@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 
 from utils.api.api_context import APIContext
 from utils.comparison.payload_resolver import resolve_payload, parse_validate_data, _is_inline_payload
+from utils.helpers.dynamic_tokens import resolve_row_tokens
 
 # --------------------------------------------------------------------------
 # Load .env first, before any fixtures are defined
@@ -92,8 +93,9 @@ def testcase_row(request):
     if status == "disabled":
         test_id = (row.get("TEST_ID") or "").strip()
         pytest.skip(f"Test case '{test_id}' is disabled in testcases.csv file hence skipping.")
-    print("***ROW**")
-    print(row)
+
+    row = resolve_row_tokens(row)
+
     return row
 
 
@@ -175,14 +177,12 @@ def api_context(request_context):
 
 @pytest.fixture
 def payload_factory():
-    def _factory(testcase_row: dict):
-        payload_value = testcase_row.get("PAYLOAD", "").strip()
+    def _factory(payload_value: str, payload_placeholder_values: str, case_sensitive: bool = True):
 
         if not payload_value:
             return None  # no payload for this test case (e.g. GET request)
 
-        raw_values = parse_validate_data(testcase_row.get("PAYLOAD_PLACEHOLDER_VALUES", "").strip())
-        case_sensitive = testcase_row.get("CASE_SENSITIVE", "true").strip().lower() != "false"
+        raw_values = parse_validate_data(payload_placeholder_values)
 
         if _is_inline_payload(payload_value):
             return resolve_payload(payload_value, raw_values, case_sensitive=case_sensitive)
@@ -190,13 +190,4 @@ def payload_factory():
             template_path = Path(payload_value)
             return resolve_payload(template_path, raw_values, case_sensitive=case_sensitive)
 
-        # raw_values = parse_validate_data(testcase_row.get("PAYLOAD_PLACEHOLDER_VALUES", "").strip())
-        #
-        # if _is_inline_payload(payload_value):
-        #     # PAYLOAD cell contains the actual JSON/XML content
-        #     return resolve_payload(payload_value, raw_values)
-        # else:
-        #     # PAYLOAD cell contains a file path to a template
-        #     template_path = Path(payload_value)
-        #     return resolve_payload(template_path, raw_values)
     return _factory

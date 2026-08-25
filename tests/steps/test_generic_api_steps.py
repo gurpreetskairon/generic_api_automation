@@ -12,13 +12,11 @@ import pytest
 from pytest_bdd import scenario, given, when, then
 from tests.conftest import api_context, get_apim_base_url, get_iib_base_url, payload_factory
 from utils.api.json_parser import query_json
-from utils.comparison.payload_resolver import parse_validate_data, detect_response_type, resolve_query_params
+from utils.comparison.payload_resolver import parse_validate_data, detect_response_type, resolve_query_params, \
+    resolve_header_placeholders
 from utils.comparison.response_comparator import compare_responses, compare_values, parse_ignore_fields
 from utils.comparison.allure_reporting import classify_differences, build_side_by_side_html
-# from utils.comparison.response_comparator import validate_result_fields
-
 from utils.api.xml_parser import query_xml
-from utils.helpers.dynamic_tokens import resolve_row_tokens
 
 
 @scenario("../features/generic_api.feature", "Validate an API response against expected data")
@@ -43,7 +41,15 @@ def fetch_endpoint(testcase_row, metadata, api_context):
     else:
         endpoint = meta["PATH"]
 
-    raw_header = parse_validate_data(os.getenv(meta["HEADER"]))
+    # get headers
+    raw_header = os.getenv(meta["HEADER"])
+
+    header_placeholder_values = parse_validate_data(
+        testcase_row.get("HEADER_PLACEHOLDER_VALUES", "").strip()
+    )
+    raw_header = resolve_header_placeholders(raw_header, header_placeholder_values)
+
+    # get http method
     if testcase_row.get("OVERRIDE_HTTP_METHOD"):
         http_method = testcase_row["OVERRIDE_HTTP_METHOD"].strip()
     else:
@@ -76,9 +82,6 @@ def fetch_endpoint(testcase_row, metadata, api_context):
 # --------------------------------------------------------------------------
 @given("the request information")
 def request_information(testcase_row, api_context, payload_factory):
-    testcase_row = resolve_row_tokens(testcase_row)
-    print(testcase_row)
-
     query_string = testcase_row.get("QUERY_STRING", "").strip()
     if query_string:
         query_placeholder_values = parse_validate_data(
@@ -89,14 +92,27 @@ def request_information(testcase_row, api_context, payload_factory):
         api_context.apim.query_params = query_params
 
         if api_context.is_comparison:
+            iib_query_params = testcase_row.get("OVERRIDE_QUERY_STRING_FOR_IIB").strip()
+            iib_query_params_placeholders = testcase_row.get("OVERRIDE_QUERY_STRING_PLACEHOLDER_VALUES_FOR_IIB").strip()
+            if iib_query_params or iib_query_params_placeholders:
+                if not iib_query_params:
+                    iib_query_params = query_string
+                query_params = resolve_query_params(iib_query_params, iib_query_params_placeholders)
             api_context.iib.query_params = query_params
 
-    payload = payload_factory(testcase_row)
+    ### HANDLE PAYLOADS
+    payload = payload_factory(testcase_row.get("PAYLOAD").strip(), testcase_row.get("PAYLOAD_PLACEHOLDER_VALUES").strip())
 
     if payload:
-        # payload = payload_factory(testcase_row)
         api_context.apim.request_body = payload
         if api_context.is_comparison:
+            iib_payload = testcase_row.get("OVERRIDE_PAYLOAD_FOR_IIB").strip()
+            iib_payload_placeholders =  testcase_row.get("OVERRIDE_PAYLOAD_PLACEHOLDER_VALUES_FOR_IIB").strip()
+            if iib_payload or iib_payload_placeholders:
+                if not iib_payload:
+                    iib_payload = testcase_row.get("PAYLOAD").strip()
+                payload = payload_factory(iib_payload, iib_payload_placeholders)
+
             api_context.iib.request_body = payload
 
 
@@ -105,7 +121,6 @@ def request_information(testcase_row, api_context, payload_factory):
 # --------------------------------------------------------------------------
 @when("I send the request")
 def send_request(api_context):
-
     api_context.apim.send_request()
     if api_context.is_comparison:
         api_context.iib.send_request()
@@ -125,8 +140,7 @@ def validate_status_code(testcase_row, api_context):
 # --------------------------------------------------------------------------
 @then("I validate the response data")
 def validate_response_data(testcase_row, api_context):
-
-    ignore_fields = parse_ignore_fields(testcase_row.get("VALIDATE_DATA_TO_IGNORE"))
+    ignore_fields = parse_ignore_fields(testcase_row.get("COMPARISON_TO_IGNORE"))
 
     if api_context.is_comparison:
         apim_text = api_context.apim.response.text()
@@ -159,7 +173,6 @@ def validate_response_data(testcase_row, api_context):
     response_type = detect_response_type(api_context.apim.response)
 
     for key, expected_value in validate_dict.items():
-        print(key, expected_value)
         if response_type == "xml":
             actual_value = query_xml(api_context.apim.response.text(), key)
         elif response_type == "json":

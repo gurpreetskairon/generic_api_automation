@@ -78,6 +78,20 @@ def resolve_query_params(query_string: str, placeholder_values: dict) -> dict:
 
     return parse_validate_data(resolved)
 
+def resolve_header_placeholders(header: str, placeholder_values: dict) -> dict:
+    """
+    Substitute placeholder tokens into a QUERY_STRING template (a JSON-object
+    string, e.g. '{"param1":"VALUE1"}') and parse the result into a dict.
+
+    Mirrors resolve_payload's substitute-then-parse approach, but returns a
+    dict instead of a raw string since query params are used as a dict
+    downstream (api_context.apim.query_params).
+    """
+    resolved = header
+    for key, value in placeholder_values.items():
+        resolved = resolved.replace(f"{key}", _escape_value(value, "json"))
+
+    return parse_validate_data(resolved)
 
 # --------------------------------------------------------------------------
 # Structural (tag/key-name) replacement - namespace-agnostic for XML
