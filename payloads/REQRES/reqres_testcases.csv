@@ -1,0 +1,4 @@
+CONDITION,OVERRIDE_PATH,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,RESPONSE_CODE,VALIDATE_DATA,VALIDATE_DATA_TO_IGNORE,STATUS
+Validate GET List Users API for exact value match,,GET,"{""page"":""2""}",,,,200,"{""data[0].first_name"":""Michael""}",,
+Validate POST Create User API,,POST,,,"{""name"":""morpheus"", ""job"":""leader""}",,201,,"[""id"", ""createdAt""]",
+Validate GET List Users API for value anywhere,,GET,"{""page"":""{page_number}""}","{""{page_number}"":2}",,,,"{""first_name=George"":{""id"": 11, ""email"": ""george.edwards@reqres.in"", ""first_name"": ""George"", ""last_name"": ""Edwards"", ""avatar"": ""https://reqres.in/img/faces/11-image.jpg""}}",,

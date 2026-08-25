@@ -1,0 +1,5 @@
+{'TEST_ID': 'TC_5', 'SERVICE_CONTRACT': 'REQRES', 'CONDITION': 'Validate GET List Users API for value anywhere', 'OVERRIDE_PATH': '', 'OVERRIDE_HTTP_METHOD': 'GET', 'QUERY_STRING': '{"page":"{page_number}"}', 'QUERY_STRING_PLACEHOLDER_VALUES': '{"{page_number}":2}', 'PAYLOAD': '', 'PAYLOAD_PLACEHOLDER_VALUES': '', 'RESPONSE_CODE': '', 'RESULT_CODE': '', 'RESULT_MESSAGE': '', 'VALIDATE_DATA': '{"first_name=George":{"id": 11, "email": "george.edwards@reqres.in", "first_name": "George", "last_name": "Edwards", "avatar": "https://reqres.in/img/faces/11-image.jpg"}}', 'VALIDATE_DATA_TO_IGNORE': '', 'STATUS': ''}
+https://reqres.in/
+api/users
+{'x-api-key': 'reqres_0786eec6d91d478ab45272f669effdc7'}
+{}

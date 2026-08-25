@@ -1,0 +1,3 @@
+CONDITION,OVERRIDE_PATH,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,RESPONSE_CODE,VALIDATE_DATA,VALIDATE_DATA_TO_IGNORE,STATUS
+Validate Celsius to Fahrenheit conversion,,,,,celsius_to_fahrenheit.xml,"{""{celsius}"":""20""}",200,"{""CelsiusToFahrenheitResult"":""68""}",,
+Validate Celsius to Fahrenheit conversion,,,,,celsius_to_fahrenheit.xml,"{""{celsius}"":""35.5""}",200,"{""CelsiusToFahrenheitResult"":""95.9""}",,

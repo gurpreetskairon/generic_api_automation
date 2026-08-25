@@ -1,0 +1,47 @@
+{'TEST_ID': 'TC_6', 'SERVICE_CONTRACT': 'SC805', 'CONDITION': 'successful_response', 'OVERRIDE_PATH': '', 'OVERRIDE_HTTP_METHOD': '', 'QUERY_STRING': '', 'QUERY_STRING_PLACEHOLDER_VALUES': '', 'PAYLOAD': 'C:\\NotBackedUp\\APIM\\payloads\\SC805\\SC805_default_palyload.xml', 'PAYLOAD_PLACEHOLDER_VALUES': '{"{username}":"curamsystemuser","{password}":"password","{auditId}":"fb43edd1-87f3-5c6e-9d0e-302f62e6c218","{transactionId}":"fb43edd1-87f3-5c6e-9d0e-302f62e6c218","{request_date_time}":"2026-08-24T20:46:08+12:00","{client_number}":290306443,"{payment_reference}":10029442827}', 'RESPONSE_CODE': '200', 'RESULT_CODE': '', 'RESULT_MESSAGE': '', 'VALIDATE_DATA': '', 'VALIDATE_DATA_TO_IGNORE': '', 'STATUS': ''}
+https://dev-apigw.int-npe.msd.govt.nz/
+nz/govt/msd/integration/derived/assistance/service/inquireassistance/v1
+{'Content-Type': 'application/xml', 'MSD-Sub-Env': 'd11'}
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:tns="http://msd.govt.nz/integration/derived/assistance/service/inquireassistance/v1"
+    xmlns:ams="http://msd.govt.nz/integration/derived/assistance/schema/assistancemessage/v1"
+    xmlns:msg="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1"
+    xmlns:pay="http://msd.govt.nz/integration/base/payment/schema/payment/v1">
+    <soapenv:Header>
+        <wsse:Security
+            xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password>password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <tns:inquireAssistanceRequest>
+            <msg:header>
+                <msg:action>INQUIREONEOFFPAYMENT</msg:action>
+                <msg:auditId>fb43edd1-87f3-5c6e-9d0e-302f62e6c218</msg:auditId>
+                <msg:requestDateTime>2026-08-24T20:46:08+12:00</msg:requestDateTime>
+                <msg:sourceSystem>obman</msg:sourceSystem>
+                <msg:transactionId>fb43edd1-87f3-5c6e-9d0e-302f62e6c218</msg:transactionId>
+                <msg:messageType>REQUEST</msg:messageType>
+                <msg:securityToken>
+                    <msg:id>obmuser</msg:id>
+                    <msg:type>USER</msg:type>
+                </msg:securityToken>
+                <msg:interactionPattern>REQUEST_RESPONSE</msg:interactionPattern>
+            </msg:header>
+            <ams:data>
+                <ams:search>
+                    <ams:clientNumber>290306443</ams:clientNumber>
+                    <ams:payment>
+                        <ams:instruction>
+                            <pay:paymentReference>10029442827</pay:paymentReference>
+                        </ams:instruction>
+                    </ams:payment>
+                </ams:search>
+            </ams:data>
+        </tns:inquireAssistanceRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

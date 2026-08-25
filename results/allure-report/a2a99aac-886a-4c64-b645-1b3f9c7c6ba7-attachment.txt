@@ -1,0 +1,12 @@
+{'TEST_ID': 'TC_2', 'SERVICE_CONTRACT': 'CELFAH', 'CONDITION': 'Validate Celsius to Fahrenheit conversion', 'OVERRIDE_PATH': '', 'OVERRIDE_HTTP_METHOD': '', 'QUERY_STRING': '', 'QUERY_STRING_PLACEHOLDER_VALUES': '', 'PAYLOAD': 'C:\\NotBackedUp\\APIM\\payloads\\CELFAH\\celsius_to_fahrenheit.xml', 'PAYLOAD_PLACEHOLDER_VALUES': '{"{celsius}":"35.5"}', 'RESPONSE_CODE': '200', 'RESULT_CODE': '', 'RESULT_MESSAGE': '', 'VALIDATE_DATA': '{"CelsiusToFahrenheitResult":"95.9"}', 'VALIDATE_DATA_TO_IGNORE': '', 'STATUS': ''}
+https://www.w3schools.com/
+xml/tempconvert.asmx
+{'Content-Type': 'text/xml; charset=utf-8'}
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    <soap:Body>
+        <CelsiusToFahrenheit xmlns="https://www.w3schools.com/xml/">
+            <Celsius>35.5</Celsius>
+        </CelsiusToFahrenheit>
+    </soap:Body>
+</soap:Envelope>
