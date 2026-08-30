@@ -192,6 +192,23 @@ def resolve_dynamic_tokens(raw_text: str) -> str:
         result = _resolve_token(name, paren_group, arg_str)
         return json.dumps(result)
 
+    def _replace_keyed(m: re.Match) -> str:
+        raw_key, fn_name, arg_str = m.group(1), m.group(2), m.group(3)
+
+        if fn_name not in TOKEN_REGISTRY:
+            return m.group(0)  # not a function-call token, leave for normal passes
+
+        args = _parse_args(arg_str)
+        result = TOKEN_REGISTRY[fn_name](*args)
+
+        # Remember it so later bare <key> references in this same blob resolve
+        # to the SAME value instead of calling the function again.
+        var_name = raw_key.strip("{}")
+        set_variable(var_name, result)
+
+        return f'"{raw_key}": {json.dumps(str(result))}'
+
+    raw_text = _KEYED_TOKEN.sub(_replace_keyed, raw_text)
     raw_text = _QUOTED_TOKEN.sub(_replace_quoted, raw_text)
     raw_text = _BARE_TOKEN.sub(_replace_bare, raw_text)
     return raw_text
@@ -208,6 +225,14 @@ def resolve_row_tokens(row: dict) -> dict:
         key: resolve_dynamic_tokens(value) if isinstance(value, str) else value
         for key, value in row.items()
     }
+
+# Matches "{key}": "<func(args)>"  -- i.e. only function-call tokens tied
+# to a JSON key. Captures the key so we can remember the resolved value.
+_KEYED_TOKEN = re.compile(
+    r'"(\{?[A-Za-z_]\w*\}?)"\s*:\s*"<([A-Za-z_]\w*)\((.*?)\)>"'
+)
+
+
 
 
 

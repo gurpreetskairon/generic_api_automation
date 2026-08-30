@@ -1,8 +1,99 @@
 ﻿TEST_ID,SERVICE_CONTRACT,CONDITION,OVERRIDE_PATH,HEADER_PLACEHOLDER_VALUES,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,OVERRIDE_QUERY_STRING_FOR_IIB,OVERRIDE_QUERY_STRING_PLACEHOLDER_VALUES_FOR_IIB,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,OVERRIDE_PAYLOAD_FOR_IIB,OVERRIDE_PAYLOAD_PLACEHOLDER_VALUES_FOR_IIB,RESPONSE_CODE,COMPARISON_TO_IGNORE,VALIDATE_DATA,MISC,STATUS
-TC_1,CELFAH,Validate Celsius to Fahrenheit conversion,,,,,,,,C:\NotBackedUp\APIM\payloads\CELFAH\celsius_to_fahrenheit.xml,"{""{celsius}"":""20""}",,,200,,"{""CelsiusToFahrenheitResult"":""68""}",,
-TC_2,CELFAH,Validate Celsius to Fahrenheit conversion,,,,,,,,C:\NotBackedUp\APIM\payloads\CELFAH\celsius_to_fahrenheit.xml,"{""{celsius}"":""35.5""}",,,200,,"{""CelsiusToFahrenheitResult"":""95.9""}",,
-TC_3,REQRES,Validate GET List Users API for exact value match,,,GET,"{""page"":""2""}",,,,,,,,200,,"{""data[0].first_name"":""Michael""}",,
-TC_4,REQRES,Validate POST Create User API,,,POST,,,,,"{""name"":""morpheus"", ""job"":""leader""}",,,,201,"[""id"", ""createdAt""]",,,
-TC_5,REQRES,Validate GET List Users API for value anywhere,,,GET,"{""page"":""{page_number}""}","{""{page_number}"":2}",,,,,,,,,"{""first_name=George"":{""id"": 11, ""email"": ""george.edwards@reqres.in"", ""first_name"": ""George"", ""last_name"": ""Edwards"", ""avatar"": ""https://reqres.in/img/faces/11-image.jpg""}}",,
-TC_6,SC805,successful_response,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\SC805\SC805_default_palyload.xml,"{""{username}"":""curamsystemuser"",""{password}"":""password"",""{auditId}"":""<generate_uuid()>"",""{transactionId}"":""<generate_uuid()>"",""{request_date_time}"":<resolve_date_token()>,""{client_number}"":290306443,""{payment_reference}"":10029442827}",,,200,,"{""result"":80500,""message"":""Request is processed Successfully.""}",,
-TC_7,SC805,no_matching_record,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\SC805\SC805_default_palyload.xml,"{""{username}"":""curamsystemuser"",""{password}"":""password"",""{auditId}"":""<generate_uuid()>"",""{transactionId}"":""<generate_uuid()>"",""{request_date_time}"":<resolve_date_token()>,""{client_number}"":312055873,""{payment_reference}"":99999999999}",,,200,,"{""result"":80501,""message"":""No Matching Record""}",,
+TC_1,SC575,Compare SC575 successful Match response,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-1\SC575\SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344677"",
+    ""{formatted_name}"": ""Allen, Gary"",
+    ""{date_of_birth}"": ""1985-03-16"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+TC_2,SC575,Compare SC575 No match response for invalid name,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-1\SC575\SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344677"",
+    ""{formatted_name}"": ""Allen, Garry"",
+    ""{date_of_birth}"": ""1985-03-16"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+TC_3,SC575,Compare SC575 No match response for invalid DOB,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-1\SC575\SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344677"",
+    ""{formatted_name}"": ""Allen, Gary"",
+    ""{date_of_birth}"": ""1990-01-01"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+TC_4,SC575,Compare SC575 No match response for invalid IRD number,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-1\SC575\SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344600"",
+    ""{formatted_name}"": ""Allen, Gary"",
+    ""{date_of_birth}"": ""1985-03-16"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+TC_5,SC805,successful_response,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-1\SC805\SC805_default_palyload.xml,"{
+    ""{username}"": ""curamsystemuser"",
+    ""{password}"": ""password"",
+    ""{auditId}"": ""<generate_uuid>"",
+    ""{transactionId}"": ""<generate_uuid>"",
+    ""{request_date_time}"":""<resolve_date_token>"",
+    ""{client_number}"": 290306443,
+    ""{payment_reference}"": 10029442827
+}",,,200,,"{
+    ""result"": 80500,
+    ""message"": ""Request is processed Successfully.""
+}",,
+TC_6,SC805,no_matching_record,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-1\SC805\SC805_default_palyload.xml,"{
+    ""{username}"": ""curamsystemuser"",
+    ""{password}"": ""password"",
+    ""{auditId}"": ""<generate_uuid()>"",
+    ""{transactionId}"": ""<generate_uuid()>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{client_number}"": 312055873,
+    ""{payment_reference}"": 99999999999
+}",,,200,,"{
+    ""result"": 80501,
+    ""message"": ""No Matching Record""
+}",,
+TC_7,SC250,receiveLifeEvent,,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-4\SC250\sc250_default_payload.xml,"{""{date}"":""<resolve_date_token()>""}",,,200,,,,
+TC_8,SC250,registerSupplier,nz/govt/msd/integration/party/registersupplier,"{""{short_env}"":""<get_short_env()>""}",,,,,,C:\NotBackedUp\APIM\payloads\Batch-4\SC250\sc250_register_supplier_payload.xml,"{""{date}"":""<resolve_date_token()>""}",,,200,,,,
+TC_9,SC831,CreateNotification_Email_Message_Default_PROVIDER,,,,,,,,C:\NotBackedUp\APIM\payloads\Batch-5\SC831\sc831_email_default_provider_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+TC_10,SC831,CreateNotification_Email_Message_Prtcpnt_Employer,,,,,,,,C:\NotBackedUp\APIM\payloads\Batch-5\SC831\sc831_email_prtcpnt_employer_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+TC_11,SC831,CreateNotification_Online_Message_Default_PROVIDER,,,,,,,,C:\NotBackedUp\APIM\payloads\Batch-5\SC831\sc831_online_default_provider_payload.xml,"{
+    ""{transaction_id}"": ""<generate_uuid()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+TC_12,SC831,CreateNotification_SMS_Message_Default_PROVIDER,,,,,,,,C:\NotBackedUp\APIM\payloads\Batch-5\SC831\sc831_sms_default_provider_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+TC_13,SC831,CreateNotification_Email_Message_Default_CLIENT,,,,,,,,C:\NotBackedUp\APIM\payloads\Batch-5\SC831\sc831_email_default_client_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83120, ""message"":""Transaction Successful""}",,
+TC_17,CELFAH,Validate Celsius to Fahrenheit conversion,,,,,,,,C:\NotBackedUp\APIM\payloads\CELFAH\celsius_to_fahrenheit.xml,"{""{celsius}"":""20""}",,,200,,"{""CelsiusToFahrenheitResult"":""68""}",,
+TC_18,CELFAH,Validate Celsius to Fahrenheit conversion,,,,,,,,C:\NotBackedUp\APIM\payloads\CELFAH\celsius_to_fahrenheit.xml,"{""{celsius}"":""35.5""}",,,200,,"{""CelsiusToFahrenheitResult"":""95.9""}",,
+TC_19,REQRES,Validate GET List Users API for exact value match,,,GET,"{""page"":""2""}",,,,,,,,200,,"{""data[0].first_name"":""Michael""}",,
+TC_20,REQRES,Validate POST Create User API,,,POST,,,,,"{""name"":""morpheus"", ""job"":""leader""}",,,,201,"[""id"", ""createdAt""]",,,
+TC_21,REQRES,Validate GET List Users API for value anywhere,,,GET,"{""page"":""{page_number}""}","{""{page_number}"":2}",,,,,,,,,"{""first_name=George"":{""id"": 11, ""email"": ""george.edwards@reqres.in"", ""first_name"": ""George"", ""last_name"": ""Edwards"", ""avatar"": ""https://reqres.in/img/faces/11-image.jpg""}}",,

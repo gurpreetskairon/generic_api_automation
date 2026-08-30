@@ -148,5 +148,32 @@ class APIContext:
             f"Expected {expected_status_code}, but got {self.response.status}"
         )
 
+    def print(self, key=None):
+        """
+        Prints class member values based on the given key.
 
+        - key is None: prints all key-value pairs.
+        - key == "request": prints all key-value pairs except "response".
+        - key is a valid member name: prints just that key-value pair.
+        - key is invalid: prints a warning.
+        """
+        members = vars(self)
 
+        if key is None:
+            to_print = members
+        elif key == "request":
+            to_print = {k: v for k, v in members.items() if k != "response"}
+        elif key in members:
+            to_print = {key: members[key]}
+        else:
+            print(f"'{key}' is not a valid member of API Context.")
+            return
+
+        print("-" * 60)
+        print(f"API Context - {key if key else 'All'}")
+        print("-" * 60)
+        for k, v in to_print.items():
+            print(f"{k}: {v}")
+            if k == "response":
+                print(f"Response Text: {self.response.text()}")
+        print("-" * 60)

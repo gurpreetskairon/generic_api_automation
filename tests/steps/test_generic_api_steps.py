@@ -77,6 +77,7 @@ def fetch_endpoint(testcase_row, metadata, api_context):
         api_context.iib.method = http_method
 
 
+
 # --------------------------------------------------------------------------
 # And the request information
 # --------------------------------------------------------------------------
@@ -131,6 +132,7 @@ def send_request(api_context):
 # --------------------------------------------------------------------------
 @then("I should receive the expected status code")
 def validate_status_code(testcase_row, api_context):
+    api_context.apim.print()
     if testcase_row["RESPONSE_CODE"]:
         api_context.apim.verify_response_status(testcase_row["RESPONSE_CODE"])
 
