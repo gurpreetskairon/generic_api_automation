@@ -1,0 +1,34 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:v1="http://www.msd.govt.nz/integration/party/registerSupplier/v1.x">
+    <soapenv:Header>
+        <curam:Credentials xmlns:curam="http://www.curamsoftware.com">
+            <Username>
+                cosuser
+            </Username>
+            <Password>
+                password
+            </Password>
+        </curam:Credentials>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:serviceRqst>
+            <v1:correlationID>
+                WLI_TESTING_With_SEC_CONTEXT
+            </v1:correlationID>
+            <v1:dateTime>
+                {date}
+            </v1:dateTime>
+            <v1:securityContext>
+                <v1:securityToken>
+                    cosuser
+                </v1:securityToken>
+            </v1:securityContext>
+            <v1:sourceSystem>
+                UA
+            </v1:sourceSystem>
+            <v1:supplierData>
+                <![CDATA[<STRUCT><SNAME>MSDSupplierRegistrationDetails</SNAME><FIELD><FNAME>agreeWithDeclarationInd</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>true</VALUE></FIELD><FIELD><FNAME>applicantFullName</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>bankAccountDisplayIndicator</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>false</VALUE></FIELD><FIELD><FNAME>bankAccountFormatted</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>bankAccountName</FNAME><TYPE>SVR_STRING</TYPE><VALUE>asdfas</VALUE></FIELD><FIELD><FNAME>bankAccountNumber</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>bankAccountSuffix</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>bankBranchID</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>bankCode</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>buildingSocietyCode</FNAME><TYPE>SVR_STRING</TYPE><VALUE>01</VALUE></FIELD><FIELD><FNAME>businessAddress</FNAME><TYPE>SVR_STRING</TYPE><VALUE>sadfas</VALUE></FIELD><FIELD><FNAME>businessAddressCity</FNAME><TYPE>SVR_STRING</TYPE><VALUE>fsdfsa</VALUE></FIELD><FIELD><FNAME>businessAddressSuburb</FNAME><TYPE>SVR_STRING</TYPE><VALUE>safas</VALUE></FIELD><FIELD><FNAME>businessPostalCode</FNAME><TYPE>SVR_STRING</TYPE><VALUE>3453</VALUE></FIELD><FIELD><FNAME>confirmContactEmail</FNAME><TYPE>SVR_STRING</TYPE><VALUE>wli_test@gmail.com</VALUE></FIELD><FIELD><FNAME>contactEmail</FNAME><TYPE>SVR_STRING</TYPE><VALUE>wli_test@gmail.com</VALUE></FIELD><FIELD><FNAME>contactFax</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>contactPersonDesignation</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>contactPersonName</FNAME><TYPE>SVR_STRING</TYPE><VALUE>asdfasf</VALUE></FIELD><FIELD><FNAME>contactPhone</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>gstIRDNumber</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>hasBusinessEFTPOS</FNAME><TYPE>SVR_STRING</TYPE><VALUE>MSDNO</VALUE></FIELD><FIELD><FNAME>hasGSTIRDNumber</FNAME><TYPE>SVR_STRING</TYPE><VALUE>MSDNO</VALUE></FIELD><FIELD><FNAME>indGoodsFood</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>true</VALUE></FIELD><FIELD><FNAME>indGoodsFuel</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>false</VALUE></FIELD><FIELD><FNAME>indGoodsOther</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>false</VALUE></FIELD><FIELD><FNAME>isSecondHandGoods</FNAME><TYPE>SVR_STRING</TYPE><VALUE>MSDNO</VALUE></FIELD><FIELD><FNAME>mailingAddress</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>mailingAddressCity</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>mailingAddressSuburb</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>mailingPostalCode</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>merchantIDNumber</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>merchantIDNumberDisplayIndicator</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>false</VALUE></FIELD><FIELD><FNAME>preferredContactType</FNAME><TYPE>SVR_STRING</TYPE><VALUE>EMAIL</VALUE></FIELD><FIELD><FNAME>secondHandGoodsDisplayIndicator</FNAME><TYPE>SVR_BOOLEAN</TYPE><VALUE>false</VALUE></FIELD><FIELD><FNAME>supplierApplicationID</FNAME><TYPE>SVR_UNIQUE_ID</TYPE><VALUE>8713761591520133120</VALUE></FIELD><FIELD><FNAME>supplierBusinessName</FNAME><TYPE>SVR_STRING</TYPE><VALUE>sadfaf</VALUE></FIELD><FIELD><FNAME>supplierTradingBusinessName</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD><FIELD><FNAME>switchType</FNAME><TYPE>SVR_STRING</TYPE><VALUE></VALUE></FIELD></STRUCT>]]>
+            </v1:supplierData>
+        </v1:serviceRqst>
+    </soapenv:Body>
+</soapenv:Envelope>

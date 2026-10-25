@@ -1,0 +1,21 @@
+<soap:Envelope xmlns:ns1="http://www.curamsoftware.com/WorkspaceServices/LifeEvent"
+               xmlns:soap="http://www.w3.org/2003/05/soap-envelope">
+    <soap:Header>
+        <curam:Credentials xmlns:curam="http://www.curamsoftware.com">
+            <Username>cosuser</Username>
+            <Password>password</Password>
+        </curam:Credentials>
+    </soap:Header>
+    <soap:Body>
+        <ns1:receiveLifeEvent>
+            <ns1:lifeEventReference>401</ns1:lifeEventReference>
+            <ns1:senderIdentification>
+                <systemID>noname</systemID>
+                <accountID>45000</accountID>
+            </ns1:senderIdentification>
+            <ns1:lifeEventData>PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iSVNPLTg4NTktMSI/PjxBcHBsaWNhdGlvbj4NCjxNU0RDSUNCYW5rRGV0YWlscyBlZmZlY3RpdmVEYXRlPSIyMDEzMDcwNCIgZmluYW5jaWFsSW5zdFR5cGU9IkJVSUxEU09DIiBpbW1lZGlhdGVFZmZlY3Q9IlZJMSIgaXNTZXJ2aWNlQ2FsbFN1Y2Nlc3NmdWw9InRydWUiIG5vQmVuZWZpdFJldHVybmVkPSJmYWxzZSIgb25lQmVuZWZpdEZvdW5kPSJ0cnVlIiBzZWxlY3RlZE5hbWVGb3JCdWlsZGluZ1NvY2lldHk9Ikhhc3RpbmdzIFBlcm1hbmVudCBCdWlsZGluZyAmYW1wOyBJbnZlc3RtZW50IFNvY2lldHkiPg0KPE1TREJlbmVmaXQgZGVzY3JpcHRpb249IlNvbGUgUGFyZW50IFN1cHBvcnQiIGlzQmVuZWZpdFNlbGVjdGVkPSJmYWxzZSIgcHJvZHVjdElkPSIzMyIgcHJvZHVjdFN0YXR1cz0iMyIgcHJvZHVjdFR5cGU9IlByaW1hcnkiLz4NCjxNU0RCdWlsZGluZ1NvY2lldHlEZXRhaWxzIGJ1aWxkaW5nU29jaWV0eUFjY291bnRJbk5hbWVPZj0iYSIgaXNCdWlsZGluZ1NvY2lldHlBY2NvdW50SW5Zb3VyTmFtZT0iVkkxIiBuYW1lT2ZCdWlsZGluZ1NvY2lldHk9IjA1Ii8+DQo8L01TRENJQ0JhbmtEZXRhaWxzPg0KPE1TRENoYW5nZUluQ2lyY3Vtc3RhbmNlIFNXTj0iMDIxNTEzNzgwIiBsaWZlRXZlbnRJRD0iMTMwMDI3MzY1NDkxNDg3NTM5MiIgbmFtZT0iQ2hhbmdlIE9mIEJhbmsgQWNjb3VudCIgdXNlcm5hbWU9ImphbWVzc21pdGgiLz4NCjwvQXBwbGljYXRpb24+DQo=</ns1:lifeEventData>
+            <ns1:lifeEventSchemaName>MSDChangeOfBankDetailsSchema</ns1:lifeEventSchemaName>
+            <ns1:submittedDateTime>{date}</ns1:submittedDateTime>
+        </ns1:receiveLifeEvent>
+    </soap:Body>
+</soap:Envelope>

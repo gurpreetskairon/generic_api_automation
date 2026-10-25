@@ -1,0 +1,103 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:v1="http://msd.govt.nz/integration/derived/communication/service/managecommunication/v1"
+                  xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1"
+                  xmlns:v12="http://msd.govt.nz/integration/derived/communication/schema/communicationmessage/v1"
+                  xmlns:v13="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                  xmlns:v14="http://msd.govt.nz/integration/utils/technical/schema/value/v1"
+                  xmlns:xsi="xsi">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-11080001" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>curamsystemuser</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+    <soapenv:Body>
+        <ns7:manageCommunicationRequest xmlns:ns7="http://msd.govt.nz/integration/derived/communication/service/managecommunication/v1"
+                                        xmlns:ns6="http://msd.govt.nz/integration/derived/communication/schema/communicationmessage/v1"
+                                        xmlns:xsi1="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi1:type="ns6:CommunicationMessage">
+            <header xmlns="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1">
+                <action>CREATENOTIFICATIONS</action>
+                <auditId>{audit_id}</auditId>
+                <requestDateTime>{request_date_time}</requestDateTime>
+                <sourceSystem>CMS</sourceSystem>
+                <transactionId>{transaction_id}</transactionId>
+                <messageType>REQUEST</messageType>
+                <securityToken>
+                    <id>rwohl001</id>
+                    <type>USER</type>
+                </securityToken>
+                <interactionPattern>REQUEST_RESPONSE</interactionPattern>
+            </header>
+            <ns6:data xsi1:type="ns6:CommunicationMessageData">
+                <ns6:communication>
+                    <ns6:participant>
+                        <ns6:id>500290007</ns6:id>
+                        <ns6:roleType>Receiver</ns6:roleType>
+                        <ns6:type>EMPLOYERID</ns6:type>
+                    </ns6:participant>
+                    <ns6:notification>
+                        <message xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                                 xsi1:type="OnlineMessage">
+                            <isAcknowledgementRequired>false</isAcknowledgementRequired>
+                            <displayText>Your application has been approved and payment card credited.</displayText>
+                        </message>
+                        <message xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                 xsi:type="SMSMessage">
+                            <isAcknowledgementRequired>false</isAcknowledgementRequired>
+                            <fromPhoneNumber>2422</fromPhoneNumber>
+                            <textMessage>
+                                Kia ora Sampath, this is your In-Work Support team. Haere mai and welcome to Mana in Mahi...
+                            </textMessage>
+                            <toPhoneNumber>64223192248</toPhoneNumber>
+                        </message>
+                        <activity xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1">
+                            <type>
+                                <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SENDHARDSHIPAPPROVAL</ns1:code>
+                                <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1" />
+                            </type>
+                            <process>
+                                <type>
+                                    <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">HardshipApplication</ns1:code>
+                                    <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                                </type>
+                            </process>
+                        </activity>
+                    </ns6:notification>
+                    <ns6:notification>
+                        <message xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                                 xsi1:type="OnlineMessage">
+                            <isAcknowledgementRequired>false</isAcknowledgementRequired>
+                            <displayText>Your application has been approved and payment card credited.</displayText>
+                        </message>
+                        <message xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                                 xsi:type="SMSMessage">
+                            <isAcknowledgementRequired>false</isAcknowledgementRequired>
+                            <fromPhoneNumber>2422</fromPhoneNumber>
+                            <textMessage>
+                                Kia ora Sampath, this is your In-Work Support team. Haere mai and welcome to Mana in Mahi...
+                            </textMessage>
+                            <toPhoneNumber>64223192248</toPhoneNumber>
+                        </message>
+                        <activity xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1">
+                            <type>
+                                <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SENDHARDSHIPAPPROVAL</ns1:code>
+                                <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                            </type>
+                            <process>
+                                <type>
+                                    <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">HardshipApplication</ns1:code>
+                                    <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                                </type>
+                            </process>
+                        </activity>
+                    </ns6:notification>
+                </ns6:communication>
+            </ns6:data>
+        </ns7:manageCommunicationRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

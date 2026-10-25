@@ -1,0 +1,71 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/derived/communication/service/managecommunication/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/derived/communication/schema/communicationmessage/v1" xmlns:v13="http://msd.govt.nz/integration/base/notification/schema/notification/v1" xmlns:v14="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v15="http://msd.govt.nz/integration/base/notification/schema/notification/v1" xmlns:xsi="xsi">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken wsu:Id="UsernameToken-11080001" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+				<wsse:Username>curamsystemuser</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+	</soapenv:Header>
+	<soapenv:Body>
+		<v1:manageCommunicationRequest>
+			<v11:header>
+				<v11:action>CREATENOTIFICATIONS</v11:action>
+				<v11:auditId>{audit_id}</v11:auditId>
+				<v11:requestDateTime>{request_date_time}</v11:requestDateTime>
+				<v11:sourceSystem>UPA</v11:sourceSystem>
+				<v11:transactionId>{transaction_id}</v11:transactionId>
+				<v11:messageType>REQUEST</v11:messageType>
+				<v11:securityToken>
+					<v11:id>upauser</v11:id>
+					<v11:type>USER</v11:type>
+				</v11:securityToken>
+				<v11:interactionPattern>REQUEST_RESPONSE</v11:interactionPattern>
+			</v11:header>
+			<v12:data>
+				<v12:communication>
+					<v12:participant>
+						<v12:id>367749652</v12:id>
+						<v12:roleType>Receiver</v12:roleType>
+						<v12:type>CLIENTNUMBER</v12:type>
+					</v12:participant>
+					<v12:notification>
+						
+						<v13:messageSummary>My Account Online Activation</v13:messageSummary>
+						
+						<v13:message xsi:type="v13:EmailMessage" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+							
+							<v13:body>test email</v13:body>
+							
+							<v13:fromAddress>test@test.com</v13:fromAddress>
+							
+							<v13:subject>test</v13:subject>
+							<v13:toAddress>gopal.cheerla001@msd.govt.nz</v13:toAddress>
+							<v15:attachment>
+								<v15:documentName>abc</v15:documentName>
+								<v15:electronicDocument>SmFpR3VydWppU2FpcmFt</v15:electronicDocument>
+								<v15:fileLocation>http://abc.com</v15:fileLocation>
+								<v15:originatingSystem>CMS</v15:originatingSystem>
+								<v15:uniqueDocumentId>a1</v15:uniqueDocumentId>
+								<v15:MIMEType></v15:MIMEType>
+								<v15:fileExtension>pdf</v15:fileExtension>
+							</v15:attachment>
+						</v13:message>
+						<v13:activity>
+							<v13:type>
+								<v14:code>SENDPROVISIONMESSAGE</v14:code>
+								
+							</v13:type>
+							<v13:process>
+								<v13:type>
+									<v14:code>hardshipApplication</v14:code>
+									
+								</v13:type>
+							</v13:process>
+						</v13:activity>
+					</v12:notification>
+				</v12:communication>
+			</v12:data>
+		</v1:manageCommunicationRequest>
+	</soapenv:Body>
+</soapenv:Envelope>

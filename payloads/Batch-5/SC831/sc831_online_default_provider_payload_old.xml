@@ -1,0 +1,25 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:v1="http://msd.govt.nz/integration/derived/communication/service/managecommunication/v1"
+                  xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1"
+                  xmlns:v12="http://msd.govt.nz/integration/derived/communication/schema/communicationmessage/v1"
+                  xmlns:v13="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                  xmlns:v14="http://msd.govt.nz/integration/utils/technical/schema/value/v1"
+                  xmlns:xsi="xsi">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                                wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <v1:manageCommunicationRequest>
+            <v11:header>
+                <v11:action>CREATENOTIFICATIONS</v11:action>
+                <v11:transactionId>{transaction_id}</v11:transactionId>
+            </v11:header>
+        </v1:manageCommunicationRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

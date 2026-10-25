@@ -37,6 +37,18 @@ def pytest_addoption(parser):
                       help="Point the APIM base URL at the IIB base URL (useful when you want "
                            "the 'APIM' slot to actually hit IIB, e.g. for baseline/sanity runs)")
 
+def _row_tags(row):
+    """All raw tag strings for a row: TEST_ID, SERVICE_CONTRACT, plus any
+    comma-separated values in the TAGS column."""
+    tags = [
+        (row.get("TEST_ID") or "").strip(),
+        (row.get("SERVICE_CONTRACT") or "").strip(),
+    ]
+    raw_extra = (row.get("TAGS") or "").strip()
+    if raw_extra:
+        tags.extend(t.strip() for t in raw_extra.split(",") if t.strip())
+    print(f"tags: {tags}")
+    return tags
 
 def pytest_configure(config):
     cli_env = config.getoption("--env")
@@ -58,8 +70,7 @@ def pytest_configure(config):
     try:
         seen = set()
         for row in load_testcases():
-            for tag in ((row.get("TEST_ID") or "").strip(),
-                        (row.get("SERVICE_CONTRACT") or "").strip()):
+            for tag in _row_tags(row):
                 sanitized = _sanitize_mark(tag)
                 if sanitized and sanitized not in seen:
                     seen.add(sanitized)
@@ -126,10 +137,9 @@ def pytest_generate_tests(metafunc):
         ids = []
         for row in contracts:
             test_id = (row.get("TEST_ID") or "").strip()
-            service_contract = (row.get("SERVICE_CONTRACT") or "").strip()
 
             marks = []
-            for tag in (test_id, service_contract):
+            for tag in _row_tags(row):
                 sanitized = _sanitize_mark(tag)
                 if sanitized:
                     marks.append(getattr(pytest.mark, sanitized))
@@ -138,8 +148,6 @@ def pytest_generate_tests(metafunc):
             ids.append(test_id)
 
         metafunc.parametrize("testcase_row", params, ids=ids, indirect=True)
-
-
 
 
 @pytest.fixture

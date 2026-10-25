@@ -1,0 +1,67 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:v1="http://msd.govt.nz/integration/derived/communication/service/managecommunication/v1"
+                  xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1"
+                  xmlns:v12="http://msd.govt.nz/integration/derived/communication/schema/communicationmessage/v1"
+                  xmlns:v13="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                  xmlns:v14="http://msd.govt.nz/integration/utils/technical/schema/value/v1"
+                  xmlns:xsi="xsi">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd"
+                                wsu:Id="UsernameToken-11080001">
+                <wsse:Username>cmsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns7:manageCommunicationRequest xmlns:ns7="http://msd.govt.nz/integration/derived/communication/service/managecommunication/v1"
+                                        xmlns:ns6="http://msd.govt.nz/integration/derived/communication/schema/communicationmessage/v1"
+                                        xmlns:xsi1="http://www.w3.org/2001/XMLSchema-instance"
+                                        xsi1:type="ns6:CommunicationMessage">
+            <header xmlns="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1">
+                <action>CREATENOTIFICATIONS</action>
+                <auditId>{audit_id}</auditId>
+                <requestDateTime>2016-08-16T12:38:35+12:00</requestDateTime>
+                <sourceSystem>ESS</sourceSystem>
+                <transactionId>{transaction_id}</transactionId>
+                <messageType>REQUEST</messageType>
+                <securityToken>
+                    <id>nnand</id>
+                    <type>USER</type>
+                </securityToken>
+                <interactionPattern>REQUEST_RESPONSE</interactionPattern>
+            </header>
+            <ns6:data xsi1:type="ns6:CommunicationMessageData">
+                <ns6:communication>
+                    <ns6:participant>
+                        <ns6:id>000000009</ns6:id>
+                        <ns6:roleType>Receiver</ns6:roleType>
+                        <ns6:type>CLIENTNUMBER</ns6:type>
+                    </ns6:participant>
+                    <ns6:notification>
+                        <message xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1"
+                                 xsi1:type="SMSMessage">
+                            <isAcknowledgementRequired>false</isAcknowledgementRequired>
+                            <fromPhoneNumber>0000</fromPhoneNumber>
+                            <textMessage>Hi this is a test message from IIB.</textMessage>
+                            <toPhoneNumber>0224691092</toPhoneNumber>
+                        </message>
+                        <activity xmlns="http://msd.govt.nz/integration/base/notification/schema/notification/v1">
+                            <type>
+                                <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SENDCMNOTIFICATION</ns1:code>
+                                <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                            </type>
+                            <process>
+                                <type>
+                                    <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">CMCorrespondence</ns1:code>
+                                    <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                                </type>
+                            </process>
+                        </activity>
+                    </ns6:notification>
+                </ns6:communication>
+            </ns6:data>
+        </ns7:manageCommunicationRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

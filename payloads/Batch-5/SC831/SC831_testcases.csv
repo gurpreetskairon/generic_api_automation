@@ -1,0 +1,24 @@
+CONDITION,OVERRIDE_PATH,HEADER_PLACEHOLDER_VALUES,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,OVERRIDE_QUERY_STRING_FOR_IIB,OVERRIDE_QUERY_STRING_PLACEHOLDER_VALUES_FOR_IIB,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,OVERRIDE_PAYLOAD_FOR_IIB,OVERRIDE_PAYLOAD_PLACEHOLDER_VALUES_FOR_IIB,RESPONSE_CODE,COMPARISON_TO_IGNORE,VALIDATE_DATA,MISC,STATUS
+CreateNotification_Email_Message_Default_PROVIDER,,,,,,,,sc831_email_default_provider_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+CreateNotification_Email_Message_Prtcpnt_Employer,,,,,,,,sc831_email_prtcpnt_employer_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+CreateNotification_Online_Message_Default_PROVIDER,,,,,,,,sc831_online_default_provider_payload.xml,"{
+    ""{transaction_id}"": ""<generate_uuid()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+CreateNotification_SMS_Message_Default_PROVIDER,,,,,,,,sc831_sms_default_provider_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83100, ""message"":""Transaction Successful""}",,
+CreateNotification_Email_Message_Default_CLIENT,,,,,,,,sc831_email_default_client_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>""
+}",,,200,"[""value""]","{""result"":83120, ""message"":""Transaction Successful""}",,

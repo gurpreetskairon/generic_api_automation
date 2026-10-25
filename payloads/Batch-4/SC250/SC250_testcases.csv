@@ -1,0 +1,3 @@
+CONDITION,OVERRIDE_PATH,HEADER_PLACEHOLDER_VALUES,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,OVERRIDE_QUERY_STRING_FOR_IIB,OVERRIDE_QUERY_STRING_PLACEHOLDER_VALUES_FOR_IIB,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,OVERRIDE_PAYLOAD_FOR_IIB,OVERRIDE_PAYLOAD_PLACEHOLDER_VALUES_FOR_IIB,RESPONSE_CODE,COMPARISON_TO_IGNORE,VALIDATE_DATA,MISC,STATUS
+receiveLifeEvent,,"{""{short_env}"":""<get_short_env()>""}",,,,,,sc250_default_payload.xml,"{""{date}"":""<resolve_date_token()>""}",,,200,,,,
+registerSupplier,nz/govt/msd/integration/party/registersupplier,"{""{short_env}"":""<get_short_env()>""}",,,,,,sc250_register_supplier_payload.xml,"{""{date}"":""<resolve_date_token()>""}",,,200,,,,

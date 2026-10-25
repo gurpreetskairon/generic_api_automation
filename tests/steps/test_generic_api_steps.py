@@ -53,7 +53,7 @@ def fetch_endpoint(testcase_row, metadata, api_context):
     if testcase_row.get("OVERRIDE_HTTP_METHOD"):
         http_method = testcase_row["OVERRIDE_HTTP_METHOD"].strip()
     else:
-        http_method = meta["HTTP_METHOD"]
+        http_method = meta.get("HTTP_METHOD", "POST")   # default value is post
 
     # APIM BASE URL
     if meta.get("OVERRIDE_APIM_BASE_URL"):
@@ -133,6 +133,8 @@ def send_request(api_context):
 @then("I should receive the expected status code")
 def validate_status_code(testcase_row, api_context):
     api_context.apim.print()
+    print("IIB")
+    # api_context.iib.print()
     if testcase_row["RESPONSE_CODE"]:
         api_context.apim.verify_response_status(testcase_row["RESPONSE_CODE"])
 
