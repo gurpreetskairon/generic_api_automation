@@ -1,0 +1,10 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER
+1,dev11,successful_response,500473220
+2,dev11,missing_client_number,
+3,dev11,missing_transaction_id,526503084
+4,dev11,missing_source_system,526503084
+5,dev11,successful_empty_actions,526546009
+6,dev11,successful_multiple_actions,500473220
+7,dev11,successful_populated_activities,526335574
+8,dev11,successful_other_method,526503084
+9,dev11,successful_null_end_date,526441458

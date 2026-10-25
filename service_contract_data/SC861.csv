@@ -1,0 +1,4 @@
+ENV,SWN,CONDITION
+dev11,413630272,transaction_successful_appointments_found
+dev11,526371944,transaction_successful_no_appointments_found
+dev11,000000001,invalid_request_data

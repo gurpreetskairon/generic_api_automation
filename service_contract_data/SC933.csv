@@ -1,0 +1,5 @@
+ID,ENVIRONMENT,CONDITION,CAMPAIGN_NAME,OPERATION,DIAL_MODE,OPTIMIZE_BY,OPTIMIZE_GOAL
+1,dev11,successful_response,SwaggerCamp1,start,PREDICTIVE,BUSY_FACTOR,80
+2,dev11,invalid_request,SwaggerCamp1,INVALID,PREDICTIVE,BUSY_FACTOR,80
+3,dev11,campaign_already_stopped,SwaggerCamp1,stop,PREDICTIVE,BUSY_FACTOR,80
+4,dev11,authentication_failure,SwaggerCamp1,start,PREDICTIVE,BUSY_FACTOR,80

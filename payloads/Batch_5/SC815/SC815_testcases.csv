@@ -1,0 +1,17 @@
+CONDITION,TAGS,OVERRIDE_CONTRACT_TYPE,OVERRIDE_PATH,HEADER_PLACEHOLDER_VALUES,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,OVERRIDE_QUERY_STRING_FOR_IIB,OVERRIDE_QUERY_STRING_PLACEHOLDER_VALUES_FOR_IIB,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,OVERRIDE_PAYLOAD_FOR_IIB,OVERRIDE_PAYLOAD_PLACEHOLDER_VALUES_FOR_IIB,COMPARISON_TO_IGNORE,RESPONSE_CODE,VALIDATE_DATA,ASYNC_VALIDATE_DATA,STATUS
+successful_response,"SANITY,POSITIVE",,,"{""{short_env}"":""<get_short_env()>""}",,,,,,,"{
+    ""{username}"": ""curamsystemuser"",
+    ""{password}"": ""password"",
+    ""{auditId}"": ""<generate_uuid('unique=True')>"",
+    ""{transactionId}"": ""<auditId>"",
+    ""{correlationid}"":""<auditid>"",
+    ""{request_date_time}"":""<resolve_date_token>"",
+   ""{referenceid}"":""<auditid>"",
+    ""{client_number}"": 526339602
+}",,,,200,"{
+    ""result"": 80500,
+    ""message"": ""Request is processed Successfully.""
+}","{
+    ""result"": 156001,
+    ""message"": ""Request is processed Successfully.""
+}",

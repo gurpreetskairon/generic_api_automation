@@ -1,0 +1,11 @@
+{
+    "transactionId": "b724ebd0-0c71-4a01-a8e1-43f33bfa4feb",
+    "requestDateTime": "20251210T111608",
+    "channelId": "CIAM",
+    "alternateId": "113",
+    "flt": "AutoParticipantLinkTest",
+    "privacyDomain": "https://msd.govt.nz/provders/CIAM-Dev",
+    "idp": "REALME",
+    "referenceTypeCode": "CA7",
+    "ciamId": "0c4f0d6a-f977-42e4-8f2a-e17f88c1e019"
+}

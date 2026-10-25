@@ -1,0 +1,10 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,CARD_NUMBER,EXPIRY_DATE,PIN_REQUIRED,SIGNATURE_REQUIRED,BLOCKED,BLOCKED_REASON
+1,dev11,successful_payment_card_update,312409451,5035137030803099,2050-12-31T18:13:51.0Z,true,false,false,
+2,dev11,invalid_card_number,312409451,5035137033353674,2050-12-31T18:13:51.0Z,true,false,false,
+3,dev11,blocked_card,526339565,5035137030975323,2050-12-31T18:13:51.0Z,true,true,true,LOST
+4,dev11,card_allocated_to_another_client,526307049,5035137030980051,2050-12-31T18:13:51.0Z,true,false,false,
+5,dev11,invalid_xml,526339581,5035137033177652,invalid date,true,false,false,
+6,dev11,card_allocation_limit_reached,513810400,5035137033170154,2050-12-31T18:13:51.0Z,true,false,false,
+7,dev11,pin_and_signature_not_required,526339573,5035137033353673,2050-12-31T18:13:51.0Z,false,false,false,
+8,dev11,invalid_block_reason,526339581,5035137033177652,2050-12-31T18:13:51.0Z,true,false,true,INVALID
+9,dev11,blocked_card_without_block_reason,526339581,5035137033177652,2050-12-31T18:13:51.0Z,true,false,true,

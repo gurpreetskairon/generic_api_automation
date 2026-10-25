@@ -1,0 +1,11 @@
+ENV,SWN,CONDITION
+dev11,411575368,None
+dev11,004593718,no_identity_verification
+dev11,123056789,no_matching_client
+dev11,1230567111,invalid_client_number
+dev11,004593718,user_not_recognised
+u11,411575368,None
+u11,004593718,no_identity_verification
+u11,123056789,no_matching_client
+u11,1230567111,invalid_client_number
+u11,004593718,user_not_recognised

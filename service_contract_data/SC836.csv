@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,ORIGINATING_SYSTEM_REFERENCE_ID,CREATED_BY
+1,dev11,successful_response,526339629,bpm_idd_F0615BA0-0000-C51F-9E96-44578186819D,bpmsystemuser
+2,dev11,duplicate_document_reference,526339629,bpm_idd_F0615BA0-0000-C51F-9E96-44578186819D,bpmsystemuser
+3,dev11,missing_mandatory_data,,bpm_idd_F0615BA0-0000-C51F-9E96-44578186819D,bpmsystemuser
+4,dev11,invalid_data,5263396,bpm_idd_F0615BA0-0000-C51F-9E96-44578186819D,bpmsystemuser
+5,dev11,user_not_recognised,526339629,bpm_idd_F0615BA0-0000-C51F-9E96-44578186819D,bp

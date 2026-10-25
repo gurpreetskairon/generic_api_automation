@@ -1,0 +1,63 @@
+{
+    "dtls": {
+        "securityToken": {
+            "securityTokenID": "wmbcmsuser",
+            "securityTokenType": "USER"
+        },
+        "person": {
+            "countryCodeOfBirth": {
+                "value": "NZ"
+            },
+            "dateOfBirth": "1953-10-05",
+            "genderCode": {
+                "value": "SX1"
+            },
+            "countryOfBirth": "New Zealand",
+            "gender": "Male",
+            "maritalStatus": "Single",
+            "maritalStatusCode": {
+                "value": "SNGL"
+            },
+            "identity": {
+                "identifier": "148726779",
+                "type": "IRD Number",
+                "typeCode": {
+                    "value": "MSDCA7"
+                }
+            },
+            "ethnicity": {
+                "startDate": "1953-10-05",
+                "ethnicityGroupCode": {
+                    "value": "MSD32100"
+                }
+            },
+            "name": {
+                "familyName": "Levy12",
+                "middleNames": "Hannah",
+                "firstName": "Fraser",
+                "title": "Doctor",
+                "titleCode": "DR",
+                "typeCode": {
+                    "value": "AT1"
+                },
+                "type": "Registered",
+                "startDate": "2020-09-21"
+            },
+            "address": [
+                {
+                    "city": "Wellington",
+                    "country": "New Zealand",
+                    "line1": "221 Tinakori Road",
+                    "line2": "Thorndon",
+                    "postalCode": "6011",
+                    "suburb": "Thorndon",
+                    "countryCode": "NZ",
+                    "isRecognisedAddress": true,
+                    "addressTypeCode": {
+                        "value": "AT1"
+                    }
+                }
+            ]
+        }
+    }
+}

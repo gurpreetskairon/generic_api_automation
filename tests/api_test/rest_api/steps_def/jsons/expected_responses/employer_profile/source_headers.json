@@ -1,0 +1,9 @@
+{
+    "serviceResults": [
+        {
+            "result": "API-01",
+            "message": "Validation error",
+            "resultDescription": "Source event headers are missing; These are required for asynchrnous publish usecases"
+        }
+    ]
+}

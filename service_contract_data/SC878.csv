@@ -1,0 +1,9 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,SECURITY_TOKEN_ID
+1,dev11,approved_hardship_application_found,526339565,mymsduser
+2,dev11,no_approved_hardship_application_found,526339581,mymsduser
+3,dev11,user_not_recognised,526339565,invaliduser
+4,dev11,missing_client_number,,mymsduser
+5,dev11,invalid_client_number,66666666$,mymsduser
+6,dev11,client_not_recognised,666666666,mymsduser
+7,dev11,client_is_duplicate,021446304,mymsduser
+8,dev11,client_details_not_accessible,526279925,mqin0001

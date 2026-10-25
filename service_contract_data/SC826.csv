@@ -1,0 +1,5 @@
+ENV,SWN,NAME,DOB,GENDER,IRD,CONDITION
+dev11,526284229,SCEightTwoSix secured client,2001-06-10,MALE,141970828,secured_client
+dev11,526284392,SCEightTwoSix automation test,2001-06-10,MALE,148787794,50+Clients
+u11,526472010,UAT Automation Client,2001-08-17,MALE,140593877,50+Clients
+u11,526474824,UAT Automation SecuredClient,2001-08-17,MALE,147940467,secured_client

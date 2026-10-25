@@ -1,0 +1,15 @@
+CONDITION,CLIENT_ID,USER_ID,ENV
+active_c2e_flag,526285162,tbau0005,dev11
+expired_c2e_flag,394354900,tbau0005,dev11
+no_c2e_flag,526285496,tbau0005,dev11
+no_matching_client,666666666,tbau0005,dev11
+invalid_client_number,526-285-154,tbau0005,dev11
+missing_client_number,,tbau0005,dev11
+user_not_recognised,526285162,tbau,dev11
+active_c2e_flag,526284966,tbau0005,u11
+expired_c2e_flag,394354900,tbau0005,u11
+no_c2e_flag,526285496,tbau0005,u11
+no_matching_client,666666666,tbau0005,u11
+invalid_client_number,526-285-154,tbau0005,u11
+missing_client_number,,tbau0005,u11
+user_not_recognised,526285162,tbau,u11

@@ -1,0 +1,4 @@
+ID,ENVIRONMENT,CONDITION,SCANNED_IMAGE_REF
+1,dev11,successful_response,20260904T105303_621276_23942_2702
+2,dev11,missing_mandatory_data,
+3,dev11,document_identifier_not_recognised,123456789

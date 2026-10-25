@@ -1,0 +1,13 @@
+CONDITION,CLIENT_ID,ENV
+medical_appeal_status_1372,290920258,dev11
+medical_appeal_status_1373,355983395,dev11
+medical_appeal_status_1374,300485857,dev11
+no_medical_appeal_decision,987456123,dev11
+client_not_present_in_medical_appeals_db,111111111,dev11
+invalid_request,,dev11
+medical_appeal_status_1372,290920258,u11
+medical_appeal_status_1373,355983395,u11
+medical_appeal_status_1374,300485857,u11
+no_medical_appeal_decision,987456123,u11
+client_not_present_in_medical_appeals_db,111111111,u11
+invalid_request,,u11

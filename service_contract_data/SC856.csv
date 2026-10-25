@@ -1,0 +1,5 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,REDIRECTION_TYPE_CODE
+1,dev11,pay_period_and_redirections,323487395,EHC
+2,dev11,pay_period_without_redirections,526339565,EHC
+3,dev11,invalid_redirection_type,323487395,ZZZ
+4,dev11,unrecognised_client,666666666,EHC

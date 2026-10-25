@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,SEARCH_START_DATE,SEARCH_END_DATE,USER_ID
+1,dev11,ongoing_application_found,526339696,2026-08-01,2026-10-01,mymsduser
+2,dev11,no_ongoing_application_found,526339581,2026-08-01,2026-10-01,mymsduser
+3,dev11,user_not_recognised,526339696,2026-08-01,2026-10-01,myms
+4,dev11,invalid_request,,2026-08-01,2026-10-01,mymsduser
+5,dev11,client_not_recognised,999999999,2026-08-01,2026-10-01,mymsduser

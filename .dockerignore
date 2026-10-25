@@ -1,0 +1,17 @@
+node_modules/
+allure-results/
+allure-report/
+bulk_output/
+bulk_output_report/
+local_db_backup/
+tmp/
+.git/
+__pycache__/
+*.pyc
+*.pyo
+docs/
+.pre-commit-config.yaml
+.idea/
+.pytest_cache/
+.ruff_cache/
+.editorconfig

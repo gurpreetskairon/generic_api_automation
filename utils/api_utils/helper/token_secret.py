@@ -1,0 +1,4 @@
+class TokenSecret:
+    secret_integration_data: str = "gAAAAABpNhMMMFvUv7FFecTyWzPBhivX3Q1TnMohqgXdm4HezKe5r5oD5HTdM_-9s7UPChgQnX6OR_tZmey7_H9TaZIN-dscIjw3lUi0HmfHsNH2Yd368L_pY6-v5K-35gVPYBiWSkp2"
+    secret_weka_dev_data: str = "gAAAAABpNhPKECM0Ol-HBQnKmwu1N7nFmGNJFJCzSDVbEOeD5JfTzwCCVLh33EUN03eGg0w2lvSCIpzJu5lNMAlHjQ9MMgC5cCtYgRIfA_gL0z64_bKdeRYDy-nB4cIOM0wFZT85APj4"
+    secret_weka_uat_data: str = "gAAAAABpNhPi3p0X6biYlXdjsUGVKr2ZY-nXYzky3u3wKGSXyujQdHvc6t4QevivEWKQ-Gij5QcfNBTDzWT5moINVQIvlWr4HVYN3s_k0xvbVKYWXzuS1zXfwK0ulqPDQ6amFIuSAglm"

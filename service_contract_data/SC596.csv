@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,TENANT_CLIENT_NUMBER
+1,dev11,client_not_recognised,666666666,
+2,dev11,client_without_eligible_service,526370987,
+3,dev11,client_with_linked_active_tenant_records,526339581,
+4,dev11,client_is_apportioned_partner,526363602,
+5,dev11,tenant_cost_does_not_match_sup_cost,,526356853

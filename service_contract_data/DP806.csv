@@ -1,0 +1,11 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,REPAYMENT_START_DATE,REPAYMENT_END_DATE,INCLUDE_ACTIVE_ONLY,INCLUDE_HERITAGE_DEBT,INCLUDE_RATES,INCLUDE_RECOVERABLE_REPAYMENTS
+1,dev11,successful_response_heritage_debt_true,519520500,2026-04-20T00:00:00,2026-06-20T00:00:00,true,true,true,true
+2,dev11,no_matching_record_heritage_debt_true,290781105,2026-04-20T00:00:00,2026-06-20T00:00:00,true,true,true,true
+3,dev11,successful_response_heritage_debt_false,519520500,2026-04-20T00:00:00,2026-06-20T00:00:00,true,false,true,true
+4,dev11,no_matching_record_heritage_debt_false,290781105,2026-04-20T00:00:00,2026-06-20T00:00:00,true,false,true,true
+5,dev11,invalid_client_number_heritage_debt_true,66666666$,2026-04-20T00:00:00,2026-06-20T00:00:00,true,true,true,true
+6,u11,successful_response_heritage_debt_true,501794336,2026-04-20T00:00:00,2026-06-20T00:00:00,true,true,true,true
+7,u11,no_matching_record_heritage_debt_true,526556046,2026-04-20T00:00:00,2026-06-20T00:00:00,true,true,true,true
+8,u11,successful_response_heritage_debt_false,501794336,2026-04-20T00:00:00,2026-06-20T00:00:00,true,false,true,true
+9,u11,no_matching_record_heritage_debt_false,526556046,2026-04-20T00:00:00,2026-06-20T00:00:00,true,false,true,true
+10,u11,invalid_client_number_heritage_debt_true,66666666$,2026-04-20T00:00:00,2026-06-20T00:00:00,true,true,true,true

@@ -1,0 +1,11 @@
+{
+  "clientNumber": "514560656",
+    "residencyDtls": [
+    {
+      "startDate": "2018-11-11",
+      "ordinarilyResidentInd": "MSDYES",
+      "country": "NZ",
+      "nzResidenceStatus": "NZCI"
+    }
+  ]
+}

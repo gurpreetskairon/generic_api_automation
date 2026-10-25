@@ -1,0 +1,3 @@
+ENV,SWN,BOOKING_TYPE,CONDITION
+dev11,526361026,APPOINTMENT,no_appointment_slots_found
+dev11,526371979,APPOINTMENT,appointment_slots_found

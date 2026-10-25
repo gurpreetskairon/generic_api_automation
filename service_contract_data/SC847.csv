@@ -1,0 +1,27 @@
+CONDITION,CLIENT_ID,EXPECTED_RESULT_CODE,EXPECTED_RESULT_MESSAGE,TYPE_CODE,TYPE_DESCRIPTION,EFFECTIVE_START,EFFECTIVE_END,ENV
+active_dtrd,526283723,84700,Transaction Successful,DIAGNOSEDDEPENDENCE,Drugs - Diagnosed dependence,,,dev11
+dtrd_prescription_medication,526286047,84700,Transaction Successful,PRESCRIPTIONMEDICATION,Drugs - Prescription medication,,,dev11
+dtrd_receiving_treatment,526286055,84700,Transaction Successful,RECEIVINGTREATMENT,Drugs - Receiving treatment,,,dev11
+dtrd_awaiting_treatment,526285985,84700,Transaction Successful,AWAITINGTREATMENT,Drugs - Awaiting treatment,,,dev11
+dtrd_diagnosed_dependence,526283723,84700,Transaction Successful,DIAGNOSEDDEPENDENCE,Drugs - Diagnosed dependence,,,dev11
+dtrd_drug_help_required,526286004,84700,Transaction Successful,DRUGHELPREQUIRED,Drugs - Client needs help to stop,,,dev11
+dtrd_drug_other,526286039,84700,Transaction Successful,DRUGOTHER,Drugs - Other,,,dev11
+dtrd_drug_no_good_sufficient_reason,526286020,84700,Transaction Successful,DRUGNOGOODSFFICIENTREASON,Drugs - No good & sufficient reason,,,dev11
+dtrd_drug_brief_interventions,526285998,84700,Transaction Successful,DRUGBRIEFINTERVENTIONS,Drugs - Brief interventions,,,dev11
+dtrd_drug_referred_assessment,526286063,84700,Transaction Successful,DRUGREFERREDASSESSMENT,Drugs - Referred for assessment,,,dev11
+no_active_dtrd,526286071,84701,No matching record,,,,,dev11
+missing_client_number,,,Application error,,,,,dev11
+invalid_client_number,ABC123,,Application error,,,,,dev11
+active_dtrd,526481798,84700,Transaction Successful,DIAGNOSEDDEPENDENCE,Drugs - Diagnosed dependence,,,u11
+dtrd_prescription_medication,526481819,84700,Transaction Successful,PRESCRIPTIONMEDICATION,Drugs - Prescription medication,,,u11
+dtrd_receiving_treatment,526481827,84700,Transaction Successful,RECEIVINGTREATMENT,Drugs - Receiving treatment,,,u11
+dtrd_awaiting_treatment,526481763,84700,Transaction Successful,AWAITINGTREATMENT,Drugs - Awaiting treatment,,,u11
+dtrd_diagnosed_dependence,526481798,84700,Transaction Successful,DIAGNOSEDDEPENDENCE,Drugs - Diagnosed dependence,,,u11
+dtrd_drug_help_required,526481789,84700,Transaction Successful,DRUGHELPREQUIRED,Drugs - Client needs help to stop,,,u11
+dtrd_drug_other,526481739,84700,Transaction Successful,DRUGOTHER,Drugs - Other,,,u11
+dtrd_drug_no_good_sufficient_reason,526481800,84700,Transaction Successful,DRUGNOGOODSUFFICIENTREASON,Drugs - No good & sufficient reason,,,u11
+dtrd_drug_brief_interventions,526481771,84700,Transaction Successful,DRUGBRIEFINTERVENTIONS,Drugs - Brief interventions,,,u11
+dtrd_drug_referred_assessment,526481835,84700,Transaction Successful,DRUGREFERREDASSESSMENT,Drugs - Referred for assessment,,,u11
+no_active_dtrd,526481843,84701,No matching record,,,,,u11
+missing_client_number,,,Application error,,,,,u11
+invalid_client_number,ABC123,,Application error,,,,,u11

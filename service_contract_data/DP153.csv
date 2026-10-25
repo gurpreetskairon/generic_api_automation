@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER
+1,dev11,successful_response,526339653
+2,dev11,bad_request,
+3,dev11,unauthorised,526339653
+4,dev11,resource_not_found,666666666
+5,dev11,upskilling_not_found,520810900

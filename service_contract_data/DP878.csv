@@ -1,0 +1,7 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER
+1,dev11,approved_hardship_application_found,526339565
+2,dev11,no_approved_hardship_application_found,526339581
+3,dev11,missing_client_number,
+4,dev11,missing_transaction_id,526339565
+5,dev11,client_not_recognised,666666666
+6,dev11,client_is_duplicate,021446304

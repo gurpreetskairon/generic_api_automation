@@ -1,0 +1,4 @@
+ID,ENVIRONMENT,CONDITION,SWIFTT_USER_ID
+1,dev11,successful_response,CIMAY
+2,dev11,district_code_not_found,CIMAY
+3,dev11,swiftt_user_not_found,ZZZZZ

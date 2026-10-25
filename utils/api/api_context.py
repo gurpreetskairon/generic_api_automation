@@ -158,7 +158,8 @@ class APIContext:
         - key is invalid: prints a warning.
         """
         members = vars(self)
-
+        if self is None:
+            return
         if key is None:
             to_print = members
         elif key == "request":

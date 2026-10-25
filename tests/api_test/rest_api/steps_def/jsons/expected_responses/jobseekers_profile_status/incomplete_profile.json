@@ -1,0 +1,14 @@
+{
+    "isProfileComplete": false,
+    "serviceResults": [
+        {
+            "result": "API-00",
+            "message": "Jobseeker Profile Completenes success",
+            "resultDescription": "",
+            "objectRef": {
+                "type": "CLIENTNUMBER",
+                "value": "c2"
+            }
+        }
+    ]
+}

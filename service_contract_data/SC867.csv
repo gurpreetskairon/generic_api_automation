@@ -1,0 +1,4 @@
+ENV,CLIENT_SWN,CLIENT_NAME,CLIENT_DOB,MED_CERT_ID,CONDITION
+dev11,526359097,Isabel Michael Mercer,1999-08-27,None,transaction_successful
+dev11,526359107,Edouard Phoebe Adkins,1999-08-27,MSD-356501,duplicate_med_cert
+dev11,526359097,Isabel Michael Mercer,1999-08-27,MSD-111111111111111111111111111,transaction_unsuccessful

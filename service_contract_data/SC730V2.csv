@@ -1,0 +1,7 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,SCANNED_IMAGE_REF,SECURITY_TOKEN_ID
+1,dev11,successful_response,526362058,,
+2,dev11,duplicate_document_reference,526362058,20260904T105303_621276_23942_2702,
+3,dev11,document_identifier_not_recognised,526362058,,
+4,dev11,missing_mandatory_data,526362058,,
+5,dev11,invalid_request_data,526362058,,
+6,dev11,invalid_security_token,123456789,,tba

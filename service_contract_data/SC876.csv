@@ -1,0 +1,9 @@
+CONDITION,CLIENT_ID,USER_ID,ENV
+successful_transaction,526300072,tbau0005,dev11
+invalid_message,526300072,tbau0005,dev11
+unrecognised_cnp_id,526300072,invalid,dev11
+swiftt_user_not_found,526300072,sdugg005,dev11
+successful_transaction,526555970,tbau0005,u11
+invalid_message,526555970,tbau0005,u11
+unrecognised_cnp_id,526555970,invalid,u11
+swiftt_user_not_found,526555970,sdugg005,u11

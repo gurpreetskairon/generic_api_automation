@@ -1,0 +1,11 @@
+ENV,condition,client_number,username
+dev11,valid_client,526285162,mymsd
+dev11,no_matching_client,666666666,mymsd
+dev11,invalid_client_number,66666666$,mymsd
+dev11,missing_client_number,,mymsd
+dev11,user_not_recognised,394354900T,invalidUser
+u11,valid_client,526285162,mymsd
+u11,no_matching_client,666666666,mymsd
+u11,invalid_client_number,66666666$,mymsd
+u11,missing_client_number,NULL,mymsd
+u11,user_not_recognised,394354900T,invalidUser

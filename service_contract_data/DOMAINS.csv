@@ -1,0 +1,10 @@
+ENV,SYSTEM,SUBSYSTEM,DOMAIN
+dev11,IIB,STAR,http://wddvs102.ssi.govt.nz:7280/
+dev11,IIB,NONE,http://a2a{ENV}.ssi.govt.nz/
+dev11,AZURE,NONE,https://dev-apigw.int-npe.msd.govt.nz/
+dev11,IIB,MYMSD,http://wddvs102.ssi.govt.nz:1111/
+dev11,IIB,CMS,http://wddvs011.ssi.govt.nz:21000/
+u11,IIB,NONE,http://a2au11.ssi.govt.nz/
+u11,AZURE,NONE,https://uat-apigw.int-npe.msd.govt.nz/
+u11,IIB,MYMSD,http://devcn707.ssi.govt.nz:54482/
+u11,IIB,CMS,http://wddvs011.ssi.govt.nz:21000/

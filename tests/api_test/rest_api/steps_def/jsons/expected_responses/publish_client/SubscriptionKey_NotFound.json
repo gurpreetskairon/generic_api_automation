@@ -1,0 +1,9 @@
+{
+    "serviceResults": [
+        {
+            "result": "API-02",
+            "message": "SubscriptionKeyNotFound",
+            "resultDescription": "Reason: Access denied due to missing subscription key. Make sure to include subscription key when making requests to an API."
+        }
+    ]
+}

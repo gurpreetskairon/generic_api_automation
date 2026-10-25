@@ -1,0 +1,16 @@
+{
+  "id": "A1234200",
+  "source": "/subscriptions/d5da5066-e581-415b-a2bc-264c2452e384/resourcegroups/jgs-rg/providers/Microsoft.ServiceBus/namespaces/msg-integration-prem2",
+  "specversion": "1.0",
+  "type": "Microsoft.ServiceBus.ActiveMessagesAvailableWithNoListeners",
+  "subject": "topics/s01-cms-employmentmgmt-employers-sync-topic/subscriptions/s01-employmentmgmt-employer-sep-sub",
+  "time": "2025-07-31T00:43:09.1831655Z",
+  "data": {
+    "namespaceName": "msg-integration-prem2",
+    "requestUri": "https://hostname:port/s01-cms-employmentmgmt-employers-sync-topic/subscriptions/s01-employmentmgmt-employer-sep-sub/messages/head",
+    "entityType": "subscriber",
+    "queueName": null,
+    "topicName": "s01-cms-employmentmgmt-employers-sync-topic",
+    "subscriptionName": "s01-employmentmgmt-employer-sep-sub"
+  }
+}

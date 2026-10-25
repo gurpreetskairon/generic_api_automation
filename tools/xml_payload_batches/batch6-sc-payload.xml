@@ -1,0 +1,1534 @@
+SC931: REST
+SC932: REST
+SC933: REST
+SC934: REST
+SC935: REST
+SC345:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:notifyVacancy xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>NOTIFYVACANCY</msd:action>
+               <msd:address>
+                  <msd:deliveryType>
+                     <msd:code>URBAN</msd:code>
+                     <msd:description>Urban Delivery</msd:description>
+                  </msd:deliveryType>
+                  <msd:simpleAddress>
+                     <msd:city>Wellington</msd:city>
+                     <msd:country>NZ</msd:country>
+                     <msd:line1>AddressLine1</msd:line1>
+                     <msd:line2>AddressLine2</msd:line2>
+                     <msd:postalCode>6010</msd:postalCode>
+                     <msd:suburb>CBD</msd:suburb>
+                  </msd:simpleAddress>
+               </msd:address>
+               <msd:property>
+                  <msd:housingType>HNZFLAT</msd:housingType>
+                  <msd:minAgeOccupant>1</msd:minAgeOccupant>
+                  <msd:mobilityAttributes>
+                     <msd:name>name</msd:name>
+                     <msd:value>value</msd:value>
+                  </msd:mobilityAttributes>
+                  <msd:numberOfBedrooms>2</msd:numberOfBedrooms>
+                  <msd:propertyAttributes>
+                     <msd:name>name1</msd:name>
+                     <msd:value>value1</msd:value>
+                  </msd:propertyAttributes>
+                  <msd:propertyReference>PROP1</msd:propertyReference>
+               </msd:property>
+               <msd:provider>
+                  <msd:providerId>12345678</msd:providerId>
+               </msd:provider>
+               <msd:vacancy>
+                  <msd:availableFrom>20140101</msd:availableFrom>
+                  <msd:isReceivingRentFunding>true</msd:isReceivingRentFunding>
+                  <msd:marketRentInfo>RENTINFO</msd:marketRentInfo>
+                  <msd:marketRentOffered>1000.00</msd:marketRentOffered>
+                  <msd:minimumBedrooms>2</msd:minimumBedrooms>
+                  <msd:tenantType>CHP</msd:tenantType>
+                  <msd:vacancyEthnicity>NZ</msd:vacancyEthnicity>
+                  <msd:vacancyIwi>NZM</msd:vacancyIwi>
+                  <msd:vacancyReference>VAC01</msd:vacancyReference>
+                  <msd:vacancyType>FLAT</msd:vacancyType>
+               </msd:vacancy>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:dateTime>20141028T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. NotifyVacancy Test Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:notifyVacancy>
+   </soap:Body>
+</soap:Envelope>
+SC331:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:notifyVacancy xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>NOTIFYVACANCY</msd:action>
+               <msd:address>
+                  <msd:deliveryType>
+                     <msd:code>URBAN</msd:code>
+                     <msd:description>Urban Delivery</msd:description>
+                  </msd:deliveryType>
+                  <msd:simpleAddress>
+                     <msd:city>Wellington</msd:city>
+                     <msd:country>NZ</msd:country>
+                     <msd:line1>AddressLine1</msd:line1>
+                     <msd:line2>AddressLine2</msd:line2>
+                     <msd:postalCode>6010</msd:postalCode>
+                     <msd:suburb>CBD</msd:suburb>
+                  </msd:simpleAddress>
+               </msd:address>
+               <msd:property>
+                  <msd:housingType>HNZFLAT</msd:housingType>
+                  <msd:minAgeOccupant>1</msd:minAgeOccupant>
+                  <msd:mobilityAttributes>
+                     <msd:name>name</msd:name>
+                     <msd:value>value</msd:value>
+                  </msd:mobilityAttributes>
+                  <msd:numberOfBedrooms>2</msd:numberOfBedrooms>
+                  <msd:propertyAttributes>
+                     <msd:name>name1</msd:name>
+                     <msd:value>value1</msd:value>
+                  </msd:propertyAttributes>
+                  <msd:propertyReference>PROP1</msd:propertyReference>
+               </msd:property>
+               <msd:provider>
+                  <msd:providerId>HNZ</msd:providerId>
+               </msd:provider>
+               <msd:vacancy>
+                  <msd:availableFrom>20140101</msd:availableFrom>
+                  <msd:isReceivingRentFunding>true</msd:isReceivingRentFunding>
+                  <msd:marketRentInfo>RENTINFO</msd:marketRentInfo>
+                  <msd:marketRentOffered>1000.00</msd:marketRentOffered>
+                  <msd:minimumBedrooms>2</msd:minimumBedrooms>
+                  <msd:tenantType>CHP</msd:tenantType>
+                  <msd:vacancyEthnicity>NZ</msd:vacancyEthnicity>
+                  <msd:vacancyIwi>NZM</msd:vacancyIwi>
+                  <msd:vacancyReference>VAC01</msd:vacancyReference>
+                  <msd:vacancyType>FLAT</msd:vacancyType>
+               </msd:vacancy>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:dateTime>20141028T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. NotifyVacancy Test Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:notifyVacancy>
+   </soap:Body>
+</soap:Envelope>
+SC354:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:notifyTenancyChange xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>notifyTenancyChange</msd:action>
+               <msd:address>
+                  <msd:deliveryType>
+                     <msd:code>code</msd:code>
+                     <msd:description>desc</msd:description>
+                  </msd:deliveryType>
+                  <msd:simpleAddress>
+                     <msd:city>Wellington</msd:city>
+                     <msd:country>NZ</msd:country>
+                     <msd:line1>AddressLine1</msd:line1>
+                     <msd:line2>AddressLine2</msd:line2>
+                     <msd:postalCode>6010</msd:postalCode>
+                     <msd:suburb>CBD</msd:suburb>
+                  </msd:simpleAddress>
+               </msd:address>
+               <msd:changedTenancyParty>
+                  <msd:householdMember>
+                     <msd:hearingImpairmentInd>true</msd:hearingImpairmentInd>
+                     <msd:interpreterRequired>1</msd:interpreterRequired>
+                     <msd:memberType>TYPE1</msd:memberType>
+                  </msd:householdMember>
+                  <msd:person>
+                     <msd:identity>
+                        <msd:identifier>ID1</msd:identifier>
+                     </msd:identity>
+                  </msd:person>
+               </msd:changedTenancyParty>
+               <msd:property>
+                  <msd:housingType>HNZFLAT</msd:housingType>
+                  <msd:minAgeOccupant>1</msd:minAgeOccupant>
+                  <msd:mobilityAttributes>
+                     <msd:name>name</msd:name>
+                     <msd:value>value</msd:value>
+                  </msd:mobilityAttributes>
+                  <msd:numberOfBedrooms>2</msd:numberOfBedrooms>
+                  <msd:previousPropertyReference>PREF1</msd:previousPropertyReference>
+                  <msd:propertyAttributes>
+                     <msd:name>name1</msd:name>
+                     <msd:value>value1</msd:value>
+                  </msd:propertyAttributes>
+                  <msd:propertyReference>PROP1</msd:propertyReference>
+               </msd:property>
+               <msd:provider>
+                  <msd:providerId>HNZ</msd:providerId>
+               </msd:provider>
+               <msd:tenancy>
+                  <msd:endDate>20100101</msd:endDate>
+                  <msd:marketRent>12.12</msd:marketRent>
+                  <msd:paymentReference>REF1</msd:paymentReference>
+                  <msd:previousTenancyReference>PREF1</msd:previousTenancyReference>
+                  <msd:startDate>20010101</msd:startDate>
+                  <msd:tenancyReference>TREF1</msd:tenancyReference>
+               </msd:tenancy>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:auditID>1. SC340 Notify Tenancy Change Request Default</msd:auditID>
+               <msd:correlationID>1. SC340 Notify Tenancy Change Request Default</msd:correlationID>
+               <msd:dateTime>20020530T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:securityToken>
+                  <msd:id>hnzadmin</msd:id>
+                  <msd:source>admin</msd:source>
+                  <msd:type>admin</msd:type>
+               </msd:securityToken>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. SC340 Notify Tenancy Change Request Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:notifyTenancyChange>
+   </soap:Body>
+</soap:Envelope>
+SC340:No
+SC341:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1" xmlns:v13="http://msd.govt.nz/integration/dedicated/case/schema/case/v1" xmlns:v14="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1" xmlns:v15="http://msd.govt.nz/integration/utils/technical/schema/value/v1">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsu:Timestamp wsu:Id="TS-902ACF6F5BBA61A0B8141470214167912">
+            <wsu:Created>2014-10-30T20:49:01.679Z</wsu:Created>
+            <wsu:Expires>2014-10-30T20:50:01.679Z</wsu:Expires>
+         </wsu:Timestamp>
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001">
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <notifyIrrChangeRequest xmlns="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1">
+         <ns2:header xmlns:ns2="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1">
+            <ns2:action>IRRTENANCY</ns2:action>
+            <ns2:auditId/>
+            <ns2:correlationId/>
+            <ns2:requestDateTime>2014-11-26T01:29:15Z</ns2:requestDateTime>
+            <ns2:transactionId>3333</ns2:transactionId>
+            <ns2:destinationOrganisation>HNZ</ns2:destinationOrganisation>
+            <ns2:sourceOrganisation>MSD</ns2:sourceOrganisation>
+         </ns2:header>
+         <ns3:data xmlns:ns3="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1">
+            <ns3:action>IRRTENANCY</ns3:action>
+            <ns3:tenancy>
+               <ns4:tenancyReference xmlns:ns4="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+            </ns3:tenancy>
+            <ns3:financials>
+               <ns5:actualIrrChangeDate xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2014-12-16</ns5:actualIrrChangeDate>
+               <ns6:appliedForIrr xmlns:ns6="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">true</ns6:appliedForIrr>
+               <ns7:approvedBond xmlns:ns7="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">234.00</ns7:approvedBond>
+               <ns8:approvedRentInAdvance xmlns:ns8="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">354.00</ns8:approvedRentInAdvance>
+               <ns9:benefitRedirection xmlns:ns9="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns9:benefitRedirection>
+               <ns10:deemedIrrChangeDate xmlns:ns10="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2014-12-16</ns10:deemedIrrChangeDate>
+               <ns11:incomeRelatedRent xmlns:ns11="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">54.00</ns11:incomeRelatedRent>
+               <ns12:irrChangeSummary xmlns:ns12="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">some comments</ns12:irrChangeSummary>
+               <ns13:irrChangeTrigger xmlns:ns13="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">some trigger</ns13:irrChangeTrigger>
+            </ns3:financials>
+            <ns3:provider>
+               <ns14:providerId xmlns:ns14="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">5376515</ns14:providerId>
+            </ns3:provider>
+            <ns3:application>
+               <ns15:accessRequired xmlns:ns15="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns16:applicationReference xmlns:ns16="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">3698867297</ns16:applicationReference>
+               <ns17:bedroomsRequired xmlns:ns17="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">0</ns17:bedroomsRequired>
+               <ns18:categoryPriority xmlns:ns18="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns19:categoryPriorityDate xmlns:ns19="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">0001-01-01</ns19:categoryPriorityDate>
+               <ns20:currentHousingProvider xmlns:ns20="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns21:fastTrackInd xmlns:ns21="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns21:fastTrackInd>
+               <ns22:fastTrackReason xmlns:ns22="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns23:householdSize xmlns:ns23="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">0</ns23:householdSize>
+               <ns24:housingRegisterType xmlns:ns24="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns25:modificationRequired xmlns:ns25="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns25:modificationRequired>
+            </ns3:application>
+         </ns3:data>
+      </notifyIrrChangeRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+SC355:No
+SC342:No
+SC356:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:notifyRentChange xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>notifyRentChange</msd:action>
+               <msd:provider>
+                  <msd:providerId>HNZ</msd:providerId>
+               </msd:provider>
+               <msd:tenancy>
+                  <msd:actualRentChangeDate>20110101</msd:actualRentChangeDate>
+                  <msd:expectedRentChangeDate>20110101</msd:expectedRentChangeDate>
+                  <msd:newRent>100.01</msd:newRent>
+                  <msd:rentChangeReason>Rent Changed</msd:rentChangeReason>
+                  <msd:rentChargeDate>20110101</msd:rentChargeDate>
+                  <msd:rentEndDate>20110101</msd:rentEndDate>
+                  <msd:tenancyReference>TREF1</msd:tenancyReference>
+               </msd:tenancy>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:auditID>1. SC342 - Notify Rent Change - Request Default</msd:auditID>
+               <msd:correlationID>1. SC342 - Notify Rent Change - Request Default</msd:correlationID>
+               <msd:dateTime>20020530T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:securityToken>
+                  <msd:id>hnzadmin</msd:id>
+                  <msd:source>admin</msd:source>
+                  <msd:type>admin</msd:type>
+               </msd:securityToken>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. SC342 - Notify Rent Change - Request Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:notifyRentChange>
+   </soap:Body>
+</soap:Envelope>
+SC343:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1" xmlns:v13="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1" xmlns:v14="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v15="http://msd.govt.nz/integration/dedicated/contact/schema/contact/v1" xmlns:v16="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsu:Timestamp wsu:Id="TS-902ACF6F5BBA61A0B8141470214167912">
+            <wsu:Created>2014-10-30T20:49:01.679Z</wsu:Created>
+            <wsu:Expires>2014-10-30T20:50:01.679Z</wsu:Expires>
+         </wsu:Timestamp>
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001">
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:notifyAdhocEventRequest>
+         <v11:header>
+            <v11:action>1. notifyAdhocEvent - Request Default</v11:action>
+            <v11:auditId>1. notifyAdhocEvent - Request Default</v11:auditId>
+            <v11:requestDateTime>2013-06-19T14:13:51.0Z</v11:requestDateTime>
+            <v11:sourceSystem>CMS</v11:sourceSystem>
+            <v11:transactionId>1. notifyAdhocEvent - Request Default</v11:transactionId>
+            <v11:securityToken>
+               <v11:id>vchan005</v11:id>
+               <v11:type>USER</v11:type>
+            </v11:securityToken>
+            <v11:destinationOrganisation>HNZ</v11:destinationOrganisation>
+            <v11:sourceOrganisation>MSD</v11:sourceOrganisation>
+         </v11:header>
+         <v12:data>
+            <v12:action>1. notifyAdhocEvent - Request Default</v12:action>
+            <v12:event>
+               <v12:code>Code</v12:code>
+               <v12:description>Desc</v12:description>
+               <v12:effectiveDate>2014-11-18</v12:effectiveDate>
+               <v12:eventParty>
+                  <v12:person>
+                     <v13:identity>
+                        <v13:identifier>111211</v13:identifier>
+                        <v13:type>
+                           <v14:code>code</v14:code>
+                           <v14:description>desc</v14:description>
+                        </v13:type>
+                     </v13:identity>
+                     <v13:dateOfBirth>1977-11-18</v13:dateOfBirth>
+                     <v13:gender>
+                        <v14:code>code</v14:code>
+                        <v14:description>desc</v14:description>
+                     </v13:gender>
+                     <v13:name>
+                        <v13:familyName>fam Name</v13:familyName>
+                        <v13:firstName>FirstName</v13:firstName>
+                        <v13:middleNames>middleNames</v13:middleNames>
+                        <v13:title>
+                           <v14:code>titleCode</v14:code>
+                           <v14:description>titleDesc</v14:description>
+                        </v13:title>
+                     </v13:name>
+                     <v13:risk>
+                        <v13:code>riskCode</v13:code>
+                        <v13:comment>riskComment</v13:comment>
+                        <v13:creationDate>2014-11-18</v13:creationDate>
+                        <v13:type>riskType</v13:type>
+                     </v13:risk>
+                     <v13:ethnicityClaim>
+                        <v13:effective>
+                           <v14:endDate>2014-11-18T00:00:00.000+01:00</v14:endDate>
+                        </v13:effective>
+                        <v13:ethnicityGroup>
+                           <v14:code>EthnicityCode</v14:code>
+                           <v14:description>ethnicityDesc</v14:description>
+                        </v13:ethnicityGroup>
+                     </v13:ethnicityClaim>
+                  </v12:person>
+                  <v12:householdMember>
+                     <v13:childCustodyDays>11</v13:childCustodyDays>
+                     <v13:csoAlert>true</v13:csoAlert>
+                     <v13:hearingImpairmentInd>true</v13:hearingImpairmentInd>
+                     <v13:interpreterLanguageCode>LangCode</v13:interpreterLanguageCode>
+                     <v13:interpreterRequired>true</v13:interpreterRequired>
+                     <v13:iwi>
+                        <v14:code>iwiCode</v14:code>
+                        <v14:description>iwiDesc</v14:description>
+                     </v13:iwi>
+                     <v13:memberType>memberType</v13:memberType>
+                     <v13:residencyCode>residenyCode</v13:residencyCode>
+                     <v13:visuallyImpairedCode>VisImpaired</v13:visuallyImpairedCode>
+                     <v13:personalAttribute>
+                        <v13:comment>persComent</v13:comment>
+                        <v13:name>persName</v13:name>
+                        <v13:value>persValue</v13:value>
+                     </v13:personalAttribute>
+                  </v12:householdMember>
+               </v12:eventParty>
+               <v12:tenancy>
+                  <v16:tenancyReference>1233232</v16:tenancyReference>
+               </v12:tenancy>
+            </v12:event>
+            <v12:provider>
+               <v13:providerId>12345</v13:providerId>
+            </v12:provider>
+         </v12:data>
+      </v1:notifyAdhocEventRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+SC357:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:notifyAdhocEvent xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>ADDPERSON</msd:action>
+               <msd:event>
+                  <msd:code>Optional_code</msd:code>
+                  <msd:description>Optional_description</msd:description>
+                  <msd:effectiveDate>20141013</msd:effectiveDate>
+                  <msd:eventParty>
+                     <msd:householdMember>
+                        <!--v13:CSOalert>false</v13:CSOalert:-->
+                        <msd:childCustodyDays>4</msd:childCustodyDays>
+                        <msd:hearingImpairmentInd>false</msd:hearingImpairmentInd>
+                        <msd:interpreterLanguageCode>Zulu</msd:interpreterLanguageCode>
+                        <msd:interpreterRequired>false</msd:interpreterRequired>
+                        <msd:iwi>Ngati Poneke</msd:iwi>
+                        <msd:memberType>Member</msd:memberType>
+                        <msd:personalAttributes>
+                           <msd:name>Mental Health Disability</msd:name>
+                           <msd:value>Anxiety</msd:value>
+                        </msd:personalAttributes>
+                        <msd:residencyCode>residencyCode</msd:residencyCode>
+                        <msd:visuallyImpairedCode>visuallyImpairedCode</msd:visuallyImpairedCode>
+                     </msd:householdMember>
+                     <msd:person>
+                        <msd:dateOfBirth>20060504</msd:dateOfBirth>
+                        <msd:ethnicityClaim>
+                           <msd:effective>
+                              <msd:end>20060504</msd:end>
+                           </msd:effective>
+                           <msd:ethnicityGroup>
+                              <msd:code>code6</msd:code>
+                              <msd:description>description6</msd:description>
+                           </msd:ethnicityGroup>
+                        </msd:ethnicityClaim>
+                        <msd:gender>
+                           <msd:code>M</msd:code>
+                           <msd:description>Male</msd:description>
+                        </msd:gender>
+                        <msd:identity>
+                           <msd:identifier>123456789</msd:identifier>
+                           <msd:type>
+                              <msd:code>SWN</msd:code>
+                              <msd:description>SWN</msd:description>
+                           </msd:type>
+                        </msd:identity>
+                        <msd:name>
+                           <msd:familyName>Murdoch</msd:familyName>
+                           <msd:firstName>Larry</msd:firstName>
+                           <msd:middleNames>Lars</msd:middleNames>
+                           <msd:title>
+                              <msd:code>Mr</msd:code>
+                              <msd:description>Mister</msd:description>
+                           </msd:title>
+                        </msd:name>
+                        <msd:risk>
+                           <msd:code>code0</msd:code>
+                           <msd:comment>comment0</msd:comment>
+                           <msd:creationDate>20060504</msd:creationDate>
+                           <msd:type>type0</msd:type>
+                        </msd:risk>
+                     </msd:person>
+                  </msd:eventParty>
+                  <msd:tenancy>
+                     <msd:tenancyReference>SHP001</msd:tenancyReference>
+                  </msd:tenancy>
+               </msd:event>
+               <msd:provider>
+                  <msd:providerId>Housing New Zealand</msd:providerId>
+               </msd:provider>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:auditID>1. SC343 - Notify Adhoc Event Request Default</msd:auditID>
+               <msd:correlationID>1. SC343 - Notify Adhoc Event Request Default</msd:correlationID>
+               <msd:dateTime>20141013T012101</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:securityToken>
+                  <msd:id>cmssystemuser</msd:id>
+                  <msd:source>CMS</msd:source>
+                  <msd:type>SYSTEM</msd:type>
+               </msd:securityToken>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. SC343 - Notify Adhoc Event Request Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:notifyAdhocEvent>
+   </soap:Body>
+</soap:Envelope>
+SC344:NO
+SC358:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:notifyException xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>notifyException</msd:action>
+               <msd:exceptionItem>
+                  <msd:code>CODE1</msd:code>
+                  <msd:dateTime>20140530T093010</msd:dateTime>
+                  <msd:description>Test Desc</msd:description>
+                  <msd:exceptionMessage>Test exception message</msd:exceptionMessage>
+                  <msd:exceptionType>Test exception type</msd:exceptionType>
+               </msd:exceptionItem>
+               <msd:exceptionItem>
+                  <msd:code>CODE1</msd:code>
+                  <msd:dateTime>20140530T093010</msd:dateTime>
+                  <msd:description>Test Desc</msd:description>
+                  <msd:exceptionMessage>Test exception message</msd:exceptionMessage>
+                  <msd:exceptionType>Test exception type</msd:exceptionType>
+               </msd:exceptionItem>
+               <msd:provider>
+                  <msd:providerId>HNZ</msd:providerId>
+               </msd:provider>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:auditID>1. SC344 Notify Exception - Request Default</msd:auditID>
+               <msd:correlationID>1. SC344 Notify Exception - Request Default</msd:correlationID>
+               <msd:dateTime>20140530T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:securityToken>
+                  <msd:id>hnzadmin</msd:id>
+                  <msd:source>admin</msd:source>
+                  <msd:type>admin</msd:type>
+               </msd:securityToken>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. SC344 Notify Exception - Request Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:notifyException>
+   </soap:Body>
+</soap:Envelope>
+SC337:No
+SC351:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:confirmOfferOutcome xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>CONFIRMOFFEROUTCOME</msd:action>
+               <msd:address>
+                  <msd:simpleAddress>
+                     <msd:city>Wellington</msd:city>
+                     <msd:country>NZ</msd:country>
+                     <msd:line1>AddressLine1</msd:line1>
+                     <msd:line2>AddressLine2</msd:line2>
+                     <msd:postalCode>6010</msd:postalCode>
+                     <msd:suburb>CBD</msd:suburb>
+                  </msd:simpleAddress>
+               </msd:address>
+               <msd:application>
+                  <msd:applicationReference>APP1</msd:applicationReference>
+                  <msd:fastTrackInd>true</msd:fastTrackInd>
+                  <msd:outcomeResponseDate>20101010</msd:outcomeResponseDate>
+                  <msd:outcomeResponseNotes>OUT2</msd:outcomeResponseNotes>
+                  <msd:outcomeResponseReason>OUT</msd:outcomeResponseReason>
+                  <msd:providerApplicationReference>OUTREF</msd:providerApplicationReference>
+               </msd:application>
+               <msd:provider>
+                  <msd:providerId>HNZ</msd:providerId>
+               </msd:provider>
+               <msd:tenancyItem>
+                  <msd:tenancy>
+                     <msd:endDate>20101010</msd:endDate>
+                     <msd:paymentReference>PREF1</msd:paymentReference>
+                     <msd:rentRedirectionStartWeek>20110101</msd:rentRedirectionStartWeek>
+                     <msd:startDate>20110101</msd:startDate>
+                     <msd:tenancyReference>REF1</msd:tenancyReference>
+                  </msd:tenancy>
+                  <msd:tenant>
+                     <msd:householdMember>
+                        <msd:hearingImpairmentInd>true</msd:hearingImpairmentInd>
+                        <msd:interpreterRequired>1</msd:interpreterRequired>
+                        <msd:memberType>TYPE1</msd:memberType>
+                     </msd:householdMember>
+                     <msd:person>
+                        <msd:identity>
+                           <msd:identifier>ID1</msd:identifier>
+                        </msd:identity>
+                     </msd:person>
+                  </msd:tenant>
+               </msd:tenancyItem>
+               <msd:vacancy>
+                  <msd:isReceivingRentFunding>true</msd:isReceivingRentFunding>
+                  <msd:vacancyReference>REF1</msd:vacancyReference>
+               </msd:vacancy>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:auditID>1. confirmOfferOutcome - Request Default</msd:auditID>
+               <msd:correlationID>1. confirmOfferOutcome - Request Default</msd:correlationID>
+               <msd:dateTime>20020530T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:securityToken>
+                  <msd:id>hnzadmin</msd:id>
+                  <msd:source>admin</msd:source>
+                  <msd:type>admin</msd:type>
+               </msd:securityToken>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. SC351 - confirmOfferOutcome - Request Default 35100</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:confirmOfferOutcome>
+   </soap:Body>
+</soap:Envelope>
+SC334:No
+SC348:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1" xmlns:v13="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1" xmlns:v14="http://msd.govt.nz/integration/dedicated/case/schema/case/v1" xmlns:v15="http://msd.govt.nz/integration/dedicated/address/schema/address/v1" xmlns:v16="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v17="http://msd.govt.nz/integration/dedicated/contact/schema/contact/v1">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsu:Timestamp wsu:Id="TS-902ACF6F5BBA61A0B8141470214167912">
+            <wsu:Created>2014-10-30T20:49:01.679Z</wsu:Created>
+            <wsu:Expires>2014-10-30T20:50:01.679Z</wsu:Expires>
+         </wsu:Timestamp>
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001">
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <confirmApplicationReferralRequest xmlns="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1">
+         <ns2:header xmlns:ns2="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1">
+            <ns2:action>ACCEPTMATCH</ns2:action>
+            <ns2:auditId/>
+            <ns2:correlationId/>
+            <ns2:requestDateTime>2014-11-26T01:29:16Z</ns2:requestDateTime>
+            <ns2:transactionId>2222</ns2:transactionId>
+            <ns2:destinationOrganisation>HNZ</ns2:destinationOrganisation>
+            <ns2:sourceOrganisation>MSD</ns2:sourceOrganisation>
+         </ns2:header>
+         <ns3:data xmlns:ns3="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1">
+            <ns3:action>ACCEPTMATCH</ns3:action>
+            <ns3:provider>
+               <ns4:providerId xmlns:ns4="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">5376517</ns4:providerId>
+            </ns3:provider>
+            <ns3:vacancy>
+               <ns5:response xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns6:responseReason xmlns:ns6="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns7:vacancyReference xmlns:ns7="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">12811</ns7:vacancyReference>
+            </ns3:vacancy>
+            <ns3:financials>
+               <ns8:actualIrrChangeDate xmlns:ns8="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">0001-01-01</ns8:actualIrrChangeDate>
+               <ns9:appliedForIrr xmlns:ns9="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns9:appliedForIrr>
+               <ns10:approvedBond xmlns:ns10="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">234.00</ns10:approvedBond>
+               <ns11:approvedRentInAdvance xmlns:ns11="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">354.00</ns11:approvedRentInAdvance>
+               <ns12:benefitRedirection xmlns:ns12="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns12:benefitRedirection>
+               <ns13:deemedIrrChangeDate xmlns:ns13="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">0001-01-01</ns13:deemedIrrChangeDate>
+               <ns14:incomeRelatedRent xmlns:ns14="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">54.00</ns14:incomeRelatedRent>
+               <ns15:irrChangeSummary xmlns:ns15="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns16:irrChangeTrigger xmlns:ns16="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+            </ns3:financials>
+            <ns3:application>
+               <ns17:accessRequired xmlns:ns17="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">No</ns17:accessRequired>
+               <ns18:applicationReference xmlns:ns18="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">3698867297</ns18:applicationReference>
+               <ns19:bedroomsRequired xmlns:ns19="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2</ns19:bedroomsRequired>
+               <ns20:categoryPriority xmlns:ns20="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">High</ns20:categoryPriority>
+               <ns21:categoryPriorityDate xmlns:ns21="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2014-12-26</ns21:categoryPriorityDate>
+               <ns22:currentHousingProvider xmlns:ns22="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <ns23:fastTrackInd xmlns:ns23="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns23:fastTrackInd>
+               <ns24:fastTrackReason xmlns:ns24="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">a reason</ns24:fastTrackReason>
+               <ns25:householdSize xmlns:ns25="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">4</ns25:householdSize>
+               <ns26:housingRegisterType xmlns:ns26="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">ABC</ns26:housingRegisterType>
+               <ns27:locality xmlns:ns27="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                  <ns28:code xmlns:ns28="http://msd.govt.nz/integration/utils/technical/schema/value/v1">kgjhtkhg</ns28:code>
+                  <ns29:description xmlns:ns29="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+               </ns27:locality>
+               <ns30:modificationRequired xmlns:ns30="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns30:modificationRequired>
+               <ns31:attribute xmlns:ns31="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                  <ns31:comment>a comment</ns31:comment>
+                  <ns31:name>name</ns31:name>
+                  <ns31:value>value</ns31:value>
+               </ns31:attribute>
+               <ns32:attribute xmlns:ns32="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                  <ns32:comment>a second comment</ns32:comment>
+                  <ns32:name>second name</ns32:name>
+                  <ns32:value>second value</ns32:value>
+               </ns32:attribute>
+               <ns33:note xmlns:ns33="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                  <ns33:generalNote>note 1</ns33:generalNote>
+                  <ns33:noteDate>2014-11-07</ns33:noteDate>
+               </ns33:note>
+               <ns34:note xmlns:ns34="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                  <ns34:generalNote>note 2</ns34:generalNote>
+                  <ns34:noteDate>2014-12-15</ns34:noteDate>
+               </ns34:note>
+            </ns3:application>
+            <ns3:address>
+               <ns35:deliveryType xmlns:ns35="http://msd.govt.nz/integration/dedicated/address/schema/address/v1">
+                  <ns36:code xmlns:ns36="http://msd.govt.nz/integration/utils/technical/schema/value/v1">URBAN</ns36:code>
+                  <ns37:description xmlns:ns37="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+               </ns35:deliveryType>
+               <ns38:simpleAddress xmlns:ns38="http://msd.govt.nz/integration/dedicated/address/schema/address/v1">
+                  <ns38:city>Wellington</ns38:city>
+                  <ns38:country/>
+                  <ns38:line1>1 some street</ns38:line1>
+                  <ns38:line2/>
+                  <ns38:postalCode/>
+                  <ns38:suburb>Thorndon</ns38:suburb>
+               </ns38:simpleAddress>
+            </ns3:address>
+            <ns3:applicant>
+               <ns3:person>
+                  <ns39:identity xmlns:ns39="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns39:identifier/>
+                     <ns39:type>
+                        <ns40:code xmlns:ns40="http://msd.govt.nz/integration/utils/technical/schema/value/v1">CODE</ns40:code>
+                        <ns41:description xmlns:ns41="http://msd.govt.nz/integration/utils/technical/schema/value/v1">a description</ns41:description>
+                     </ns39:type>
+                  </ns39:identity>
+                  <ns42:dateOfBirth xmlns:ns42="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">1959-01-01</ns42:dateOfBirth>
+                  <ns43:gender xmlns:ns43="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns44:code xmlns:ns44="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Male</ns44:code>
+                     <ns45:description xmlns:ns45="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Male</ns45:description>
+                  </ns43:gender>
+                  <ns46:name xmlns:ns46="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns46:familyName>Smith</ns46:familyName>
+                     <ns46:firstName>Brian</ns46:firstName>
+                     <ns46:middleNames>Wilson</ns46:middleNames>
+                     <ns46:title>
+                        <ns47:code xmlns:ns47="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        <ns48:description xmlns:ns48="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                     </ns46:title>
+                  </ns46:name>
+                  <ns49:risk xmlns:ns49="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns49:code>risk</ns49:code>
+                     <ns49:comment>a comment</ns49:comment>
+                     <ns49:creationDate>2014-11-26</ns49:creationDate>
+                     <ns49:type>a risk type</ns49:type>
+                  </ns49:risk>
+                  <ns50:ethnicityClaim xmlns:ns50="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns50:effective>
+                        <ns51:end xmlns:ns51="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01</ns51:end>
+                        <ns52:start xmlns:ns52="http://msd.govt.nz/integration/utils/technical/schema/value/v1">2014-10-27</ns52:start>
+                     </ns50:effective>
+                  </ns50:ethnicityClaim>
+               </ns3:person>
+               <ns3:contact>
+                  <ns53:contactDetail xmlns:ns53="http://msd.govt.nz/integration/dedicated/contact/schema/contact/v1">
+                     <ns53:type>
+                        <ns54:code xmlns:ns54="http://msd.govt.nz/integration/utils/technical/schema/value/v1">a type</ns54:code>
+                        <ns55:description xmlns:ns55="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                     </ns53:type>
+                     <ns53:value>a value</ns53:value>
+                  </ns53:contactDetail>
+               </ns3:contact>
+               <ns3:householdMember>
+                  <ns56:childCustodyDays xmlns:ns56="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">0</ns56:childCustodyDays>
+                  <ns57:csoAlert xmlns:ns57="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns57:csoAlert>
+                  <ns58:hearingImpairmentInd xmlns:ns58="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns58:hearingImpairmentInd>
+                  <ns59:interpreterLanguageCode xmlns:ns59="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                  <ns60:interpreterRequired xmlns:ns60="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns60:interpreterRequired>
+                  <ns61:iwi xmlns:ns61="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns62:code xmlns:ns62="http://msd.govt.nz/integration/utils/technical/schema/value/v1">gfidfgs</ns62:code>
+                     <ns63:description xmlns:ns63="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                  </ns61:iwi>
+                  <ns64:iwi xmlns:ns64="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns65:code xmlns:ns65="http://msd.govt.nz/integration/utils/technical/schema/value/v1">gfidfgs</ns65:code>
+                     <ns66:description xmlns:ns66="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                  </ns64:iwi>
+                  <ns67:memberType xmlns:ns67="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">AAA</ns67:memberType>
+                  <ns68:residencyCode xmlns:ns68="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                  <ns69:visuallyImpairedCode xmlns:ns69="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                  <ns70:personalAttribute xmlns:ns70="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns70:comment>a comment</ns70:comment>
+                     <ns70:name>a name</ns70:name>
+                     <ns70:value>a value</ns70:value>
+                  </ns70:personalAttribute>
+               </ns3:householdMember>
+               <ns3:supportPerson>
+                  <ns3:organisation>an organisation</ns3:organisation>
+                  <ns3:role>a role</ns3:role>
+                  <ns3:person>
+                     <ns71:dateOfBirth xmlns:ns71="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">0001-01-01</ns71:dateOfBirth>
+                     <ns72:gender xmlns:ns72="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                        <ns73:code xmlns:ns73="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        <ns74:description xmlns:ns74="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                     </ns72:gender>
+                     <ns75:name xmlns:ns75="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                        <ns75:familyName/>
+                        <ns75:firstName/>
+                        <ns75:middleNames/>
+                        <ns75:title>
+                           <ns76:code xmlns:ns76="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                           <ns77:description xmlns:ns77="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        </ns75:title>
+                     </ns75:name>
+                  </ns3:person>
+                  <ns3:contact>
+                     <ns78:contactDetail xmlns:ns78="http://msd.govt.nz/integration/dedicated/contact/schema/contact/v1">
+                        <ns78:type>
+                           <ns79:code xmlns:ns79="http://msd.govt.nz/integration/utils/technical/schema/value/v1">a type</ns79:code>
+                           <ns80:description xmlns:ns80="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        </ns78:type>
+                        <ns78:value>a value</ns78:value>
+                     </ns78:contactDetail>
+                  </ns3:contact>
+               </ns3:supportPerson>
+            </ns3:applicant>
+         </ns3:data>
+      </confirmApplicationReferralRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+SC333:No
+SC347:
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>b2b_integration</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soap:Body>
+      <rem:adviseVacancyMatch xmlns:rem="http://remote.placement.housing.services.integration.msd.curam">
+         <rem:args0>
+            <msd:data xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:action>ADVISEVACANCYMATCH</msd:action>
+               <msd:address>
+                  <msd:simpleAddress>
+                     <msd:city>City1</msd:city>
+                     <msd:country>Country</msd:country>
+                     <msd:line1>Line1</msd:line1>
+                     <msd:line2>Line2</msd:line2>
+                     <msd:postalCode>1234</msd:postalCode>
+                     <msd:suburb>Suburb</msd:suburb>
+                  </msd:simpleAddress>
+               </msd:address>
+               <msd:application>
+                  <msd:applicationReference>REF1</msd:applicationReference>
+                  <msd:fastTrackInd>true</msd:fastTrackInd>
+                  <msd:providerApplicationReference>PREF1</msd:providerApplicationReference>
+               </msd:application>
+               <msd:property>
+                  <msd:housingType>H1</msd:housingType>
+                  <msd:minAgeOccupant>1</msd:minAgeOccupant>
+                  <msd:mobilityAttributes>
+                     <msd:name>MName</msd:name>
+                     <msd:value>MValue</msd:value>
+                  </msd:mobilityAttributes>
+                  <msd:numberOfBedrooms>2</msd:numberOfBedrooms>
+                  <msd:propertyAttributes>
+                     <msd:name>PName</msd:name>
+                     <msd:value>PValue</msd:value>
+                  </msd:propertyAttributes>
+                  <msd:propertyReference>PROP1</msd:propertyReference>
+               </msd:property>
+               <msd:provider>
+                  <msd:providerId>HNZ</msd:providerId>
+               </msd:provider>
+               <msd:vacancy>
+                  <msd:availableFrom>20150101</msd:availableFrom>
+                  <msd:isReceivingRentFunding>true</msd:isReceivingRentFunding>
+                  <msd:marketRentInfo>RENTINFO</msd:marketRentInfo>
+                  <msd:marketRentOffered>1000.00</msd:marketRentOffered>
+                  <msd:minimumBedrooms>2</msd:minimumBedrooms>
+                  <msd:tenantType>FAMILY</msd:tenantType>
+                  <msd:vacancyEthnicity>NZ</msd:vacancyEthnicity>
+                  <msd:vacancyIwi>NZM</msd:vacancyIwi>
+                  <msd:vacancyReference>VAC01</msd:vacancyReference>
+                  <msd:vacancyType>VAC</msd:vacancyType>
+               </msd:vacancy>
+            </msd:data>
+            <msd:header xmlns:msd="http://struct.integration.msd.curam/xsd">
+               <msd:auditID>1. adviseVacancyMatch Default</msd:auditID>
+               <msd:correlationID>1. adviseVacancyMatch Default</msd:correlationID>
+               <msd:dateTime>20020530T093010</msd:dateTime>
+               <msd:destinationOrganisation>MSD</msd:destinationOrganisation>
+               <msd:securityToken>
+                  <msd:id>hnzadmin</msd:id>
+                  <msd:source>admin</msd:source>
+                  <msd:type>admin</msd:type>
+               </msd:securityToken>
+               <msd:sourceOrganisation>HNZ</msd:sourceOrganisation>
+               <msd:transactionID>1. adviseVacancyMatch Default</msd:transactionID>
+            </msd:header>
+         </rem:args0>
+      </rem:adviseVacancyMatch>
+   </soap:Body>
+</soap:Envelope>
+SC332:No
+SC346:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1" xmlns:v13="http://msd.govt.nz/integration/dedicated/case/schema/case/v1" xmlns:v14="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1" xmlns:v15="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v16="http://msd.govt.nz/integration/dedicated/contact/schema/contact/v1">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+         <wsu:Timestamp wsu:Id="TS-902ACF6F5BBA61A0B8141470214167912">
+            <wsu:Created>2014-10-30T20:49:01.679Z</wsu:Created>
+            <wsu:Expires>2014-10-30T20:50:01.679Z</wsu:Expires>
+         </wsu:Timestamp>
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001">
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ns8:adviseApplicationShortlistRequest xsi:type="ns7:AdviseApplicationShortlistMessage" xmlns:ns8="http://msd.govt.nz/integration/dedicated/housing/service/housingproviderservice/v1" xmlns:ns7="http://msd.govt.nz/integration/dedicated/housing/schema/housingmessage/v1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+         <header xmlns="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1">
+            <action>LIST</action>
+            <correlationId>iFix 1. adviseApplicationShortlist Test HAT-1669</correlationId>
+            <requestDateTime>2015-03-09T14:23:05+13:00</requestDateTime>
+            <transactionId>iFix 1. adviseApplicationShortlist Test HAT-1669</transactionId>
+            <destinationOrganisation>HNZ</destinationOrganisation>
+            <sourceOrganisation>MSD</sourceOrganisation>
+         </header>
+         <ns7:data>
+            <ns7:action>LIST</ns7:action>
+            <ns7:shortlistItem>
+               <ns7:application>
+                  <s10:accessRequired xmlns:s10="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <s11:applicationReference xmlns:s11="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">18281245</s11:applicationReference>
+                  <ns5:bedroomsRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:bedroomsRequired>
+                  <s12:categoryPriority xmlns:s12="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">A14</s12:categoryPriority>
+                  <ns5:categoryPriorityDate xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2015-03-04</ns5:categoryPriorityDate>
+                  <s13:currentHousingProvider xmlns:s13="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:fastTrackInd xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:fastTrackInd>
+                  <s14:fastTrackReason xmlns:s14="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:householdSize xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:householdSize>
+                  <s15:housingRegisterType xmlns:s15="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">NEW</s15:housingRegisterType>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">POSTCODE</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">6011</ns1:description>
+                  </locality>
+                  <ns5:modificationRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:modificationRequired>
+                  <attribute xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <name>MOVENEED</name>
+                     <value>8-60 Days</value>
+                  </attribute>
+               </ns7:application>
+               <ns7:shortlistParty>
+                  <ns7:person xsi:type="ns3:Person" xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns3:identity>
+                        <ns3:identifier>356224286</ns3:identifier>
+                        <ns3:type>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SWN</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Social Welfare Number</ns1:description>
+                        </ns3:type>
+                     </ns3:identity>
+                     <ns3:dateOfBirth>1944-01-01</ns3:dateOfBirth>
+                     <ns3:gender>
+                        <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Female</ns1:code>
+                        <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Female</ns1:description>
+                     </ns3:gender>
+                     <ns3:name>
+                        <ns3:familyName>Veitch</ns3:familyName>
+                        <ns3:firstName>Diana</ns3:firstName>
+                        <ns3:middleNames>Mabel</ns3:middleNames>
+                        <ns3:title>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">MRS</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Mrs</ns1:description>
+                        </ns3:title>
+                     </ns3:name>
+                     <ns3:risk>
+                        <ns3:code>CONVIOL</ns3:code>
+                        <ns3:creationDate>2015-03-04</ns3:creationDate>
+                        <ns3:type>Individual</ns3:type>
+                     </ns3:risk>
+                     <ns3:ethnicityClaim>
+                        <ns3:effective>
+                           <ns1:endDate xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01T00:00:00+12:00</ns1:endDate>
+                        </ns3:effective>
+                        <ns3:ethnicityGroup>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">11111</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">New Zealand European/Pakeha</ns1:description>
+                        </ns3:ethnicityGroup>
+                     </ns3:ethnicityClaim>
+                  </ns7:person>
+                  <ns7:householdMember>
+                     <ns3:csoAlert xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:csoAlert>
+                     <ns3:hearingImpairmentInd xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:hearingImpairmentInd>
+                     <s16:interpreterLanguageCode xmlns:s16="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                     <ns3:interpreterRequired xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:interpreterRequired>
+                     <s17:memberType xmlns:s17="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">APPNT</s17:memberType>
+                     <s18:residencyCode xmlns:s18="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NZCI</s18:residencyCode>
+                     <s19:visuallyImpairedCode xmlns:s19="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NO</s19:visuallyImpairedCode>
+                  </ns7:householdMember>
+               </ns7:shortlistParty>
+            </ns7:shortlistItem>
+            <ns7:shortlistItem>
+               <ns7:application>
+                  <s20:accessRequired xmlns:s20="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <s21:applicationReference xmlns:s21="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">18281742</s21:applicationReference>
+                  <ns5:bedroomsRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:bedroomsRequired>
+                  <s22:categoryPriority xmlns:s22="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">A13</s22:categoryPriority>
+                  <ns5:categoryPriorityDate xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2015-03-05</ns5:categoryPriorityDate>
+                  <s23:currentHousingProvider xmlns:s23="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:fastTrackInd xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:fastTrackInd>
+                  <s24:fastTrackReason xmlns:s24="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:householdSize xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:householdSize>
+                  <s25:housingRegisterType xmlns:s25="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">NEW</s25:housingRegisterType>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">CITY</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Wellington</ns1:description>
+                  </locality>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SUBURB</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Johnsonville</ns1:description>
+                  </locality>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">POSTCODE</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">6037</ns1:description>
+                  </locality>
+                  <ns5:modificationRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:modificationRequired>
+                  <attribute xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <name>MOVENEED</name>
+                     <value>7 Days or Less</value>
+                  </attribute>
+               </ns7:application>
+               <ns7:shortlistParty>
+                  <ns7:person xsi:type="ns3:Person" xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns3:identity>
+                        <ns3:identifier>405527700</ns3:identifier>
+                        <ns3:type>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SWN</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Social Welfare Number</ns1:description>
+                        </ns3:type>
+                     </ns3:identity>
+                     <ns3:dateOfBirth>1991-12-24</ns3:dateOfBirth>
+                     <ns3:gender>
+                        <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Female</ns1:code>
+                        <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Female</ns1:description>
+                     </ns3:gender>
+                     <ns3:name>
+                        <ns3:familyName>Wright</ns3:familyName>
+                        <ns3:firstName>Emma</ns3:firstName>
+                        <ns3:middleNames>Rawharangi</ns3:middleNames>
+                        <ns3:title>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">MISS</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Miss</ns1:description>
+                        </ns3:title>
+                     </ns3:name>
+                     <ns3:ethnicityClaim>
+                        <ns3:effective>
+                           <ns1:endDate xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01T00:00:00+12:00</ns1:endDate>
+                        </ns3:effective>
+                        <ns3:ethnicityGroup>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">21111</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">New Zealand Maori</ns1:description>
+                        </ns3:ethnicityGroup>
+                     </ns3:ethnicityClaim>
+                  </ns7:person>
+                  <ns7:householdMember>
+                     <ns3:csoAlert xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:csoAlert>
+                     <ns3:hearingImpairmentInd xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:hearingImpairmentInd>
+                     <s26:interpreterLanguageCode xmlns:s26="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                     <ns3:interpreterRequired xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:interpreterRequired>
+                     <s27:memberType xmlns:s27="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">APPNT</s27:memberType>
+                     <s28:residencyCode xmlns:s28="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NZCI</s28:residencyCode>
+                     <s29:visuallyImpairedCode xmlns:s29="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NO</s29:visuallyImpairedCode>
+                  </ns7:householdMember>
+               </ns7:shortlistParty>
+            </ns7:shortlistItem>
+            <ns7:shortlistItem>
+               <ns7:application>
+                  <s30:accessRequired xmlns:s30="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <s31:applicationReference xmlns:s31="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">18282243</s31:applicationReference>
+                  <ns5:bedroomsRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:bedroomsRequired>
+                  <s32:categoryPriority xmlns:s32="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">A13</s32:categoryPriority>
+                  <ns5:categoryPriorityDate xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2015-03-06</ns5:categoryPriorityDate>
+                  <s33:currentHousingProvider xmlns:s33="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:fastTrackInd xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:fastTrackInd>
+                  <s34:fastTrackReason xmlns:s34="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:householdSize xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:householdSize>
+                  <s35:housingRegisterType xmlns:s35="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">NEW</s35:housingRegisterType>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">CITY</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Wellington</ns1:description>
+                  </locality>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SUBURB</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Johnsonville</ns1:description>
+                  </locality>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">POSTCODE</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">6037</ns1:description>
+                  </locality>
+                  <ns5:modificationRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:modificationRequired>
+                  <attribute xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <name>MOVENEED</name>
+                     <value>7 Days or Less</value>
+                  </attribute>
+               </ns7:application>
+               <ns7:shortlistParty>
+                  <ns7:person xsi:type="ns3:Person" xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns3:identity>
+                        <ns3:identifier>405600700</ns3:identifier>
+                        <ns3:type>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SWN</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Social Welfare Number</ns1:description>
+                        </ns3:type>
+                     </ns3:identity>
+                     <ns3:dateOfBirth>1992-04-28</ns3:dateOfBirth>
+                     <ns3:gender>
+                        <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Female</ns1:code>
+                        <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Female</ns1:description>
+                     </ns3:gender>
+                     <ns3:name>
+                        <ns3:familyName>Yates-Murray</ns3:familyName>
+                        <ns3:firstName>Bronwyn</ns3:firstName>
+                        <ns3:middleNames>Mabel Murray</ns3:middleNames>
+                        <ns3:title>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        </ns3:title>
+                     </ns3:name>
+                     <ns3:ethnicityClaim>
+                        <ns3:effective>
+                           <ns1:endDate xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01T00:00:00+12:00</ns1:endDate>
+                        </ns3:effective>
+                        <ns3:ethnicityGroup>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">11111</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">New Zealand European/Pakeha</ns1:description>
+                        </ns3:ethnicityGroup>
+                     </ns3:ethnicityClaim>
+                  </ns7:person>
+                  <ns7:householdMember>
+                     <ns3:csoAlert xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:csoAlert>
+                     <ns3:hearingImpairmentInd xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:hearingImpairmentInd>
+                     <s36:interpreterLanguageCode xmlns:s36="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                     <ns3:interpreterRequired xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:interpreterRequired>
+                     <s37:memberType xmlns:s37="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">APPNT</s37:memberType>
+                     <s38:residencyCode xmlns:s38="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NZCI</s38:residencyCode>
+                     <s39:visuallyImpairedCode xmlns:s39="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NO</s39:visuallyImpairedCode>
+                  </ns7:householdMember>
+               </ns7:shortlistParty>
+            </ns7:shortlistItem>
+            <ns7:shortlistItem>
+               <ns7:application>
+                  <s40:accessRequired xmlns:s40="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <s41:applicationReference xmlns:s41="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">18282247</s41:applicationReference>
+                  <ns5:bedroomsRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:bedroomsRequired>
+                  <s42:categoryPriority xmlns:s42="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">A13</s42:categoryPriority>
+                  <ns5:categoryPriorityDate xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2015-03-06</ns5:categoryPriorityDate>
+                  <s43:currentHousingProvider xmlns:s43="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:fastTrackInd xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:fastTrackInd>
+                  <s44:fastTrackReason xmlns:s44="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:householdSize xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:householdSize>
+                  <s45:housingRegisterType xmlns:s45="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">NEW</s45:housingRegisterType>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">CITY</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Wellington</ns1:description>
+                  </locality>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SUBURB</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Johnsonville</ns1:description>
+                  </locality>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">POSTCODE</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">6037</ns1:description>
+                  </locality>
+                  <ns5:modificationRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:modificationRequired>
+                  <attribute xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <name>MOVENEED</name>
+                     <value>7 Days or Less</value>
+                  </attribute>
+               </ns7:application>
+               <ns7:shortlistParty>
+                  <ns7:person xsi:type="ns3:Person" xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns3:identity>
+                        <ns3:identifier>405661000</ns3:identifier>
+                        <ns3:type>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SWN</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Social Welfare Number</ns1:description>
+                        </ns3:type>
+                     </ns3:identity>
+                     <ns3:dateOfBirth>1991-04-12</ns3:dateOfBirth>
+                     <ns3:gender>
+                        <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Male</ns1:code>
+                        <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Male</ns1:description>
+                     </ns3:gender>
+                     <ns3:name>
+                        <ns3:familyName>Porter</ns3:familyName>
+                        <ns3:firstName>Ivan</ns3:firstName>
+                        <ns3:middleNames>llewellyn</ns3:middleNames>
+                        <ns3:title>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        </ns3:title>
+                     </ns3:name>
+                     <ns3:ethnicityClaim>
+                        <ns3:effective>
+                           <ns1:endDate xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01T00:00:00+12:00</ns1:endDate>
+                        </ns3:effective>
+                        <ns3:ethnicityGroup>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">99999</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Not Stated</ns1:description>
+                        </ns3:ethnicityGroup>
+                     </ns3:ethnicityClaim>
+                  </ns7:person>
+                  <ns7:householdMember>
+                     <ns3:csoAlert xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:csoAlert>
+                     <ns3:hearingImpairmentInd xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:hearingImpairmentInd>
+                     <s46:interpreterLanguageCode xmlns:s46="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                     <ns3:interpreterRequired xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:interpreterRequired>
+                     <s47:memberType xmlns:s47="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">APPNT</s47:memberType>
+                     <s48:residencyCode xmlns:s48="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">PERE</s48:residencyCode>
+                     <s49:visuallyImpairedCode xmlns:s49="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NO</s49:visuallyImpairedCode>
+                  </ns7:householdMember>
+               </ns7:shortlistParty>
+            </ns7:shortlistItem>
+            <ns7:shortlistItem>
+               <ns7:application>
+                  <s50:accessRequired xmlns:s50="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <s51:applicationReference xmlns:s51="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">18282250</s51:applicationReference>
+                  <ns5:bedroomsRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:bedroomsRequired>
+                  <s52:categoryPriority xmlns:s52="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">A13</s52:categoryPriority>
+                  <ns5:categoryPriorityDate xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">2015-03-09</ns5:categoryPriorityDate>
+                  <s53:currentHousingProvider xmlns:s53="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:fastTrackInd xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:fastTrackInd>
+                  <s54:fastTrackReason xmlns:s54="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+                  <ns5:householdSize xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">1</ns5:householdSize>
+                  <s55:housingRegisterType xmlns:s55="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">NEW</s55:housingRegisterType>
+                  <locality xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">POSTCODE</ns1:code>
+                     <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">6011</ns1:description>
+                  </locality>
+                  <ns5:modificationRequired xmlns:ns5="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">false</ns5:modificationRequired>
+                  <attribute xmlns="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">
+                     <name>MOVENEED</name>
+                     <value>7 Days or Less</value>
+                  </attribute>
+               </ns7:application>
+               <ns7:shortlistParty>
+                  <ns7:person xsi:type="ns3:Person" xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">
+                     <ns3:identity>
+                        <ns3:identifier>405698400</ns3:identifier>
+                        <ns3:type>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">SWN</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Social Welfare Number</ns1:description>
+                        </ns3:type>
+                     </ns3:identity>
+                     <ns3:dateOfBirth>1980-09-17</ns3:dateOfBirth>
+                     <ns3:gender>
+                        <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Unknown</ns1:code>
+                        <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Unknown</ns1:description>
+                     </ns3:gender>
+                     <ns3:name>
+                        <ns3:familyName>Ebrahimzadeh</ns3:familyName>
+                        <ns3:firstName>Manijeh</ns3:firstName>
+                        <ns3:title>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1"/>
+                        </ns3:title>
+                     </ns3:name>
+                     <ns3:ethnicityClaim>
+                        <ns3:effective>
+                           <ns1:endDate xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01T00:00:00+12:00</ns1:endDate>
+                        </ns3:effective>
+                        <ns3:ethnicityGroup>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">51100</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Middle Eastern</ns1:description>
+                        </ns3:ethnicityGroup>
+                     </ns3:ethnicityClaim>
+                     <ns3:ethnicityClaim>
+                        <ns3:effective>
+                           <ns1:endDate xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">0001-01-01T00:00:00+12:00</ns1:endDate>
+                        </ns3:effective>
+                        <ns3:ethnicityGroup>
+                           <ns1:code xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">51115</ns1:code>
+                           <ns1:description xmlns:ns1="http://msd.govt.nz/integration/utils/technical/schema/value/v1">Iranian/Persian</ns1:description>
+                        </ns3:ethnicityGroup>
+                     </ns3:ethnicityClaim>
+                  </ns7:person>
+                  <ns7:householdMember>
+                     <ns3:csoAlert xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:csoAlert>
+                     <ns3:hearingImpairmentInd xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:hearingImpairmentInd>
+                     <s56:interpreterLanguageCode xmlns:s56="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1"/>
+                     <ns3:interpreterRequired xmlns:ns3="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">false</ns3:interpreterRequired>
+                     <s57:memberType xmlns:s57="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">APPNT</s57:memberType>
+                     <s58:residencyCode xmlns:s58="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">PERE</s58:residencyCode>
+                     <s59:visuallyImpairedCode xmlns:s59="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">NO</s59:visuallyImpairedCode>
+                  </ns7:householdMember>
+               </ns7:shortlistParty>
+            </ns7:shortlistItem>
+            <ns7:provider>
+               <s60:providerId xmlns:s60="http://msd.govt.nz/integration/dedicated/party/schema/partyrole/v1">47502</s60:providerId>
+            </ns7:provider>
+            <ns7:vacancy>
+               <s61:response xmlns:s61="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <s62:responseReason xmlns:s62="http://msd.govt.nz/integration/dedicated/case/schema/case/v1"/>
+               <s63:vacancyReference xmlns:s63="http://msd.govt.nz/integration/dedicated/case/schema/case/v1">85625</s63:vacancyReference>
+            </ns7:vacancy>
+         </ns7:data>
+      </ns8:adviseApplicationShortlistRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+SC845:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken>
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password>password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <SOAP>
+         <Context operation="inquire" operationType="REQUEST_RESPONSE" portType="InquireObligationServiceSoapPort" portTypeNamespace="http://msd.govt.nz/integration/derived/obligation/service/inquireobligation/v1" port="InquireObligationServiceSoapPort" service="InquireObligationService" fileName="inquireobligation.wsdl">
+            <SOAP_Version>1.1</SOAP_Version>
+            <Namespace xmlns:env="http://schemas.xmlsoap.org/soap/envelope/"/>
+            <_XmlDeclaration Version="1.0" Encoding="UTF-8"/>
+         </Context>
+         <Header/>
+         <Body>
+            <ns5:inquireObligationRequest xmlns="http://msd.govt.nz/integration/derived/obligation/service/inquireobligation/v1" xmlns:ns2="http://msd.govt.nz/integration/derived/obligation/schema/obligationmessage/v1" xmlns:ns5="http://msd.govt.nz/integration/derived/obligation/service/inquireobligation/v1" xmlns:ns3="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:ns4="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:ns1="http://msd.govt.nz/integration/base/party/schema/partyrole/v1" xmlns:ns0="http://msd.govt.nz/integration/base/obligation/schema/obligation/v1">
+               <ns3:header>
+                  <ns3:action>INQUIREOBLIGATION</ns3:action>
+                  <ns3:auditId>4dffcd40-12f3-450c-b1e6-abe5348aa1ca</ns3:auditId>
+                  <ns3:requestDateTime>2026-08-12T02:25:02.267Z</ns3:requestDateTime>
+                  <ns3:sourceSystem>obman</ns3:sourceSystem>
+                  <ns3:transactionId>e20675fd-9354-42d2-879f-38d919a832a6</ns3:transactionId>
+                  <ns3:messageType>REQUEST</ns3:messageType>
+                  <ns3:securityToken>
+                     <ns3:id>obmuser</ns3:id>
+                     <ns3:type>USER</ns3:type>
+                  </ns3:securityToken>
+                  <ns3:interactionPattern>REQUEST_RESPONSE</ns3:interactionPattern>
+               </ns3:header>
+               <ns2:data>
+                  <ns2:search>
+                     <ns2:clientNumber>368081500</ns2:clientNumber>
+                  </ns2:search>
+               </ns2:data>
+            </ns5:inquireObligationRequest>
+         </Body>
+      </SOAP>
+   </soapenv:Body>
+</soapenv:Envelope>
+SC851:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/dedicated/case/service/casemanagementinput/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/dedicated/case/schema/casemanagementinput/v1" xmlns:v13="http://msd.govt.nz/integration/derived/appointment/schema/appointment/v1" xmlns:v14="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v15="http://msd.govt.nz/integration/base/party/schema/partyrole/v1" xmlns:v16="http://msd.govt.nz/integration/base/address/schema/address/v1" xmlns:v17="http://msd.govt.nz/integration/base/obligation/schema/obligation/v1" xmlns:v18="http://msd.govt.nz/integration/base/payment/schema/payment/v1" xmlns:v19="http://msd.govt.nz/integration/base/contact/schema/contact/v1" xmlns:v110="http://msd.govt.nz/integration/base/case/schema/case/v1" xmlns:v111="http://msd.govt.nz/integration/base/productandservice/schema/productandservice/v1">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <v1:caseManagementInputRequest>
+         <v11:header>
+            <v11:action>INQUIRE</v11:action>
+            <v11:auditId>4.SC851 inquireCaseManagementInputs - JS</v11:auditId>
+            <v11:requestDateTime>2013-06-19T14:13:51.0+12:00</v11:requestDateTime>
+            <v11:sourceSystem>CMS</v11:sourceSystem>
+            <v11:transactionId>4.SC851 inquireCaseManagementInputs - JS</v11:transactionId>
+            <v11:messageType>REQUEST</v11:messageType>
+            <v11:securityToken>
+               <v11:id>abcd001</v11:id>
+               <v11:type>USER</v11:type>
+            </v11:securityToken>
+            <v11:interactionPattern>REQUEST_RESPONSE</v11:interactionPattern>
+         </v11:header>
+         <v12:data>
+            <v12:search>
+               <v12:clientNumber>313546098</v12:clientNumber>
+            </v12:search>
+         </v12:data>
+         <v12:filter>
+            <v12:appointmentSearchPeriod>
+               <v14:endDate>2015-06-19T14:13:51.0+12:00</v14:endDate>
+               <v14:startDate>2010-06-19T14:13:51.0+12:00</v14:startDate>
+            </v12:appointmentSearchPeriod>
+            <v12:assistanceActivePeriod>
+               <v14:end>2015-08-19</v14:end>
+               <v14:start>2010-08-19</v14:start>
+            </v12:assistanceActivePeriod>
+            <v12:includeObligationFailures>true</v12:includeObligationFailures>
+         </v12:filter>
+      </v1:caseManagementInputRequest>
+   </soapenv:Body>
+</soapenv:Envelope>
+SC128:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:obl="http://msd.govt.nz/integration/case/v1.x/ObligationWebServices" xmlns:com="http://msd.govt.nz/integration/v6.x/common" xmlns:obl1="http://msd.govt.nz/integration/case/v2.x/obligation" xmlns:case="http://msd.govt.nz/integration/case/v2.x/case">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>curamsystemuser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <obl:adviseObligationActivityRqst>
+         <com:correlationId>SC128_IIBTest-0001</com:correlationId>
+         <com:transactionId>SC128_adviseObligationActivity_12800</com:transactionId>
+         <com:sourceSystem>CMS</com:sourceSystem>
+         <com:dateTime>2025-01-01T00:00:00.000+01:00</com:dateTime>
+         <com:SecurityContext>
+            <com:SecurityToken>
+               <com:id>kpham001</com:id>
+            </com:SecurityToken>
+         </com:SecurityContext>
+         <obl:clientObligationAdvice>
+            <obl:clientNumber>400100600</obl:clientNumber>
+            <obl:obligationEvent>
+               <obl1:caseObligation>
+                  <obl1:obligationType>
+                     <obl1:code>WORKFT</obl1:code>
+                     <obl1:description>Full-Time Work</obl1:description>
+                  </obl1:obligationType>
+               </obl1:caseObligation>
+               <obl1:status>
+                  <obl1:code>FAILED</obl1:code>
+                  <obl1:description>failed</obl1:description>
+                  <obl1:reason>
+                     <com:code>15</com:code>
+                     <com:description>Complete Referral</com:description>
+                  </obl1:reason>
+                  <obl1:eventType>OF1CWENCGS</obl1:eventType>
+                  <obl1:activity>
+                     <case:identifier>0404-1</case:identifier>
+                     <case:name>Barista</case:name>
+                     <case:outcome>
+                        <com:code>NOTATTAINED</com:code>
+                        <com:description>Not Attained</com:description>
+                     </case:outcome>
+                     <case:result>
+                        <com:code>DNA</com:code>
+                        <com:description>Did Not Accept</com:description>
+                     </case:result>
+                     <case:planItem>
+                        <case:identifier>1001</case:identifier>
+                        <case:name>Paid Employment</case:name>
+                     </case:planItem>
+                  </obl1:activity>
+                  <obl1:appointment>
+                     <obl1:type>type</obl1:type>
+                     <obl1:datetime>2025-01-01T00:00:00.000+01:00</obl1:datetime>
+                     <obl1:location>Wellington</obl1:location>
+                     <obl1:isSeminar>false</obl1:isSeminar>
+                  </obl1:appointment>
+               </obl1:status>
+            </obl:obligationEvent>
+         </obl:clientObligationAdvice>
+         <!--1 or more repetitions:-->
+      </obl:adviseObligationActivityRqst>
+   </soapenv:Body>
+</soapenv:Envelope>
+SC127:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:obl="http://msd.govt.nz/integration/case/v1.x/ObligationWebServices" xmlns:com="http://msd.govt.nz/integration/v6.x/common">
+   <soapenv:Header>
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-11080001" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mymsduser</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+         </wsse:UsernameToken>
+      </wsse:Security>
+   </soapenv:Header>
+   <soapenv:Body>
+      <obl:getClientObligationFailureRqst>
+         <com:correlationId>SC127_IIBTest-0002</com:correlationId>
+         <com:transactionId>SC127_getClientObligationFailure_12700</com:transactionId>
+         <com:sourceSystem>MYMSD</com:sourceSystem>
+         <com:dateTime>2025-01-07T10:52:17+13:00</com:dateTime>
+         <com:SecurityContext>
+            <com:SecurityToken>
+               <com:id>mymsduser</com:id>
+            </com:SecurityToken>
+         </com:SecurityContext>
+         <obl:clientNumber>312794221</obl:clientNumber>
+      </obl:getClientObligationFailureRqst>
+   </soapenv:Body>
+</soapenv:Envelope>

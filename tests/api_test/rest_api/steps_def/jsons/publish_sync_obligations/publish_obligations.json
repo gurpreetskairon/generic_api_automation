@@ -1,0 +1,268 @@
+{
+    "messageId": "1234567",
+    "participant": {
+        "identities": [
+            {
+                "identifier": "678912345",
+                "type": {
+                    "code": "CLIENTNUMBER",
+                    "description": "Client Number"
+                }
+            },
+            {
+                "identifier": "987654321",
+                "type": {
+                    "code": "NATIONALID",
+                    "description": "National ID"
+                }
+            },
+            {
+                "identifier": "A12345678",
+                "type": {
+                    "code": "PASSPORT",
+                    "description": "Passport"
+                }
+            }
+        ],
+        "salesForceFlag": true
+    },
+    "incomeDetails": {
+        "type": {
+            "code": "WORKFT",
+            "description": "Full-time Work"
+        },
+        "amount": "string",
+        "hoursWorked": 1.25,
+        "frequency": {
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "intervalUnit": "string",
+            "intervalValue": "string"
+        }
+    },
+    "changeReason": {
+        "code": "WORKFT",
+        "description": "Full-time Work"
+    },
+    "changeDate": "2015-01-19",
+    "previousService": {
+        "serviceId": "581941785",
+        "serviceCode": "365",
+        "applicationDate": "2023-04-28",
+        "commencementDate": "2023-05-15",
+        "renewalDate": "2026-05-15",
+        "registrationDate": "2023-05-23",
+        "lastStatus": {
+            "benefitStatus": {
+                "code": "Current",
+                "description": "Current"
+            },
+            "changeDate": "2025-09-01T00:00:00+12:00",
+            "changeReason": {
+                "code": "123",
+                "description": "change Rea Desc"
+            }
+        },
+        "additionalServiceData": "",
+        "apportionmentIndicator": 0,
+        "qualifyingIndicator": 0
+    },
+    "currentService": {
+        "serviceId": "582690775",
+        "serviceCode": "675",
+        "applicationDate": "2024-06-11",
+        "commencementDate": "2024-06-11",
+        "renewalDate": "2026-05-15",
+        "registrationDate": "2024-06-19",
+        "lastStatus": {
+            "benefitStatus": {
+                "code": "Current",
+                "description": "Current"
+            },
+            "changeDate": "2025-10-15T12:23:34.123456+13:00",
+            "changeReason": {
+                "code": "456",
+                "description": "change Rea Desc"
+            }
+        },
+        "additionalServiceData": "FTJS1",
+        "apportionmentIndicator": 2,
+        "qualifyingIndicator": 0
+    },
+    "previousObligations": [
+        {
+            "effective": {
+                "startDate": "2025-12-15T12:12:12",
+                "endDate": "2025-10-20T10:10:10.123456+13:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "SWIFTT",
+                    "description": "Swiftt Data"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "515",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        },
+        {
+            "effective": {
+                "startDate": "2025-10-15T12:23:34.123456+13:00",
+                "endDate": "2025-10-20T10:10:10.123456+13:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "SWIFTT",
+                    "description": "Swiftt Data 1"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "516",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2024-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        }
+    ],
+    "currentObligations": [
+        {
+            "effective": {
+                "startDate": "2025-12-15T12:12:12",
+                "endDate": "2025-10-20T10:10:10.123456+13:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "SWIFTT",
+                    "description": "Data from SWIFTT"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "515",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        },
+        {
+            "effective": {
+                "startDate": "2025-10-15T12:23:34.123456+13:00",
+                "endDate": "2025-10-20T10:10:10.123456+13:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "SWIFTT1",
+                    "description": "Data from SWIFTT 1"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "516",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        },
+        {
+            "effective": {
+                "startDate": "2025-10-15T12:23:34.123456+13:00",
+                "endDate": "2025-10-15T12:23:34.123456+13:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "startDate": "2025-10-15T12:23:34.123456+13:00",
+                    "endDate": "2025-10-15T12:23:34.123456+13:00"
+                },
+                "type": {
+                    "code": "SWIFTT11",
+                    "description": "Data from SWIFTT 11"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "517",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "startDate": "2025-10-15T12:23:44.123456+13:00",
+                    "endDate": "2017-12-31T23:59:00+12:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        }
+    ]
+}

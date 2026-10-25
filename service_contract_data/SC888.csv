@@ -1,0 +1,7 @@
+ENV,CLIENT_SWN,CASE_REF,PAYLOAD_TYPE,DECISION_ACTION,DESCRIPTION,CONDITION
+dev11,526337667,90047266,id_verification,PROVIDED,Identity client document provided/uploaded,ID_PROVIDED
+dev11,526337667,90047266,id_verification,CANNOTPROVIDE,Identity client document cannot be provided/uploaded,CANNOT_PROVIDE
+dev11,526337667,90047266,id_verification,CANNOTNODOCS,Client does not have ID documents that MSD needs to verify identity,NO_DOCS
+dev11,526337667,90047266,id_verification,ACCEPTBRING,Client acknowledged that they need to bring ID documents into MSD service centre,ACKNOWLEDGE_TO_BRING
+dev11,526337667,90047266,obligations_verification,ACCEPTED,Client has accepted obligations,OBLIGATIONS_ACCEPTED
+dev11,526337667,90047266,obligations_verification,DISCUSS,Client wants to discuss obligations,OBLIGATIONS_DISCUSSED

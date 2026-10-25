@@ -1,0 +1,13 @@
+project-includes = [
+    "apps/**/*.py",
+    "scripts/**/*.py",
+    "tests/**/*.py",
+    "tools/**/*.py",
+    "utils/**/*.py",
+    "*.py",
+]
+
+search-path = ["."]
+
+[errors]
+missing-attribute = "ignore"

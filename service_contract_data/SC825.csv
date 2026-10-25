@@ -1,0 +1,19 @@
+ENV,SWN,USER,CONDITION
+dev11,021238295,mqin0001,not_secured
+dev11,526279925,rwohl001,global_access
+dev11,526279941,mqin0001,temporary_access
+dev11,526279925,mqin0001,no_client_access
+dev11,021238295,rchak001,user_not_found
+dev11,000000000,rwohl001,no_matching_client
+dev11,021238295,rwohl001,None
+dev11,021238295,rwohl001,invalid SOAPAction
+dev11,021238295,rwohl001,missing SOAPAction
+u11,021238295,tauto005,not_secured
+u11,526481827,tauto005,global_access
+u11,526481827,mqin0001,temporary_access
+u11,526481835,mqin0001,no_client_access
+u11,021238295,gsing018,user_not_found
+u11,000000000,tauto005,no_matching_client
+u11,021238295,tauto005,None
+u11,021238295,tauto005,invalid SOAPAction
+u11,021238295,tauto005,missing SOAPAction

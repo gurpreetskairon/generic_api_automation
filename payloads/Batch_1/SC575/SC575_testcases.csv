@@ -1,0 +1,45 @@
+CONDITION,OVERRIDE_PATH,HEADER_PLACEHOLDER_VALUES,OVERRIDE_HTTP_METHOD,QUERY_STRING,QUERY_STRING_PLACEHOLDER_VALUES,OVERRIDE_QUERY_STRING_FOR_IIB,OVERRIDE_QUERY_STRING_PLACEHOLDER_VALUES_FOR_IIB,PAYLOAD,PAYLOAD_PLACEHOLDER_VALUES,OVERRIDE_PAYLOAD_FOR_IIB,OVERRIDE_PAYLOAD_PLACEHOLDER_VALUES_FOR_IIB,RESPONSE_CODE,COMPARISON_TO_IGNORE,VALIDATE_DATA,MISC,STATUS
+Compare SC575 successful Match response,,"{""{short_env}"":""<get_short_env()>""}",,,,,,SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344677"",
+    ""{formatted_name}"": ""Allen, Gary"",
+    ""{date_of_birth}"": ""1985-03-16"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+Compare SC575 No match response for invalid name,,"{""{short_env}"":""<get_short_env()>""}",,,,,,SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344677"",
+    ""{formatted_name}"": ""Allen, Garry"",
+    ""{date_of_birth}"": ""1985-03-16"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+Compare SC575 No match response for invalid DOB,,"{""{short_env}"":""<get_short_env()>""}",,,,,,SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344677"",
+    ""{formatted_name}"": ""Allen, Gary"",
+    ""{date_of_birth}"": ""1990-01-01"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,
+Compare SC575 No match response for invalid IRD number,,"{""{short_env}"":""<get_short_env()>""}",,,,,,SC575_default_payload.xml,"{
+    ""{audit_id}"": ""<generate_uuid()>"",
+    ""{correlation_id}"": ""<audit_id>"",
+    ""{transaction_id}"": ""<audit_id>"",
+    ""{request_date_time}"":""<resolve_date_token()>"",
+    ""{ird_number}"": ""123344600"",
+    ""{formatted_name}"": ""Allen, Gary"",
+    ""{date_of_birth}"": ""1985-03-16"",
+    ""{formatted_address}"": ""66 frye crescent Wanaka 9305"",
+    ""{user_id}"": ""tbau0005""
+}",,,200,,,,

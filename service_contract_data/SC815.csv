@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,USER_TYPE,BUSINESS_KEY,MOBILE_NUMBER
+1,dev11,successful_client_response,client,526339602,640200000000
+2,dev11,successful_provider_response,provider,egde370176,640200000000
+3,dev11,client_authorisation_inactive,client,526370533,640200000000
+4,dev11,client_authorisation_locked,client,021504880,640200000000
+5,dev11,client_deceased,client,35,640200000000

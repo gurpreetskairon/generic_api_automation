@@ -1,0 +1,9 @@
+ID,ENVIRONMENT,CONDITION,SEARCH_TYPE,ACCOUNT_HOLDER_NAME,BANK,BRANCH,ACCOUNT,SUFFIX,CARD_NUMBER
+1,dev11,successful_bank_account_search,bank_account,test data,12,3216,0119223,000,
+2,dev11,successful_community_service_card_search,community_service_card,,,,,,0000005602868019
+3,dev11,no_matching_record,bank_account,test data,12,1234,1234567,123,
+4,dev11,building_society_account,bank_account,test data,02,0688,0089022,002,
+5,u11,successful_bank_account_search,bank_account,test data,38,9366,9659812,000,
+6,u11,successful_community_service_card_search,community_service_card,,,,,,0000005603358002
+7,u11,no_matching_record,bank_account,test data,12,1234,1234567,123,
+8,u11,building_society_account,bank_account,test data,02,0688,0089022,002,

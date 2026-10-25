@@ -1,0 +1,11 @@
+CONDITION,CLIENT_NUMBER,DATE_OF_BIRTH,ENV
+valid_supergold_card,005507865,1921-05-09,dev11
+no_supergold_card,526300267,1999-07-28,dev11
+incorrect_date_of_birth,526300267,1999-06-28,dev11
+invalid_client_number,100000000,1999-07-28,dev11
+invalid_date_of_birth,526300267,28-jul-1999,dev11
+valid_supergold_card,021455539,1960-06-17,u11
+no_supergold_card,526300267,1999-07-28,u11
+incorrect_date_of_birth,526300267,1999-06-28,u11
+invalid_client_number,100000000,1999-07-28,u11
+invalid_date_of_birth,526300267,28-jul-1999,u11

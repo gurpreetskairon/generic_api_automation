@@ -1,0 +1,5 @@
+ENVIRONMENT,CONDITION,CLIENT_NUMBER,SWIFTT_USER
+dev11,successful_transaction,300504820,GEKAS
+dev11,invalid_request,319733414,GEKAS
+dev11,client_not_recognised,999999999,GEKAS
+dev11,swiftt_user_not_found,300504820,INVALIDUSER

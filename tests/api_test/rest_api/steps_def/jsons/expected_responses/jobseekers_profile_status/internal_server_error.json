@@ -1,0 +1,9 @@
+{
+    "serviceResults": [
+        {
+            "result": "API-01",
+            "message": "Validation error",
+            "resultDescription": "Mandatory headers are missing; Please refer to the specification"
+        }
+    ]
+}

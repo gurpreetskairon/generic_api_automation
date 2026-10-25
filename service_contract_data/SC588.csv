@@ -1,0 +1,11 @@
+CLIENT_NUMBER,CONDITION,ENV
+211742369,successful,dev11
+526301827,client_not_present,dev11
+526301827a,unrecognised_result_code,dev11
+211742369,missing_authorization,dev11
+211742369,invalid_authorization,dev11
+211742369,successful,u11
+526301827,client_not_present,u11
+526301827a,unrecognised_result_code,u11
+211742369,missing_authorization,u11
+211742369,invalid_authorization,u11

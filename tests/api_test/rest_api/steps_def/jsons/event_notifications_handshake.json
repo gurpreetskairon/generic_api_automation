@@ -1,0 +1,13 @@
+[{
+  "id": "70670f7f-69f1-49cf-91b7-5f2d9212719b",
+  "topic": "/subscriptions/4775a092-4035-414f-a3d9-1818664f75b8/resourceGroups/rg-sbns-integration-dev-aue-001/providers/microsoft.servicebus/namespaces/sbns-int-dev-aue-001",
+  "subject": "",
+  "data": {
+    "validationCode": "5380E509-B8FB-417A-9DFF-B9B5C0EBFC82",
+    "validationUrl": "https://rp-australiaeast.eventgrid.azure.net:553/eventsubscriptions/eg-to-apim-webhook/validate?id=5380E509-B8FB-417A-9DFF-B9B5C0EBFC82&t=2025-09-04T21:33:26.5132593Z&apiVersion=2022-06-15&token=d%2bA1sygZg%2bfCyktPNLAUsC39o6d3T%2btEQRyN53AC5Ss%3d"
+  },
+  "eventType": "Microsoft.EventGrid.SubscriptionValidationEvent",
+  "eventTime": "2025-09-04T21:33:26.5133225Z",
+  "metadataVersion": "1",
+  "dataVersion": "2"
+}]

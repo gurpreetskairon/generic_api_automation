@@ -1,0 +1,7 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,SEARCH_PERIOD_START,SEARCH_PERIOD_END,STATUS
+1,dev11,hardship_application_found,526339565,,,
+2,dev11,hardship_application_found_with_filters,526339565,2026-01-05,2026-10-01,INPROGRESS
+3,dev11,no_hardship_application_found,526339677,,,
+4,dev11,user_not_recognised,526339565,,,
+5,dev11,invalid_request,,,,
+6,dev11,client_not_recognised,666666666,,,

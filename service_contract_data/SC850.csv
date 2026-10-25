@@ -1,0 +1,5 @@
+CLIENT_NUMBER,CONDITION,ENV
+500054006,successful_transaction,dev11
+500054006,invalid_request,dev11
+526556089,successful_transaction,u11
+526556089,invalid_request,u11

@@ -1,0 +1,12 @@
+{
+    "code": "DIS-SUCCESS",
+    "emails": "WekaTesting_UAT@weka.msd.govt.nz",
+    "externalIds": "292614",
+    "providerNames": "ASAP CAR TRANSPORT",
+    "alternateIds": "300000085386686",
+    "registeredContext": [
+        "WekaTesting_UAT@weka.msd.govt.nz"
+    ],
+    "displayContextSelection": false,
+    "currentContext": "WekaTesting_UAT@weka.msd.govt.nz"
+}

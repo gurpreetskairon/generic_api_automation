@@ -1,0 +1,3 @@
+{
+    "Error": "Invalid 'fltID' or 'externalID & externalIDType' values, one of these values must be passed"
+}

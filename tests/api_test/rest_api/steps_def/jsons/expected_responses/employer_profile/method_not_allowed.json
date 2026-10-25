@@ -1,0 +1,9 @@
+{
+    "serviceResults": [
+        {
+            "result": "API-04",
+            "message": "OperationNotFound",
+            "resultDescription": "Reason: Unable to match incoming request to an operation."
+        }
+    ]
+}

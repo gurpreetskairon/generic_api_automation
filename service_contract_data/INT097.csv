@@ -1,0 +1,6 @@
+ENVIRONMENT,CONDITION,PARTNER_SWN,MIDDLE_NAME,DATE_OF_BIRTH,GENDER,ETHNICITY,IRD_NUMBER,COUNTRY_OF_BIRTH,MARITAL_STATUS,MARITAL_STATUS_DATE,ADDRESS_LINE1,ADDRESS_LINE2,SUBURB,CITY,RESIDENCY_STATUS,RESIDENCY_STATUS_CHANGE_DATE
+dev11,successful_transaction,0,One,14-JUL-1988,M,P,,NZ,SNGL,14-JUL-1988,3 Woodridge Drive,Line2,Newlands,Wellington,P,14-JUL-1988
+dev11,invalid_ird_number_format,0,One,14-JUL-1988,M,P,01911200,NZ,SNGL,14-JUL-1988,3 Woodridge Drive,Line2,Newlands,Wellington,P,14-JUL-1988
+dev11,invalid_partner_client_number,333333333,Whit,21-MAR-1975,M,P,666666666,NZ,MRRD,29-AUG-2014,3 Woodridge Drive,Line2,Newlands,Wellington,P,29-AUG-2014
+dev11,invalid_residency_status_change_date,0,One,14-JUL-1988,M,P,666666666,NZ,SNGL,14-JUL-1988,3 Woodridge Drive,Line2,Newlands,Wellington,P,29-AUG-2034
+dev11,invalid_person_gender,0,One,14-JUL-1988,T,P,666666666,NZ,SNGL,14-JUL-1988,3 Woodridge Drive,Line2,Newlands,Wellington,P,14-JUL-1988

@@ -1,0 +1,174 @@
+id,environment,partner_client_number,status,used_for_condition,reserved_transaction_id,created_client_number,reserved_at,used_at,notes
+1,dev11,526286530,USED,valid_register_client_with_partner,b1c5e051-cb7c-4d5c-8469-71194e16bc20,526287597,2026-07-07 18:19:44,2026-07-07 18:19:49,SC827 reusable partner pool
+2,dev11,526286557,USED,valid_register_client_with_partner,f2fa8515-4990-4ef0-9eee-08beab0a60d2,526287503,2026-07-07 07:28:08,2026-07-07 07:28:18,SC827 reusable partner pool
+3,dev11,526286565,USED,valid_register_client_with_partner,53e2d38b-f8cd-428e-9071-4f7d5167c5e6,526287511,2026-07-07 07:29:53,2026-07-07 07:29:56,SC827 reusable partner pool
+4,dev11,526286573,USED,valid_register_client_with_partner,bbfb9ed4-68e1-49e4-8b55-2279d82321aa,526287538,2026-07-07 07:33:09,2026-07-07 07:33:12,SC827 reusable partner pool
+5,dev11,526286581,USED,valid_register_client_with_partner,25aef569-086d-4bb1-97da-feef430541c5,526287562,2026-07-07 07:51:49,2026-07-07 07:51:52,SC827 reusable partner pool
+6,dev11,526286595,USED,valid_register_client_with_partner,2e191117-7707-4b84-98d7-c2500a3ee1a7,526287482,2026-07-07 06:33:50,2026-07-07 06:34:02,SC827 reusable partner pool
+7,dev11,526286602,USED,valid_register_client_with_partner,1b8308af-950e-4839-bcbd-aba8b307c721,526287490,2026-07-07 06:34:14,2026-07-07 06:34:17,SC827 reusable partner pool
+8,dev11,526286864,USED,valid_register_client_with_partner,eb6f1d79-451d-4ca9-8f46-5760e16642c7,526287618,2026-07-07 22:24:39,2026-07-07 22:24:41,SC827 positive partner scenario pool
+9,dev11,526286872,USED,valid_register_client_with_partner,f8826e99-93c7-4c2e-8dcb-e285e327a17e,526287677,2026-07-07 22:46:37,2026-07-07 22:46:40,SC827 positive partner scenario pool
+10,dev11,526286880,USED,valid_register_client_with_partner,ce59c6ec-2d8c-49c2-aece-c3782e45530d,526287730,2026-07-07 23:07:56,2026-07-07 23:07:59,SC827 positive partner scenario pool
+11,dev11,526286899,USED,valid_register_client_with_partner,5846caf5-d4e0-497f-bf66-441fb74193b0,526287925,2026-07-08 02:22:43,2026-07-08 02:22:46,SC827 positive partner scenario pool
+12,dev11,526286901,USED,valid_register_client_with_partner,d692bdc0-1620-4984-ae93-c5fcecf2b3f6,526287976,2026-07-08 02:39:57,2026-07-08 02:39:59,SC827 positive partner scenario pool
+13,dev11,526286915,USED,valid_register_client_with_partner,6dc14207-8dc5-4227-9449-66d8467afb6d,526288017,2026-07-08 05:37:03,2026-07-08 05:37:06,SC827 positive partner scenario pool
+14,dev11,526286928,RESERVED,valid_register_client_with_partner,ccca2177-9b5b-4b6d-ae10-66c71c5df1d8,,2026-07-08 06:20:29,,SC827 positive partner scenario pool
+15,dev11,526286936,USED,valid_register_client_with_partner,223aee85-ca3d-413a-80ad-189c9be96b45,526288092,2026-07-08 06:30:16,2026-07-08 06:30:26,SC827 positive partner scenario pool
+16,dev11,526286944,USED,valid_register_client_with_partner,85a52852-1570-484b-9ff7-713af5ae2004,526288164,2026-07-08 07:36:13,2026-07-08 07:36:15,SC827 positive partner scenario pool
+17,dev11,526286952,RESERVED,valid_register_client_with_partner,d197d2ef-f351-4a65-ac78-f42cd324abcd,,2026-07-08 08:00:39,,SC827 positive partner scenario pool
+18,dev11,526286960,RESERVED,valid_register_client_with_partner,5d7452e0-3df7-4bcf-a0d1-d1990375e26e,,2026-07-08 08:09:43,,SC827 positive partner scenario pool
+19,dev11,526286979,RESERVED,valid_register_client_with_partner,d27a6e14-de22-4104-a5d4-4980fd743926,,2026-07-08 08:09:43,,SC827 positive partner scenario pool
+20,dev11,526286987,USED,valid_register_client_with_partner,b3090e97-5b5a-42a7-b1b3-5364d34ae912,526288279,2026-07-08 20:45:53,2026-07-08 20:45:57,SC827 positive partner scenario pool
+21,dev11,526286995,RESERVED,valid_register_client_with_partner,3164a9a2-98ea-407e-9ee7-aa5c6f35a7bc,,2026-07-08 20:49:09,,SC827 positive partner scenario pool
+22,dev11,526287028,RESERVED,valid_register_client_with_partner,b453abbc-993f-45b0-8d66-d69e334f6809,,2026-07-08 20:49:09,,SC827 positive partner scenario pool
+23,dev11,526287036,USED,valid_register_client_with_partner,7873cef9-8f77-48e9-a593-d64e998ca90a,526288359,2026-07-08 20:59:59,2026-07-08 21:00:05,SC827 positive partner scenario pool
+24,dev11,526287044,USED,valid_register_client_with_partner,66f5c2f8-dc72-4607-b758-f64caaf18f85,526288340,2026-07-08 20:59:59,2026-07-08 21:00:05,SC827 positive partner scenario pool
+25,dev11,526287052,USED,valid_register_client_with_partner,5f8c0cdb-0b82-4170-a7d8-852ecdf8797d,526288375,2026-07-08 21:26:01,2026-07-08 21:26:04,SC827 positive partner scenario pool
+26,dev11,526287060,USED,valid_register_client_with_partner,52039111-f8eb-499c-8f66-ac6468c81f10,526288412,2026-07-08 21:26:56,2026-07-08 21:27:01,SC827 positive partner scenario pool
+27,dev11,526287079,USED,valid_register_client_with_partner,ef95bb4d-19c8-4c81-9c72-160f49b3cc6f,526288404,2026-07-08 21:26:56,2026-07-08 21:27:01,SC827 positive partner scenario pool
+28,dev11,526287095,RESERVED,valid_register_client_with_partner,4aab6027-1567-41e9-a423-85ceaa0ac82d,,2026-07-08 23:46:45,,SC827 positive partner scenario pool
+29,dev11,526287108,RESERVED,valid_register_client_with_partner,aa39ae61-3705-446f-ba03-69c1e06d9ff3,,2026-07-08 23:46:45,,SC827 positive partner scenario pool
+30,dev11,526287116,USED,valid_register_client_with_partner,35970edd-bc15-4c2f-95fc-7079dcc27abd,526288631,2026-07-08 23:49:01,2026-07-08 23:49:07,SC827 positive partner scenario pool
+31,dev11,526287124,USED,valid_register_client_with_partner,03539a7a-6236-4f34-bda4-2e6ff0b36bd4,526288623,2026-07-08 23:49:01,2026-07-08 23:49:07,SC827 positive partner scenario pool
+32,dev11,526287140,USED,valid_register_client_with_partner,90b0f8c2-77a6-4f28-a580-d2d6553b2407,526288674,2026-07-09 00:10:28,2026-07-09 00:10:31,SC827 positive partner scenario pool
+33,dev11,526287159,RESERVED,valid_register_client_with_partner,f75e2170-4b89-46c5-ae8d-b286884bfffc,,2026-07-09 01:02:21,,SC827 positive partner scenario pool
+34,dev11,526287167,RESERVED,valid_register_client_with_partner,78c49773-7ca9-40cb-84b0-1f7a6aaa770c,,2026-07-09 01:02:21,,SC827 positive partner scenario pool
+35,dev11,526280225,USED,valid_register_client_with_partner,85ae8db2-6624-49bc-9788-0d674e9a5b5d,526288930,2026-07-09 01:52:45,2026-07-09 01:52:49,Clean unlinked partner client for SC827 comparison testing
+36,dev11,526280238,USED,valid_register_client_with_partner,1db74f60-883a-4533-a7dd-30f64954a5b8,526288922,2026-07-09 01:52:45,2026-07-09 01:52:49,Clean unlinked partner client for SC827 comparison testing
+37,dev11,526280246,USED,valid_register_client_with_partner,2ccc1dfd-36cc-4e6a-bcbd-b8d7bea3e9b7,526288973,2026-07-09 01:53:54,2026-07-09 01:53:57,Clean unlinked partner client for SC827 comparison testing
+38,dev11,526280262,RESERVED,valid_register_client_with_partner,924c5b42-0dc7-476c-9786-05e9cfd85afd,,2026-07-19 21:33:36,,Clean unlinked partner client for SC827 comparison testing
+39,dev11,526280270,RESERVED,valid_register_client_with_partner,51a7bccc-f0b1-4198-b960-3a94e7fbf1f4,,2026-07-19 21:33:36,,Clean unlinked partner client for SC827 comparison testing
+45,dev11,526285125,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-23 01:09:09,,Clean unlinked partner client for SC827 comparison testing
+46,dev11,526285138,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-23 01:09:09,,Clean unlinked partner client for SC827 comparison testing
+47,dev11,526285146,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-23 01:10:45,,Clean unlinked partner client for SC827 comparison testing
+48,dev11,526285154,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-23 01:10:45,,Clean unlinked partner client for SC827 comparison testing
+49,dev11,526285162,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-23 02:01:15,,Clean unlinked partner client for SC827 comparison testing
+77,dev11,526294274,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-27 03:02:53,,SC827 positive partner scenario pool
+78,dev11,526294389,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-07-27 03:02:53,,SC827 positive partner scenario pool
+79,dev11,526294434,AVAILABLE,,,,,,SC827 positive partner scenario pool
+80,dev11,526294493,AVAILABLE,,,,,,SC827 positive partner scenario pool
+81,dev11,526294522,AVAILABLE,,,,,,SC827 positive partner scenario pool
+82,dev11,526294595,AVAILABLE,,,,,,SC827 positive partner scenario pool
+83,dev11,526294645,AVAILABLE,,,,,,SC827 positive partner scenario pool
+84,dev11,526294696,AVAILABLE,,,,,,SC827 positive partner scenario pool
+85,dev11,526294755,AVAILABLE,,,,,,SC827 positive partner scenario pool
+86,dev11,526294776,AVAILABLE,,,,,,SC827 positive partner scenario pool
+87,dev11,526294848,AVAILABLE,,,,,,SC827 positive partner scenario pool
+88,dev11,526294899,AVAILABLE,,,,,,SC827 positive partner scenario pool
+89,dev11,526294944,AVAILABLE,,,,,,SC827 positive partner scenario pool
+90,dev11,526294995,AVAILABLE,,,,,,SC827 positive partner scenario pool
+91,dev11,526295060,AVAILABLE,,,,,,SC827 positive partner scenario pool
+92,dev11,526295116,AVAILABLE,,,,,,SC827 positive partner scenario pool
+93,dev11,526295167,AVAILABLE,,,,,,SC827 positive partner scenario pool
+94,dev11,526295212,AVAILABLE,,,,,,SC827 positive partner scenario pool
+95,dev11,526295255,AVAILABLE,,,,,,SC827 positive partner scenario pool
+96,dev11,526295298,AVAILABLE,,,,,,SC827 positive partner scenario pool
+97,dev11,526295343,AVAILABLE,,,,,,SC827 positive partner scenario pool
+98,dev11,526295378,AVAILABLE,,,,,,SC827 positive partner scenario pool
+99,dev11,526295415,AVAILABLE,,,,,,SC827 positive partner scenario pool
+100,dev11,526295511,AVAILABLE,,,,,,SC827 positive partner scenario pool
+101,dev11,526295554,AVAILABLE,,,,,,SC827 positive partner scenario pool
+102,dev11,526295570,AVAILABLE,,,,,,SC827 positive partner scenario pool
+103,dev11,526295626,AVAILABLE,,,,,,SC827 positive partner scenario pool
+104,dev11,526295677,AVAILABLE,,,,,,SC827 positive partner scenario pool
+105,dev11,526295706,AVAILABLE,,,,,,SC827 positive partner scenario pool
+106,u11,526482322,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-08-19 21:45:52,,
+107,u11,526482349,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-08-19 21:45:52,,
+108,u11,526482357,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-08-25 01:56:07,,
+109,u11,526482437,RESERVED,valid_register_client_with_partner,fb43edd1-87f3-5c6e-9d0e-302f62e6c218,,2026-08-25 01:56:07,,
+110,u11,526482445,AVAILABLE,,,,,,
+111,u11,526482461,AVAILABLE,,,,,,
+112,u11,526482479,AVAILABLE,,,,,,
+113,u11,526482488,AVAILABLE,,,,,,
+114,u11,526482496,AVAILABLE,,,,,,
+115,u11,526482509,AVAILABLE,,,,,,
+116,u11,526482517,AVAILABLE,,,,,,
+117,u11,526482525,AVAILABLE,,,,,,
+118,u11,526482533,AVAILABLE,,,,,,
+119,u11,526482541,AVAILABLE,,,,,,
+120,u11,526482559,AVAILABLE,,,,,,
+121,u11,526482576,AVAILABLE,,,,,,
+122,u11,526482584,AVAILABLE,,,,,,
+123,u11,526482592,AVAILABLE,,,,,,
+124,u11,526482605,AVAILABLE,,,,,,
+125,u11,526482613,AVAILABLE,,,,,,
+126,u11,526482621,AVAILABLE,,,,,,
+127,u11,526482639,AVAILABLE,,,,,,
+128,u11,526482648,AVAILABLE,,,,,,
+129,u11,526482656,AVAILABLE,,,,,,
+130,u11,526482664,AVAILABLE,,,,,,
+131,u11,526482672,AVAILABLE,,,,,,
+132,u11,526482680,AVAILABLE,,,,,,
+133,u11,526482699,AVAILABLE,,,,,,
+134,u11,526482701,AVAILABLE,,,,,,
+135,u11,526482719,AVAILABLE,,,,,,
+136,u11,526482728,AVAILABLE,,,,,,
+137,u11,526482736,AVAILABLE,,,,,,
+138,u11,526482744,AVAILABLE,,,,,,
+139,u11,526482752,AVAILABLE,,,,,,
+140,u11,526482760,AVAILABLE,,,,,,
+141,u11,526482779,AVAILABLE,,,,,,
+142,u11,526482787,AVAILABLE,,,,,,
+143,u11,526482795,AVAILABLE,,,,,,
+144,u11,526482808,AVAILABLE,,,,,,
+145,u11,526482816,AVAILABLE,,,,,,
+146,u11,526482824,AVAILABLE,,,,,,
+147,u11,526482832,AVAILABLE,,,,,,
+148,u11,526482840,AVAILABLE,,,,,,
+149,u11,526482859,AVAILABLE,,,,,,
+150,u11,526482867,AVAILABLE,,,,,,
+151,u11,526482875,AVAILABLE,,,,,,
+152,u11,526482883,AVAILABLE,,,,,,
+153,u11,526482891,AVAILABLE,,,,,,
+154,u11,526482904,AVAILABLE,,,,,,
+155,u11,526482912,AVAILABLE,,,,,,
+156,u11,526482920,AVAILABLE,,,,,,
+157,u11,526482939,AVAILABLE,,,,,,
+158,u11,526482947,AVAILABLE,,,,,,
+159,u11,526482955,AVAILABLE,,,,,,
+160,u11,526482963,AVAILABLE,,,,,,
+161,u11,526482971,AVAILABLE,,,,,,
+162,u11,526482989,AVAILABLE,,,,,,
+163,u11,526482998,AVAILABLE,,,,,,
+164,u11,526483004,AVAILABLE,,,,,,
+165,u11,526483012,AVAILABLE,,,,,,
+166,u11,526483020,AVAILABLE,,,,,,
+167,u11,526483039,AVAILABLE,,,,,,
+168,u11,526483047,AVAILABLE,,,,,,
+169,u11,526483055,AVAILABLE,,,,,,
+170,u11,526483063,AVAILABLE,,,,,,
+171,u11,526483071,AVAILABLE,,,,,,
+172,u11,526483089,AVAILABLE,,,,,,
+173,u11,526483098,AVAILABLE,,,,,,
+174,u11,526483100,AVAILABLE,,,,,,
+175,u11,526483119,AVAILABLE,,,,,,
+176,u11,526483127,AVAILABLE,,,,,,
+177,u11,526483135,AVAILABLE,,,,,,
+178,u11,526483143,AVAILABLE,,,,,,
+179,u11,526483151,AVAILABLE,,,,,,
+180,u11,526483169,AVAILABLE,,,,,,
+181,u11,526483178,AVAILABLE,,,,,,
+182,u11,526483186,AVAILABLE,,,,,,
+183,u11,526483194,AVAILABLE,,,,,,
+184,u11,526483207,AVAILABLE,,,,,,
+185,u11,526483215,AVAILABLE,,,,,,
+186,u11,526483282,AVAILABLE,,,,,,
+187,u11,526483290,AVAILABLE,,,,,,
+188,u11,526483311,AVAILABLE,,,,,,
+189,u11,526483329,AVAILABLE,,,,,,
+190,u11,526483338,AVAILABLE,,,,,,
+191,u11,526483346,AVAILABLE,,,,,,
+192,u11,526483354,AVAILABLE,,,,,,
+193,u11,526483362,AVAILABLE,,,,,,
+194,u11,526483370,AVAILABLE,,,,,,
+195,u11,526483389,AVAILABLE,,,,,,
+196,u11,526483397,AVAILABLE,,,,,,
+197,u11,526483409,AVAILABLE,,,,,,
+198,u11,526483418,AVAILABLE,,,,,,
+199,u11,526483426,AVAILABLE,,,,,,
+200,u11,526483434,AVAILABLE,,,,,,
+201,u11,526483442,AVAILABLE,,,,,,
+202,u11,526483450,AVAILABLE,,,,,,
+203,u11,526483469,AVAILABLE,,,,,,
+204,u11,526483477,AVAILABLE,,,,,,
+205,u11,526483493,AVAILABLE,,,,,,

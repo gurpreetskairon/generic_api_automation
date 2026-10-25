@@ -1,0 +1,3 @@
+ID,ENVIRONMENT,CONDITION,USER_TYPE,USER_ID,BUSINESS_KEY,OTP,SOURCE_SYSTEM,IP_ADDRESS,SESSION_IDENTIFIER
+1,dev11,maximum_attempts_exceeded,provider,tbau0005,IUlw369153,#b3S3=8,UPA,201.33.54.1,VJMockSession
+2,dev11,user_temporarily_locked,provider,tbau0005,IUlw369153,#b3S3=8,UPA,201.33.54.1,VJMockSession

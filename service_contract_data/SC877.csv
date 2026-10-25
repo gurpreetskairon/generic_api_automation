@@ -1,0 +1,5 @@
+ENVIRONMENT,CONDITION,CLIENT_NUMBER
+dev11,successful_transaction,526291731
+dev11,unsuccessful_transaction,526346987
+dev11,client_not_recognised,000000000
+dev11,cnp_id_not_recognised,526291731

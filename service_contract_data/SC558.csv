@@ -1,0 +1,4 @@
+ID,ENVIRONMENT,CONDITION,SOURCE_PAYMENT_REFERENCE
+2,dev11,unrecognised_payment_reference,1002976076810029760768
+3,dev11,invalid_xml,10029760768a
+4,dev11,successful_payment_details,10029760768

@@ -1,0 +1,5 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,CALLBACK_ADDRESS
+1,dev11,no_further_action,526349770,http://localhost:8088/teamworks/webservices/MSD_TAS/RegrantAssistanceCallbackWS.tws
+2,dev11,further_action_required,526339661,http://localhost:8088/teamworks/webservices/MSD_TAS/RegrantAssistanceCallbackWS.tws
+3,dev11,transaction_unsuccessful,526339661,http://localhost:8088/teamworks/webservices/MSD_TAS/RegrantAssistanceCallbackWS.tws
+4,dev11,assistance_not_regranted,526339661,http://localhost:8088/teamworks/webservices/MSD_TAS/RegrantAssistanceCallbackWS.tws

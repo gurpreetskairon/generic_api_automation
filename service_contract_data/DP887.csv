@@ -1,0 +1,15 @@
+ID,ENVIRONMENT,CONDITION,CASE_REFERENCES,INCLUDE_APPLICATION_OBLIGATION,INCLUDE_EVIDENCE_LIST,INCLUDE_PARTNER,INCLUDE_POTENTIAL_OBLIGATION,INCLUDE_PRE_BENEFIT_ACTIVITY,INCLUDE_APPLICATION_APPOINTMENT,INCLUDE_APPLICATION_VERIFICATION,INCLUDE_APPLICATION_CHANGE_TYPE
+1,dev11,ongoing_application_found,90051951,true,true,true,true,true,true,true,true
+2,dev11,no_primary_application_obligation,90041974,true,true,true,true,true,true,true,true
+3,dev11,no_partner_application_obligation,4139716,true,true,true,true,true,true,true,true
+4,dev11,no_partner_in_application,90041974,true,true,true,true,true,true,true,true
+5,dev11,no_primary_supporting_document,90041974,true,true,true,true,true,true,true,true
+6,dev11,no_partner_supporting_document,4139716,true,true,true,true,true,true,true,true
+7,dev11,no_primary_document_evidence,90041974,true,true,true,true,true,true,true,true
+8,dev11,no_partner_document_evidence,90059330,true,true,true,true,true,true,true,true
+9,dev11,no_primary_work_obligation,90058268,true,true,true,true,true,true,true,true
+10,dev11,no_partner_work_obligation,90043692,true,true,true,true,true,true,true,true
+11,dev11,no_primary_pre_benefit_activity,90041974,true,true,true,true,true,true,true,true
+12,dev11,no_partner_pre_benefit_activity,4138334,true,true,true,true,true,true,true,true
+13,dev11,no_primary_appointments,,true,true,true,true,true,true,true,true
+14,dev11,invalid_request,,true,true,true,true,true,true,true,true

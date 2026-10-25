@@ -1,0 +1,9 @@
+{
+    "serviceResults": [
+        {
+            "result": "API-01",
+            "message": "Validation error",
+            "resultDescription": "Payload is empty; Please refer to the specification"
+        }
+    ]
+}

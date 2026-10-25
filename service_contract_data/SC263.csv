@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,TOKEN_TYPE
+1,dev11,successful_response,526339602,Voice
+2,dev11,invalid_token_type,526339602,INVALID
+3,dev11,invalid_client_number_format,INVALID,Voice
+4,dev11,authentication_failed,526339602,Voice
+5,dev11,unexpected_exception,526339602,Voice

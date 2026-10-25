@@ -1,0 +1,143 @@
+{
+
+    "identities": [
+      {
+        "identifier": "623130813",
+        "type": {
+          "code": "CLIENTNUMBER",
+          "description": "Client Number"
+        }
+      }
+    ],
+    "hasSEPProfile": false,
+    "dateOfBirth": "2020-07-03",
+    "countryOfBirth": {
+      "code": "NZ",
+      "description": "New Zealand"
+    },
+    "gender": {
+      "code": "FEMALE",
+      "description": "Female"
+    },
+    "ethnicity": {
+      "code": "MSD61118",
+      "description": "New Zealander"
+    },
+    "maritalStatus": {
+      "code": "SNGL",
+      "description": "Single"
+    },
+    "status": {
+      "type": {
+        "code": "ACTIVE",
+        "description": "Active"
+      }
+    },
+    "secured": {
+      "effective": {},
+      "isSecured": false,
+      "reasons": []
+    },
+    "names": [
+      {
+        "lastName": "Wilson",
+        "firstName": "Olivia",
+        "middleName": "",
+        "period": {
+          "start": "2025-07-03"
+        },
+        "type": {
+          "code": "RGST",
+          "description": "Registered"
+        }
+      }
+    ],
+    "contacts": [
+      {
+        "contactId": "-345756824516952064",
+        "type": {
+          "code": "ADDRESS",
+          "description": "Physical Address"
+        },
+        "usage": {
+          "code": "RESIDENTIAL",
+          "description": "Residential"
+        },
+        "primacy": "PREFERRED",
+        "address": {
+          "careOfAddressee": "",
+          "line1": "56 The Terrace",
+          "line2": "",
+          "line3": "",
+          "line4": "",
+          "city": "Wellington",
+          "postalCode": "6011",
+          "suburb": "Wellington Central",
+          "country": "New Zealand",
+          "countryCode": "NZ",
+          "addressId": 15692
+        },
+        "period": {
+          "start": "2025-07-03"
+
+        }
+      },
+      {
+        "contactId": "-2903801412863393792",
+        "type": {
+          "code": "EMAIL",
+          "description": "Home"
+        },
+        "usage": {
+          "code": "HOME",
+          "description": "Home"
+        },
+        "primacy": "PREFERRED",
+        "email": {
+          "emailAddress": "invalid@mail.com"
+        },
+        "period": {
+          "start": "2025-07-03"
+
+        }
+      }
+    ],
+    "residencies": [
+      {
+        "category": {
+          "code": "NZCI",
+          "description": "New Zealand Citizen"
+        },
+        "country": {
+          "code": "NZ",
+          "description": "New Zealand"
+        },
+        "effective": {
+          "start": "2020-07-03"
+        }
+      }
+    ],
+    "firstNZArrival": {
+      "country": {
+        "code": "NZ",
+        "description": "New Zealand"
+      },
+      "entryDate": "2020-07-03"
+    },
+    "ordinarilyResidentNZ": {
+      "isOrdinarilyResidentInNZ": true,
+      "effective": {
+        "start": "2020-07-03"
+      }
+    },
+    "languages": [
+      {
+        "type": {
+          "code": "LN1",
+          "description": "English"
+        },
+        "isPreferred": true
+      }
+    ]
+
+}

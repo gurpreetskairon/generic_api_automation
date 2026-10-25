@@ -1,0 +1,6 @@
+ENVIRONMENT,CONDITION,CLIENT_NUMBER,MEDICAL_CERTIFICATE_IDENTIFIER
+dev11,successful_transaction,440735651,MSD-3133352
+dev11,user_not_recognised,123456789,MSD-63247
+dev11,medical_certificate_not_recognised,123456789,MSD-63247
+dev11,certificate_linked_to_different_client,021455520,MSD-3133352
+dev11,client_locked_duplicate_fraud,526285736,MSD-3133352

@@ -1,0 +1,3 @@
+ENVIRONMENT,CONDITION,CAMPAIGN_NAME
+dev11,successful_transaction,SwaggerCamp1
+dev11,invalid_request,SwaggerCamp12222222

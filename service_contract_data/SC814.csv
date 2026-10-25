@@ -1,0 +1,11 @@
+ID,ENVIRONMENT,CONDITION,START_DATE,END_DATE,PAYCYCLE_CODE,COUNTRY_CODES
+1,dev11,successful_paycycle_0,2026-06-01,2026-08-13,0,UK
+2,dev11,successful_paycycle_1,2026-06-01,2026-08-13,1,UK
+3,dev11,successful_paycycle_2,2026-06-01,2026-08-13,2,UK
+4,dev11,successful_paycycle_3,2026-06-01,2026-08-13,3,UK
+5,dev11,successful_paycycle_4,2026-06-01,2026-08-13,4,UK
+6,dev11,successful_paycycle_5,2026-06-01,2026-08-13,5,UK
+7,dev11,no_exchange_rates,2026-06-01,2026-08-13,3,AU
+8,dev11,invalid_country_code,2026-06-01,2026-08-13,3,ZZ
+9,dev11,invalid_paycycle_code,2026-06-01,2026-08-13,99,UK
+10,dev11,invalid_date_range,2026-08-13,2026-06-01,3,AU

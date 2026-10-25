@@ -1,0 +1,727 @@
+SC814:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/base/payment/service/inquirepayment/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/base/payment/schema/paymentmessage/v1" xmlns:v13="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v14="http://msd.govt.nz/integration/base/payment/schema/payment/v1">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <v1:inquirePaymentRequest>
+            <v11:header>
+                <v11:action>INQUIREEXCHANGERATE</v11:action>
+                <v11:auditId>${=UUID.randomUUID()}</v11:auditId>
+                <v11:requestDateTime>${=new java.text.SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss'Z'").format(new Date())}</v11:requestDateTime>
+                <v11:sourceSystem>BPM</v11:sourceSystem>
+                <v11:transactionId>${=UUID.randomUUID()}</v11:transactionId>
+                <v11:messageType>REQUEST</v11:messageType>
+                <v11:securityToken>
+                    <v11:id>abcd001</v11:id>
+                    <v11:type>USER</v11:type>
+                </v11:securityToken>
+                <v11:interactionPattern>REQUEST_RESPONSE</v11:interactionPattern>
+            </v11:header>
+            <v12:data>
+                <v12:payPeriodSearch>
+                    <v12:effective>
+                        <v13:end>2010-06-19</v13:end>
+                        <v13:start>2008-06-01</v13:start>
+                    </v12:effective>
+                    <v12:country>
+                        <v13:isoAlpha2Code>AU</v13:isoAlpha2Code>
+                    </v12:country>
+                    <v12:country>
+                        <v13:isoAlpha2Code>UK</v13:isoAlpha2Code>
+                    </v12:country>
+                    <v12:paycycleType>
+                        <v14:code>3</v14:code>
+                    </v12:paycycleType>
+                </v12:payPeriodSearch>
+                <v12:payPeriodSearch>
+                    <v12:effective>
+                        <v13:end>2013-06-19</v13:end>
+                        <v13:start>2010-06-20</v13:start>
+                    </v12:effective>
+                    <v12:country>
+                        <v13:isoAlpha2Code>AU</v13:isoAlpha2Code>
+                    </v12:country>
+                    <v12:country>
+                        <v13:isoAlpha2Code>US</v13:isoAlpha2Code>
+                    </v12:country>
+                    <v12:paycycleType>
+                        <v14:code>3</v14:code>
+                    </v12:paycycleType>
+                </v12:payPeriodSearch>
+            </v12:data>
+        </v1:inquirePaymentRequest>
+    </soapenv:Body>
+</soapenv:Envelope>
+SC856:
+<v1:inquirePaymentRequest xmlns:v1="http://msd.govt.nz/integration/base/payment/service/inquirepayment/v1" xmlns:v11="http://msd.govt.nz/integration/utils/technical/schema/messaging/v1" xmlns:v12="http://msd.govt.nz/integration/base/payment/schema/paymentmessage/v1" xmlns:v13="http://msd.govt.nz/integration/utils/technical/schema/value/v1" xmlns:v14="http://msd.govt.nz/integration/base/payment/schema/payment/v1">
+    <v11:header>
+        <v11:action>INQUIREEXCHANGERATE</v11:action>
+        <v11:auditId>InquirePaymentRequestMQ_81400_auditId${=UUID.randomUUID()}</v11:auditId>
+        <v11:requestDateTime>2013-06-19T14:13:51.0Z</v11:requestDateTime>
+        <v11:sourceSystem>BPM</v11:sourceSystem>
+        <v11:transactionId>InquirePaymentRequestMQ_81400_transactionId${=UUID.randomUUID()}</v11:transactionId>
+        <v11:messageType>REQUEST</v11:messageType>
+        <v11:securityToken>
+            <v11:id>rhanc004</v11:id>
+            <v11:type>USER</v11:type>
+        </v11:securityToken>
+        <v11:interactionPattern>REQUEST_RESPONSE</v11:interactionPattern>
+    </v11:header>
+    <v12:data>
+        <v12:payPeriodSearch>
+            <v12:effective>
+                <v13:end>2010-06-19</v13:end>
+                <v13:start>2008-06-01</v13:start>
+            </v12:effective>
+            <v12:country>
+                <v13:isoAlpha2Code>AU</v13:isoAlpha2Code>
+            </v12:country>
+            <v12:country>
+                <v13:isoAlpha2Code>UK</v13:isoAlpha2Code>
+            </v12:country>
+            <v12:paycycleType>
+                <v14:code>3</v14:code>
+            </v12:paycycleType>
+        </v12:payPeriodSearch>
+        <v12:payPeriodSearch>
+            <v12:effective>
+                <v13:end>2013-06-19</v13:end>
+                <v13:start>2010-06-20</v13:start>
+            </v12:effective>
+            <v12:country>
+                <v13:isoAlpha2Code>AU</v13:isoAlpha2Code>
+            </v12:country>
+            <v12:country>
+                <v13:isoAlpha2Code>US</v13:isoAlpha2Code>
+            </v12:country>
+            <v12:paycycleType>
+                <v14:code>3</v14:code>
+            </v12:paycycleType>
+        </v12:payPeriodSearch>
+    </v12:data>
+</v1:inquirePaymentRequest>
+
+SC512:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v4.x/common" xmlns:pay1="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken wsu:Id="UsernameToken-11080001" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:validatePaymentInstructionRqst>
+            <com:correlationId>validatePaymentInstruction_2013_11_05_15_01_813_0001</com:correlationId>
+            <com:transactionId>validatePaymentInstruction_2013_11_05_15_01_813_0001</com:transactionId>
+            <com:sourceSystem>CMS</com:sourceSystem>
+            <com:dateTime>2012-04-01T12:00:00</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>cshuk003</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <cardNumber>5035137000006526</cardNumber>
+            <paymentInstruction>
+                <pay1:paymentAmount>600</pay1:paymentAmount>
+                <pay1:paymentExpiryDate>2013-08-01T12:00:00</pay1:paymentExpiryDate>
+            </paymentInstruction>
+            <paymentInstruction>
+                <pay1:paymentAmount>50</pay1:paymentAmount>
+                <pay1:paymentExpiryDate>2012-03-04T12:00:00</pay1:paymentExpiryDate>
+            </paymentInstruction>
+        </pay:validatePaymentInstructionRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC547:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v4.x/common" xmlns:pay1="http://msd.govt.nz/integration/finance/v1.x/PaymentCard" xmlns:par="http://msd.govt.nz/integration/v4.x/partyRole" xmlns:emp="http://msd.govt.nz/integration/v4.x/employee">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:updatePaymentRqst>
+            <com:correlationId>UP100</com:correlationId>
+            <com:transactionId>SC547_update</com:transactionId>
+            <com:sourceSystem>SWIFTT</com:sourceSystem>
+            <com:dateTime>2012-06-01T12:00:00</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>cshuk003</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <cardNumber>5035137000005965</cardNumber>
+            <instruction>
+                <pay1:allocationIndex>1</pay1:allocationIndex>
+                <pay1:debitAccountCode>CR</pay1:debitAccountCode>
+                <pay1:createdDate>2012-06-01T12:00:00</pay1:createdDate>
+                <pay1:paymentAmount>10000</pay1:paymentAmount>
+                <pay1:paymentExpiryDate>2013-06-01T12:00:00</pay1:paymentExpiryDate>
+                <pay1:merchantRestriction>0000000100000000</pay1:merchantRestriction>
+                <pay1:amountSpent>0</pay1:amountSpent>
+                <pay1:reconciliationReference>${=System.currentTimeMillis()}</pay1:reconciliationReference>
+                <pay1:sourcePaymentReference>1330469396254</pay1:sourcePaymentReference>
+                <pay1:disabled>false</pay1:disabled>
+            </instruction>
+        </pay:updatePaymentRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC549:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken>
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password>password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:provideCardRqst xmlns:emp="http://msd.govt.nz/integration/v4.x/employee" xmlns:pay1="http://msd.govt.nz/integration/finance/v1.x/PaymentCard" xmlns:com="http://msd.govt.nz/integration/v4.x/common" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:par="http://msd.govt.nz/integration/v4.x/partyRole" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService file:../../../../interfaces/wsdls/finance-services/samples-v1.x/PaymentCard.xsd">
+            <com:correlationId>PC101</com:correlationId>
+            <com:transactionId>SC549_ProvidePaymentCard</com:transactionId>
+            <com:sourceSystem>CMS</com:sourceSystem>
+            <com:dateTime>2012-05-04T18:13:51.0Z</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>PCM_TEST_USER</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <clientNumber>222222223</clientNumber>
+            <paymentCard>
+                <pay1:cardNumber>5035137000005254</pay1:cardNumber>
+                <pay1:expiryDate>2012-05-04T18:13:51.0Z</pay1:expiryDate>
+                <pay1:pinRequired>true</pay1:pinRequired>
+                <pay1:signatureRequired>false</pay1:signatureRequired>
+                <pay1:pinNumber>1993</pay1:pinNumber>
+                <pay1:blocked>true</pay1:blocked>
+                <pay1:blockedReason>LOST</pay1:blockedReason>
+            </paymentCard>
+        </pay:provideCardRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC559:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v4.x/common">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <ns2:notifyExpiredPaymentRqst xmlns="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:ns2="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:ns3="http://msd.govt.nz/integration/v4.x/common" xmlns:ns0="http://msd.govt.nz/integration/finance/v1.x/PaymentCard" xmlns:ns5="http://msd.govt.nz/integration/v4.x/partyRole" xmlns:ns4="http://msd.govt.nz/integration/v4.x/employee">
+            <ns3:correlationId>SC559-notifyExpiredPayments_success</ns3:correlationId>
+            <ns3:transactionId>SC559_notifyExpiredPayments_success</ns3:transactionId>
+            <ns3:sourceSystem>EFTPOS_GATEWAY</ns3:sourceSystem>
+            <ns3:dateTime>2024-12-02T12:32:20.608Z</ns3:dateTime>
+            <targetSystem xmlns="">CMS</targetSystem>
+            <instruction xmlns="">
+                <ns0:amountSpent>20000</ns0:amountSpent>
+                <ns0:expiryNotifiedDate>2024-12-02T12:32:20.608Z</ns0:expiryNotifiedDate>
+                <ns0:sourcePaymentReference>10027070196</ns0:sourcePaymentReference>
+            </instruction>
+        </ns2:notifyExpiredPaymentRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+sc558:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v4.x/common">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:getPaymentDetailRqst>
+            <com:correlationId>SC558_test_corrId_1</com:correlationId>
+            <com:transactionId>SC558_test_transId_1</com:transactionId>
+            <com:sourceSystem>CMS</com:sourceSystem>
+            <com:dateTime>2007-10-26T19:36:29</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>appuser</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <sourcePaymentReference>120</sourcePaymentReference>
+        </pay:getPaymentDetailRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC560:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v2.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v6.x/common" xmlns:cas="http://msd.govt.nz/integration/finance/v2.x/caseFinancial" xmlns:prod="http://msd.govt.nz/integration/productAndServices/v2.x/productAndService" xmlns:par="http://msd.govt.nz/integration/party/v2.x/partyRole" xmlns:con="http://msd.govt.nz/integration/contactsLocations/v2.x/contact">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:setPaymentCardPinRqst>
+            <com:correlationId>2344342343</com:correlationId>
+            <com:transactionId>SC560v2_SetPaymentCardPIN_request</com:transactionId>
+            <com:sourceSystem>MYMSD</com:sourceSystem>
+            <com:dateTime>2023-09-14T12:00:00</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>rcoet001</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <paymentCard>
+                <cas:cardNumber>1040000533921277526</cas:cardNumber>
+                <cas:expiryDate>2023-12-31T23:59:59</cas:expiryDate>
+                <cas:authentication>
+                    <cas:pinBlock>ZEiFFI1x8k9G5Wt0EbF16tpKVHFvn3kgyEOM8hA38pE=</cas:pinBlock>
+                    <cas:initVector>666JuLdPNycPRENEqS5Wag==</cas:initVector>
+                    <cas:encryptedKey>iXouSx2XgXycgmW5TzNSkJQIoAwVcDyji1Ab000sVfhWTFmk9Y1nO8E+XJ7G2AOiVxAEF4I0GxKSU0LnJJCECVitMi+eaHIei7iUKVfevpE8hFTrlQYoXhJA2ecf6rvvyzAg5ED8lKIVFKe5InbDD82eJb0o9bwIEF5QSj+RtvCemTZflFZmzz2stzSjeAaKC7owVPE3HxDeOm+/Dm/DbxYq4eerfNzgYZEJSKLHfmXoRS5JY4NrXlpRg8WRt0VIvIfWfDivfkihXb5/fUNxyD/dNG8p5gSb0C6x+KOMGD4qfD8tiYvlQw+UeNgp0Lh/LjgIokNkxH6UaFPJGSgCJg==</cas:encryptedKey>
+                </cas:authentication>
+            </paymentCard>
+        </pay:setPaymentCardPinRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+sc556:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v4.x/common" xmlns:pay1="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:getCardTransactionRqst>
+            <com:correlationId>getCardTransaction_2013_11_05_14_59_446_0036</com:correlationId>
+            <com:transactionId>SC556_getCardTransaction</com:transactionId>
+            <com:sourceSystem>CMS</com:sourceSystem>
+            <com:dateTime>2012-04-01T12:00:00</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>cshuk003</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <cardNumber>5035137000006526</cardNumber>
+            <transactionPeriod>
+                <com:startDate>2013-01-01T00:00:00</com:startDate>
+                <com:endDate>2014-12-31T23:59:59</com:endDate>
+            </transactionPeriod>
+        </pay:getCardTransactionRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC557v2:
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+    <env:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </env:Header>
+    <env:Body>
+        <s1:getCardDetailRqst xmlns:addr="http://msd.govt.nz/integration/contactsLocations/v2.x/address" xmlns:com="http://msd.govt.nz/integration/v6.x/common" xmlns:cont="http://msd.govt.nz/integration/contactsLocations/v2.x/contact" xmlns:csf="http://msd.govt.nz/integration/finance/v2.x/caseFinancial" xmlns:par="http://msd.govt.nz/integration/party/v2.x/partyRole" xmlns:ps="http://msd.govt.nz/integration/productAndServices/v2.x/productAndService" xmlns:s1="http://msd.govt.nz/integration/finance/v2.x/PaymentCardWebService" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://msd.govt.nz/integration/finance/v2.x/PaymentCardWebService PaymentCard.xsd">
+            <com:correlationId>SC557v2_getCardDetails</com:correlationId>
+            <com:sourceSystem>CMS</com:sourceSystem>
+            <com:dateTime>2012-02-14T12:00:00</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken xsi:type="com:SecurityToken">
+                    <com:id>rcoet001</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <paymentCard>
+                <csf:cardNumber>5035137023292665</csf:cardNumber>
+                <csf:partyAssociation>
+                    <csf:partyRoleType>
+                        <com:code>CardHolder</com:code>
+                    </csf:partyRoleType>
+                    <csf:party xsi:type="par:Party">
+                        <par:role xsi:type="par:Client">
+                            <par:clientNumber>111222333</par:clientNumber>
+                        </par:role>
+                    </csf:party>
+                </csf:partyAssociation>
+            </paymentCard>
+        </s1:getCardDetailRqst>
+    </env:Body>
+</env:Envelope>
+
+sc510:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:allocateCardRqst xmlns:emp="http://msd.govt.nz/integration/v4.x/employee" xmlns:pay1="http://msd.govt.nz/integration/finance/v1.x/PaymentCard" xmlns:com="http://msd.govt.nz/integration/v4.x/common" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService" xmlns:par="http://msd.govt.nz/integration/v4.x/partyRole" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService file:../../../../interfaces/wsdls/finance-services/samples-v1.x/PaymentCard.xsd">
+            <com:correlationId>SC510_allocatePaymentCard_request</com:correlationId>
+            <com:transactionId>SC510_allocatePaymentCard_request</com:transactionId>
+            <com:sourceSystem>CMS</com:sourceSystem>
+            <com:dateTime>2025-02-27T23:33:48.597Z</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>rcoet001</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <clientNumber>021513780</clientNumber>
+            <paymentCard>
+                <pay1:cardNumber>5035137000006229</pay1:cardNumber>
+                <pay1:expiryDate>2050-12-31T00:00:00.0Z</pay1:expiryDate>
+                <pay1:pinRequired>true</pay1:pinRequired>
+                <pay1:signatureRequired>false</pay1:signatureRequired>
+                <pay1:pinNumber>1993</pay1:pinNumber>
+                <pay1:blocked>false</pay1:blocked>
+            </paymentCard>
+        </pay:allocateCardRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC511:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <addPaymentRqst xmlns="http://msd.govt.nz/integration/finance/v1.x/PaymentCardWebService">
+            <ns1:correlationId xmlns:ns1="http://msd.govt.nz/integration/v4.x/common">SC511_test_corrId_2</ns1:correlationId>
+            <ns2:transactionId xmlns:ns2="http://msd.govt.nz/integration/v4.x/common">SC511_addPayment-request</ns2:transactionId>
+            <ns3:sourceSystem xmlns:ns3="http://msd.govt.nz/integration/v4.x/common">CMS</ns3:sourceSystem>
+            <ns4:dateTime xmlns:ns4="http://msd.govt.nz/integration/v4.x/common">2013-07-30T04:28:00.000Z</ns4:dateTime>
+            <ns5:SecurityContext xmlns:ns5="http://msd.govt.nz/integration/v4.x/common"/>
+            <cardNumber xmlns="">5035137000006229</cardNumber>
+            <clientNumber xmlns="">021513780</clientNumber>
+            <paymentInstruction xmlns="">
+                <ns6:allocationIndex xmlns:ns6="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">1</ns6:allocationIndex>
+                <ns7:debitAccountCode xmlns:ns7="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">CR</ns7:debitAccountCode>
+                <pay:createdDate xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">2013-08-29T00:00:00.000Z</pay:createdDate>
+                <ns8:paymentAmount xmlns:ns8="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">30000</ns8:paymentAmount>
+                <ns9:paymentExpiryDate xmlns:ns9="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">2013-09-05T12:00:00.000Z</ns9:paymentExpiryDate>
+                <ns10:merchantRestriction xmlns:ns10="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">0000000000000001</ns10:merchantRestriction>
+                <ns12:disabled xmlns:ns12="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">false</ns12:disabled>
+                <pay:status xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">ACTIVE</pay:status>
+            </paymentInstruction>
+        </addPaymentRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC535:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <ns2:synchronisePaymentCardRqst xsi:schemaLocation="http://msd.govt.nz/integration/finance/v1.x/PaymentCardProxyWebService PaymentCardProxy.xsd" xmlns:ns1="http://msd.govt.nz/integration/v4.x/employee" xmlns:ns2="http://msd.govt.nz/integration/finance/v1.x/PaymentCardProxyWebService" xmlns:ns3="http://msd.govt.nz/integration/finance/v1.x/PaymentCard" xmlns:ns4="http://msd.govt.nz/integration/v4.x/common" xmlns:ns5="http://msd.govt.nz/integration/v4.x/partyRole" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+            <ns4:correlationId>${=context.correlationId}</ns4:correlationId>
+            <ns4:transactionId>${=context.transactionId}</ns4:transactionId>
+            <ns4:sourceSystem>CMS</ns4:sourceSystem>
+            <ns4:dateTime>${=context.a2atimestamp}</ns4:dateTime>
+            <ns4:SecurityContext>
+                <ns4:SecurityToken>
+                    <ns4:id>rcoet001</ns4:id>
+                </ns4:SecurityToken>
+            </ns4:SecurityContext>
+            <invocationStyle>asynchronous</invocationStyle>
+            <transactionCounter>1</transactionCounter>
+            <paymentCard>
+                <ns3:cardNumber>1234567890123456</ns3:cardNumber>
+                <ns3:expiryDate>2006-05-04T18:13:51.0Z</ns3:expiryDate>
+                <ns3:pinOffset>2222</ns3:pinOffset>
+                <ns3:pinRequired>false</ns3:pinRequired>
+                <ns3:signatureRequired>false</ns3:signatureRequired>
+                <ns3:blocked>false</ns3:blocked>
+                <ns3:paymentInstructions>
+                    <ns3:allocationIndex>1</ns3:allocationIndex>
+                    <ns3:debitAccountCode>999999</ns3:debitAccountCode>
+                    <ns3:gatewayPaymentReference>
+                        <ns4:sourceId>922337203</ns4:sourceId>
+                    </ns3:gatewayPaymentReference>
+                    <ns3:paymentAmount>10000</ns3:paymentAmount>
+                    <ns3:paymentExpiryDate>2006-05-04T18:13:51.0Z</ns3:paymentExpiryDate>
+                    <ns3:merchantRestriction>123123</ns3:merchantRestriction>
+                    <ns3:disabled>false</ns3:disabled>
+                </ns3:paymentInstructions>
+                <ns3:paymentInstructions>
+                    <ns3:allocationIndex>2</ns3:allocationIndex>
+                    <ns3:debitAccountCode>999999</ns3:debitAccountCode>
+                    <ns3:gatewayPaymentReference>
+                        <ns4:sourceId>922337203</ns4:sourceId>
+                    </ns3:gatewayPaymentReference>
+                    <ns3:paymentAmount>10000</ns3:paymentAmount>
+                    <ns3:paymentExpiryDate>2006-05-04T18:13:51.0Z</ns3:paymentExpiryDate>
+                    <ns3:merchantRestriction>123123</ns3:merchantRestriction>
+                    <ns3:disabled>false</ns3:disabled>
+                </ns3:paymentInstructions>
+                <ns3:paymentInstructions>
+                    <ns3:allocationIndex>2</ns3:allocationIndex>
+                    <ns3:debitAccountCode>999999</ns3:debitAccountCode>
+                    <ns3:gatewayPaymentReference>
+                        <ns4:sourceId>922337203</ns4:sourceId>
+                    </ns3:gatewayPaymentReference>
+                    <ns3:paymentAmount>10000</ns3:paymentAmount>
+                    <ns3:paymentExpiryDate>2006-05-04T18:13:51.0Z</ns3:paymentExpiryDate>
+                    <ns3:merchantRestriction>123123</ns3:merchantRestriction>
+                    <ns3:disabled>false</ns3:disabled>
+                    <ns3:transferredFrom>
+                        <ns3:cardNumber>1234567890123456</ns3:cardNumber>
+                    </ns3:transferredFrom>
+                </ns3:paymentInstructions>
+            </paymentCard>
+        </ns2:synchronisePaymentCardRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC539:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <wp:notifyPaymentTransactionRqst
+	xmlns:ct="urn:oasis:names:tc:ciq:ct:3"
+    	xmlns:xal="urn:oasis:names:tc:ciq:xal:3" 
+	xmlns:xprl="urn:oasis:names:tc:ciq:xprl:3"
+    	xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3" 
+	xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3"
+    	xmlns:xnal="NZL:govt:egu:xNAL:xNL-basic:version=3_3"
+    	xmlns:com="http://msd.govt.nz/external/v1.x/common"
+    	xmlns:wp="http://msd.govt.nz/external/westpac/v1.x/WestpacInflowWebService"
+    	xmlns:xlink="http://www.w3.org/1999/xlink" 
+	xmlns:pr="http://msd.govt.nz/external/v1.x/partyrole"
+    	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    	xsi:schemaLocation="http://msd.govt.nz/external/westpac/v1.x/WestpacInflowWebService file:../../../../interfaces/wsdls/westpac-services/samples-v1.x/WestpacInflow.xsd">
+            <com:correlationId>${=context.correlationId}</com:correlationId>
+            <com:transactionId>${=context.transactionId}</com:transactionId>
+            <com:sourceOrganisation>Westpac</com:sourceOrganisation>
+            <com:dateTime>${=context.a2atimestamp}</com:dateTime>
+            <notificationType>Batch</notificationType>
+            <totalEftposTransactions>2</totalEftposTransactions>
+            <totalPurchaseAmount>7400</totalPurchaseAmount>
+            <eftposTransaction>
+                <pr:party>
+                    <xpil:Accounts>
+                        <xpil:Account xpil:Type="PaymentInstruction" ct:DateValidTo="2006-05-04T18:13:51.0Z">
+                            <xpil:AccountElement xpil:Type="GatewayReferenceNumber">1234567890123456</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TransactionAllocationAmount">1000</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="AmountSpent">5000</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PaymentAmount">5000</xpil:AccountElement>
+                        </xpil:Account>
+                        <xpil:Account xpil:Type="PaymentInstruction" ct:DateValidTo="2006-05-04T18:13:51.0Z">
+                            <xpil:AccountElement xpil:Type="GatewayReferenceNumber">1234567890123457</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TransactionAllocationAmount">2000</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="AmountSpent">2000</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PaymentAmount">10000</xpil:AccountElement>
+                        </xpil:Account>
+                        <xpil:Account xpil:Type="EftposTransaction" ct:DateValidFrom="2006-05-04T18:13:51.0Z">
+                            <xpil:AccountElement xpil:Type="TerminalLocation">Wellington</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TerminalOwner">WestPark Holiday Inn</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TerminalNumber">986696</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="SupplierID">78657565</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="SupplierSwitch">78657565</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="CardPresent">True</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="CashOutAmount">0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="EftposTransactionNumber">7676876678678</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PurchaseAmount">3000</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="RequestCode">ReqCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="RequestTypeCode">ReqTypeCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="ResponseCode">RespCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="ReversalReasonCode">ReversalReasonCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="SettlementDate">2006-05-04</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TerminalTransactionNumber">99999999999767</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="RetrievalReferenceNumber">67565675575</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="AuthIdResponse">67565675575</xpil:AccountElement>
+                        </xpil:Account>
+                    </xpil:Accounts>
+                    <xpil:Documents>
+                        <xpil:Document xpil:Type="BankCard">
+                            <xpil:DocumentElement xpil:Type="CardNumber">6543211234567890 </xpil:DocumentElement>
+                            <xpil:DocumentElement xpil:Type="PinOffset">1234</xpil:DocumentElement>
+                        </xpil:Document>
+                    </xpil:Documents>
+                </pr:party>
+            </eftposTransaction>
+            <eftposTransaction>
+                <pr:party>
+                    <xpil:Accounts>
+                        <xpil:Account xpil:Type="PaymentInstruction" ct:DateValidTo="2006-05-04T18:13:51.0Z">
+                            <xpil:AccountElement xpil:Type="GatewayReferenceNumber">1234567890123456 </xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TransactionAllocationAmount">4400</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="AmountSpent">14400</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PaymentAmount">20000</xpil:AccountElement>
+                        </xpil:Account>
+                        <xpil:Account xpil:Type="EftposTransaction" ct:DateValidFrom="2006-05-04T18:13:51.0Z">
+                            <xpil:AccountElement xpil:Type="TerminalLocation">Wellington</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TerminalOwner">WestPark Holiday Inn</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TerminalNumber">986696</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="SupplierID">78657565</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="SupplierSwitch">78657565</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="CardPresent">True</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="CashOutAmount">0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="EftposTransactionNumber">7676876678678 </xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PurchaseAmount">4400</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="RequestCode">ReqCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="RequestTypeCode">ReqTypeCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="ResponseCode">RespCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="ReversalReasonCode">ReversalReasonCode0</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="SettlementDate">2006-05-04</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="TerminalTransactionNumber">99999999999767 </xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="RetrievalReferenceNumber">67565675575 </xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="AuthIdResponse">67565675575 </xpil:AccountElement>
+                        </xpil:Account>
+                    </xpil:Accounts>
+                    <xpil:Documents>
+                        <xpil:Document xpil:Type="BankCard">
+                            <xpil:DocumentElement xpil:Type="CardNumber">3456789065432112 </xpil:DocumentElement>
+                        </xpil:Document>
+                    </xpil:Documents>
+                </pr:party>
+            </eftposTransaction>
+        </wp:notifyPaymentTransactionRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+SC540:
+<?xml version="1.0" encoding="UTF-8"?>
+<soapenv:Envelope 
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" 
+    xmlns:wes="http://msd.govt.nz/external/westpac/v1.x/WestpacInflowWebService" 
+    xmlns:com="http://msd.govt.nz/external/v1.x/common" 
+    xmlns:par="http://msd.govt.nz/external/v1.x/partyrole" 
+    xmlns:xpil="urn:oasis:names:tc:ciq:xpil:3" 
+    xmlns:ct3="urn:oasis:names:tc:ciq:ct:3" 
+    xmlns:xlin="http://www.w3.org/1999/xlink" 
+    xmlns:xnl="urn:oasis:names:tc:ciq:xnl:3" 
+    xmlns:xal="urn:oasis:names:tc:ciq:xal:3" 
+    xmlns:xprl="urn:oasis:names:tc:ciq:xprl:3">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <wes:notifyExpiredPaymentInstructionsRqst>
+            <com:correlationId>${=context.correlationId}</com:correlationId>
+            <com:transactionId>${=context.transactionId}</com:transactionId>
+            <com:sourceOrganisation>Westpac</com:sourceOrganisation>
+            <com:dateTime>${=context.a2atimestamp}</com:dateTime>
+            <com:digitalSignature>12345678</com:digitalSignature>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>string</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <notificationType>Batch</notificationType>
+            <totalAmountSpent>12300</totalAmountSpent>
+            <totalExpiries>2</totalExpiries>
+            <expiry>
+                <par:party>
+                    <xpil:Accounts>
+                        <xpil:Account ct3:DateValidFrom="2006-05-04T18:13:51.0Z" xpil:Type="PaymentInstruction">
+                            <xpil:AccountElement xpil:Type="GatewayReferenceNumber">1234567890123456</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PaymentAmount">12000</xpil:AccountElement>
+                        </xpil:Account>
+                    </xpil:Accounts>
+                    <xpil:Documents>
+                        <xpil:Document xpil:Type="BankCard">
+                            <xpil:DocumentElement xpil:Type="CardNumber">1111222233334444</xpil:DocumentElement>
+                        </xpil:Document>
+                    </xpil:Documents>
+                </par:party>
+            </expiry>
+            <expiry>
+                <par:party>
+                    <xpil:Accounts>
+                        <xpil:Account ct3:DateValidFrom="2006-06-06T18:13:51.0Z" xpil:Type="PaymentInstruction">
+                            <xpil:AccountElement xpil:Type="GatewayReferenceNumber">1234567890654321</xpil:AccountElement>
+                            <xpil:AccountElement xpil:Type="PaymentAmount">300</xpil:AccountElement>
+                        </xpil:Account>
+                    </xpil:Accounts>
+                    <xpil:Documents>
+                        <xpil:Document xpil:Type="BankCard">
+                            <xpil:DocumentElement xpil:Type="CardNumber">11112222333355555</xpil:DocumentElement>
+                        </xpil:Document>
+                    </xpil:Documents>
+                </par:party>
+            </expiry>
+        </wes:notifyExpiredPaymentInstructionsRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+sc553:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v1.x/PaymentCardProxyWebService" xmlns:com="http://msd.govt.nz/integration/v4.x/common" xmlns:pay1="http://msd.govt.nz/integration/finance/v1.x/PaymentCard">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:synchroniseMerchantPaymentAuthorityRqst>
+            <com:correlationId>SMP101</com:correlationId>
+            <com:transactionId>SC553_sync_merchant_request</com:transactionId>
+            <com:sourceSystem>EFTPOS_GATEWAY</com:sourceSystem>
+            <com:dateTime>2013-07-30T04:28:00.000Z</com:dateTime>
+            <merchant>
+                <pay1:eftposMerchantId>12</pay1:eftposMerchantId>
+                <pay1:msdMerchantId>12</pay1:msdMerchantId>
+                <pay1:replaces/>
+                <pay1:switch>ETSL</pay1:switch>
+            </merchant>
+        </pay:synchroniseMerchantPaymentAuthorityRqst>
+    </soapenv:Body>
+</soapenv:Envelope>
+
+SC555:
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:pay="http://msd.govt.nz/integration/finance/v2.x/PaymentCardWebService" xmlns:com="http://msd.govt.nz/integration/v6.x/common">
+    <soapenv:Header>
+        <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+            <wsse:UsernameToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="UsernameToken-11080001">
+                <wsse:Username>curamsystemuser</wsse:Username>
+                <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">password</wsse:Password>
+            </wsse:UsernameToken>
+        </wsse:Security>
+    </soapenv:Header>
+    <soapenv:Body>
+        <pay:getCardStatementRqst>
+            <com:correlationId>SC555v2_GCS101</com:correlationId>
+            <com:sourceSystem>COS</com:sourceSystem>
+            <com:dateTime>2012-02-27T23:33:48.597Z</com:dateTime>
+            <com:SecurityContext>
+                <com:SecurityToken>
+                    <com:id>cosuser</com:id>
+                </com:SecurityToken>
+            </com:SecurityContext>
+            <includeFailedTransactions>false</includeFailedTransactions>
+            <includeSuccessfulTransactions>true</includeSuccessfulTransactions>
+            <transactionPeriod/>
+            <paymentCard xmlns:par="http://msd.govt.nz/integration/party/v2.x/partyRole" xmlns:csf="http://msd.govt.nz/integration/finance/v2.x/caseFinancial">
+                <csf:cardNumber>5035137023292665</csf:cardNumber>
+                <csf:partyAssociation>
+                    <csf:partyRoleType>
+                        <com:code>CardHolder</com:code>
+                    </csf:partyRoleType>
+                    <csf:party xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="par:Party">
+                        <par:role xsi:type="par:Client">
+                            <par:clientNumber>111222333</par:clientNumber>
+                        </par:role>
+                    </csf:party>
+                </csf:partyAssociation>
+            </paymentCard>
+        </pay:getCardStatementRqst>
+    </soapenv:Body>
+</soapenv:Envelope>

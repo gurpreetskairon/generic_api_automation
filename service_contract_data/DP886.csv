@@ -1,0 +1,6 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,SEARCH_PERIOD_START,SEARCH_PERIOD_END
+1,dev11,ongoing_application_found,526339696,2026-08-01,2026-10-01
+2,dev11,no_ongoing_application_found,526339581,2026-08-01,2026-10-01
+3,dev11,missing_client_number,,2026-08-01,2026-10-01
+4,dev11,missing_search_period_start,526339696,,2026-10-01
+5,dev11,search_period_end_before_start,526339696,2026-10-01,2026-08-01

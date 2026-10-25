@@ -1,0 +1,5 @@
+ID,ENVIRONMENT,CONDITION,CASE_REFERENCES,CLIENT_NUMBER
+1,dev11,application_attachment_retrieved,90048797,526339880
+2,dev11,no_application_or_attachment_found,4139493,526339880
+3,dev11,invalid_request_missing_case_reference,,526339880
+4,dev11,invalid_request_missing_client_number,90048797,

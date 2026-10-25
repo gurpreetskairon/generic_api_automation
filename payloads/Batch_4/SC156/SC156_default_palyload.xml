@@ -1,0 +1,51 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:v1="http://msd.govt.nz/integration/derived/proxymessage/service/manageproxyengagement/v1" xmlns:v2="http://msd.govt.nz/integration/utils/technical/schema/messaging/v2" xmlns:v11="http://msd.govt.nz/integration/derived/proxyengagement/schema/proxymessage/v1" xmlns:v12="http://msd.govt.nz/integration/utils/technical/schema/value/v1">
+<soapenv:Header>
+<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+<wsse:UsernameToken wsu:Id="UsernameToken-callback-realistic" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+<wsse:Username>{username}</wsse:Username>
+<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">{password}</wsse:Password>
+</wsse:UsernameToken>
+</wsse:Security>
+</soapenv:Header>
+<soapenv:Body>
+<v1:manageProxyEngagementRequest>
+<v2:header>
+<v2:action>MANAGEPROXY</v2:action>
+<v2:auditId>{audit_id}</v2:auditId>
+<v2:callbackAddress>CMS.STP</v2:callbackAddress>
+<v2:correlationId>{correlation_id}</v2:correlationId>
+<v2:requestDateTime>{request_date_time}</v2:requestDateTime>
+<v2:sourceSystem>CMS</v2:sourceSystem>
+<v2:transactionId>{transaction_id}</v2:transactionId>
+<v2:messageType>REQUEST</v2:messageType>
+<v2:securityToken>
+<v2:id>JEHOV</v2:id>
+<v2:type>USER</v2:type>
+</v2:securityToken>
+<v2:interactionPattern>REQUEST_CALLBACK</v2:interactionPattern>
+<v2:sourceProcessActivity>UPDATEPROXY</v2:sourceProcessActivity>
+<v2:lockingBehaviour>
+<v2:errorIfNotLocked>false</v2:errorIfNotLocked>
+<v2:keepLock>true</v2:keepLock>
+<v2:lockType>W</v2:lockType>
+<v2:retrieveSwifttUser>false</v2:retrieveSwifttUser>
+</v2:lockingBehaviour>
+</v2:header>
+<v11:data>
+<v11:clientNumber>{client_number}</v11:clientNumber>
+<v11:benefitType>JOBSEEKER_SUPPORT</v11:benefitType>
+<v11:processType>JS_26_WEEK_REAPP</v11:processType>
+<v11:proxies>
+<v11:proxyDetails>
+<v11:actionType>CREATE</v11:actionType>
+<v11:referenceId>{reference_id}</v11:referenceId>
+<v11:proxyCode>
+<v12:code>3</v12:code>
+</v11:proxyCode>
+<v11:proxyDate>2026-07-24T00:00:00+12:00</v11:proxyDate>
+</v11:proxyDetails>
+</v11:proxies>
+</v11:data>
+</v1:manageProxyEngagementRequest>
+</soapenv:Body>
+</soapenv:Envelope>

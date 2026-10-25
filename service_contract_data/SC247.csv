@@ -1,0 +1,7 @@
+ENV,SWN,CONDITION
+dev11,415819220,None
+dev11,000000100,no_matching_client
+dev11,5262855O9,invalid_client_number
+u11,415819220,None
+u11,000000100,no_matching_client
+u11,526285509,invalid_client_number

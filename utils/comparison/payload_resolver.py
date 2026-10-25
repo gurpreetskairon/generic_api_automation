@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+# payload_resolver.py
+=======
+>>>>>>> 6ac2d0d0 (added my generic api script code)
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape as xml_escape
@@ -232,7 +236,11 @@ def resolve_payload(template_path_or_content, values: dict, case_sensitive: bool
     else:
         json.loads(payload_string)
 
+<<<<<<< HEAD
+    return payload_string, fmt
+=======
     return payload_string
+>>>>>>> 6ac2d0d0 (added my generic api script code)
 
 
 def detect_response_type(response) -> str:

@@ -1,0 +1,13 @@
+{
+    "serviceResults": [
+        {
+            "result": "API-99",
+            "message": "The server was unable to process the request due to an internal error",
+            "resultDescription": "",
+            "objectRef": {
+                "type": "CLIENTNUMBER",
+                "value": "123456789"
+            }
+        }
+    ]
+}

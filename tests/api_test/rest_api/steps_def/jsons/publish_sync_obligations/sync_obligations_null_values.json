@@ -1,0 +1,274 @@
+{
+    "messageId": "1234567",
+    "participant": {
+        "identities": [
+            {
+                "identifier": "316402052",
+                "type": {
+                    "code": "CLIENTNUMBER",
+                    "description": "Client Number"
+                }
+            },
+            {
+                "identifier": "",
+                "type": {
+                    "code": "NATIONALID",
+                    "description": "National ID"
+                }
+            },
+            {
+                "identifier": "",
+                "type": {
+                    "code": "PASSPORT",
+                    "description": "Passport"
+                }
+            }
+        ],
+        "hasSEPProfile": true
+    },
+    "changeReason": {
+        "code": "WORKFT",
+        "description": "Full-time Work"
+    },
+    "changeDate": "2015-01-19",
+    "previousService": {
+        "product": {
+            "abbreviation": "JS",
+            "productId": "31",
+            "productType": {
+                "code": "Primary",
+                "description": "Primary Benefit"
+            },
+            "publishedName": "Job Seeker"
+        },
+        "productDelivery": {
+            "caseId": 534543,
+            "isActive": false,
+            "status": {
+                "statusCode": {
+                    "code": "Cancelled",
+                    "description": "Cancelled"
+                },
+                "effective": {
+                    "end": "2025-07-07T00:53:12.626Z"
+                },
+                "startReason": {
+                    "code": "345",
+                    "description": "13 WK VU IMPOSED - REFUSED WRK"
+                }
+            },
+            "applicationDate": "2024-06-18",
+            "commencementDate": "2024-06-18",
+            "renewalDate": "2024-06-18",
+            "registrationDate": "2024-06-18",
+            "isBenefitApportioned": true
+        }
+    },
+    "currentService": {
+        "product": {
+            "abbreviation": "JS",
+            "productId": "31",
+            "productType": {
+                "code": "Primary",
+                "description": "Primary Benefit"
+            },
+            "publishedName": "Job Seeker"
+        },
+        "productDelivery": {
+            "caseId": 534543,
+            "isActive": false,
+            "status": {
+                "statusCode": {
+                    "code": "Cancelled",
+                    "description": "Cancelled"
+                },
+                "effective": {
+                    "start": "2025-07-07T00:53:12.626Z"
+                },
+                "startReason": {
+                    "code": 128,
+                    "description": "13 WK VU IMPOSED - REFUSED WRK"
+                }
+            },
+            "applicationDate": "2024-06-18",
+            "commencementDate": "2024-06-18",
+            "renewalDate": "2024-06-18",
+            "registrationDate": "2024-06-18",
+            "isBenefitApportioned": true
+        }
+    },
+    "previousObligations": [
+        {
+            "effective": {
+                "start": "2015-01-19T12:00+12:00",
+                "end": "2015-12-31T23:59+12:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "start": "2015-01-19T12:00+12:00",
+                    "end": "2015-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "SWIFTT",
+                    "description": "Swiftt Data"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "515",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "start": "2015-01-19T12:00+12:00",
+                    "end": "2015-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        },
+        {
+            "effective": {
+                "start": "2016-01-19T12:00+12:00",
+                "end": "2016-12-31T23:59+12:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "start": "2016-01-19T12:00+12:00",
+                    "end": "2016-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "SWIFTT",
+                    "description": "Swiftt Data 1"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "516",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "start": "2016-01-19T12:00+12:00",
+                    "end": "2016-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        }
+    ],
+    "currentObligations": [
+        {
+            "effective": {
+                "start": "2015-01-19T12:00+12:00",
+                "end": "2015-12-31T23:59+12:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "start": "2015-01-19T12:00+12:00",
+                    "end": "2015-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "SWIFTT",
+                    "description": "Data from SWIFTT"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "515",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "start": "2015-01-19T12:00+12:00",
+                    "end": "2015-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        },
+        {
+            "effective": {
+                "start": "2016-01-19T12:00+12:00",
+                "end": "2016-12-31T23:59+12:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "start": "2016-01-19T12:00+12:00",
+                    "end": "2016-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "SWIFTT1",
+                    "description": "Data from SWIFTT 1"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "516",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "start": "2016-01-19T12:00+12:00",
+                    "end": "2016-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        },
+        {
+            "effective": {
+                "start": "2017-01-19T12:00+12:00",
+                "end": "2017-12-31T23:59+12:00"
+            },
+            "type": {
+                "code": "WORKFT",
+                "description": "Full-time Work"
+            },
+            "registration": {
+                "effective": {
+                    "start": "2017-01-19T12:00+12:00",
+                    "end": "2017-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "SWIFTT11",
+                    "description": "Data from SWIFTT 11"
+                }
+            },
+            "exemption": {
+                "reason": {
+                    "code": "517",
+                    "description": "Work Preparation Not Activated"
+                },
+                "effective": {
+                    "start": "2017-01-19T12:00+12:00",
+                    "end": "2017-12-31T23:59+12:00"
+                },
+                "type": {
+                    "code": "FULL",
+                    "description": "Full Exemption"
+                }
+            }
+        }
+    ]
+}

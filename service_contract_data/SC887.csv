@@ -1,0 +1,17 @@
+ID,ENVIRONMENT,CONDITION,CASE_REFERENCE,USER_ID
+1,dev11,ongoing_application_found,90051951,mymsduser
+2,dev11,no_primary_application_obligation,90041974,mymsduser
+3,dev11,no_partner_application_obligation,4139716,mymsduser
+4,dev11,no_partner_in_application,90041974,mymsduser
+5,dev11,no_primary_supporting_document,90041974,mymsduser
+6,dev11,no_partner_supporting_document,4139716,mymsduser
+7,dev11,no_primary_document_evidence,90041974,mymsduser
+8,dev11,no_partner_document_evidence,90059330,mymsduser
+9,dev11,no_primary_work_obligation,90058268,mymsduser
+10,dev11,no_partner_work_obligation,90043692,mymsduser
+11,dev11,no_primary_pre_benefit_activity,90041974,mymsduser
+12,dev11,no_partner_pre_benefit_activity,4138334,mymsduser
+13,dev11,no_primary_appointments,90043692,mymsduser
+14,dev11,user_not_recognised,4139797,mym
+15,dev11,invalid_request,,mymsduser
+16,dev11,no_matching_record,12345678,mymsduser

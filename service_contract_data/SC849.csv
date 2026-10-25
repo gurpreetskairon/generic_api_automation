@@ -1,0 +1,9 @@
+ENV,SWN,CONDITION
+dev11,366187536,no_current_activities
+dev11,399922800,one_or_more_current_activities
+dev11,3999228OO,alpha_numeric_swn
+dev11,000000001,invalid_client_number
+u11,526554471,no_current_activities
+u11,415605700,one_or_more_current_activities
+u11,3999228OO,alpha_numeric_swn
+u11,000000001,invalid_client_number

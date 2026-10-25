@@ -1,0 +1,5 @@
+ID,ENVIRONMENT,CONDITION,CASE_REFERENCE,ENTITLEMENT_TYPE_CODE,ENTITLEMENT_TYPE_DESCRIPTION,IS_RECOVERABLE,RECOVERY_RATE,AMOUNT
+1,dev11,non_recoverable_special_needs_grant,90014861,620,Special Needs Grant,false,0,80.00
+2,dev11,recoverable_advance,90048037,831,Advance,true,1.5,110
+3,dev11,Transaction Unsuccessful,,620,Special Needs Grant,false,0,10.00
+4,dev11,invalid_request,,,,,,

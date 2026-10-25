@@ -1,0 +1,5 @@
+ENV,client_number,condition,effective_start,effective_end,security_token_id
+dev11,526286143,valid_client,2021-02-01T16:31:52.397Z,2021-02-01T16:31:52.397Z,tbau0005
+dev11,666666666,invalid_client_number,2021-02-01T16:31:52.397Z,2021-02-01T16:31:52.397Z,tbau0005
+u11,526286143,valid_client,2021-02-01T16:31:52.397Z,2021-02-01T16:31:52.397Z,tbau0005
+u11,666666666,invalid_client_number,2021-02-01T16:31:52.397Z,2021-02-01T16:31:52.397Z,tbau0005

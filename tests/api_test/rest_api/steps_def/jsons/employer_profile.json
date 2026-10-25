@@ -1,0 +1,293 @@
+{
+  "businessName": "New World Kaikoura",
+  "tradingName": "New World  holdings Ltd",
+  "industry": {
+    "highLevel": "Accomodation and Food Services",
+    "lowLevel": "Furniture and Other",
+    "className": "Grape Growing"
+  },
+  "identities": [
+    {
+      "identifier": "123",
+      "type": {
+        "code": "NZBNNUMBER",
+        "description": "NZBN Number"
+      }
+    },
+    {
+      "identifier": "456",
+      "type": {
+        "code": "IRDNUMBER",
+        "description": "IRD Number"
+      }
+    },
+    {
+      "identifier": "2578810958204415110",
+      "type": {
+        "code": "PROVIDERID",
+        "description": "Provider Id"
+      }
+    }
+  ],
+  "period": {
+    "start": "2020-12-17",
+    "end": "2020-12-17"
+  },
+  "segmentation": {
+    "code": "MSDPSL1",
+    "description": "Strategic"
+  },
+  "status": {
+    "code": "PS1",
+    "description": "Prospect"
+  },
+  "comment": "endReason",
+  "associatedTo": [
+    {
+      "name": {
+        "lastName": "Wilson",
+        "firstName": "David",
+        "title": "Mr"
+      },
+      "role": {
+        "code": "RT001",
+        "description": "Key Account Manager"
+      },
+      "status": {
+        "code": "ACTIVE",
+        "description": "Active"
+      },
+      "toType": {
+        "code": "PMBR",
+        "description": "Provider Member"
+      },
+      "period": {
+        "start": "2020-12-17",
+        "end": "2025-12-17"
+      },
+      "contacts": [
+        {
+          "contactId": "1234567891234567891",
+          "type": {
+            "code": "PHONE",
+            "description": "Phone"
+          },
+          "usage": {
+            "code": "WORK",
+            "description": "Work"
+          },
+          "primacy": "PREFERRED",
+          "phone": {
+            "areaCode": "21",
+            "number": "3423223",
+            "extension": "123",
+            "countryCode": "+64"
+          },
+          "period": {
+            "start": "2020-12-17",
+            "end": "2025-12-17"
+          },
+          "status": {
+            "code": "ACTIVE",
+            "description": "Active"
+          }
+        },
+        {
+          "contactId": "1234567891234567891",
+          "type": {
+            "code": "EMAIL",
+            "description": "Email"
+          },
+          "usage": {
+            "code": "BUSINESS",
+            "description": "Business"
+          },
+          "primacy": "PREFERRED",
+          "email": {
+            "emailAddress": "person@gmail.com"
+          },
+          "period": {
+            "start": "2020-12-17",
+            "end": "2025-12-17"
+          },
+          "status": {
+            "code": "ACTIVE",
+            "description": "Active"
+          }
+        }
+      ]
+    },
+    {
+      "name": {
+        "lastName": "Wilson",
+        "firstName": "Peter",
+        "title": "Mr"
+      },
+      "role": {
+        "code": "MSDPMP4",
+        "description": "MSD Contact Person "
+      },
+      "status": {
+        "code": "ACTIVE",
+        "description": "Active"
+      },
+      "toType": {
+        "code": "SMBR",
+        "description": "Staff Member"
+      },
+      "identities": [
+        {
+          "identifier": "gchee002",
+          "type": {
+            "code": "USERID",
+            "description": "User id"
+          }
+        }
+      ],
+      "period": {
+        "start": "2020-12-17",
+        "end": "2025-12-17"
+      },
+      "contacts": [
+        {
+          "contactId": "1234567891234567891",
+          "type": {
+            "code": "PHONE",
+            "description": "Phone"
+          },
+          "usage": {
+            "code": "WORK",
+            "description": "Work"
+          },
+          "primacy": "PREFERRED",
+          "phone": {
+            "areaCode": "21",
+            "number": "3423223",
+            "extension": "123",
+            "countryCode": "+64"
+          },
+          "period": {
+            "start": "2020-12-17",
+            "end": "2025-12-17"
+          },
+          "status": {
+            "code": "ACTIVE",
+            "description": "Active"
+          }
+        }
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "category": {
+        "code": "MSDHOUS",
+        "description": "Housing (en)"
+      },
+      "type": [
+        {
+          "code": "MSDTYP1",
+          "description": "State Sector SHP (en)"
+        },
+        {
+          "code": "MSDTYP2",
+          "description": "Community Housing Provider (en)"
+        }
+      ],
+      "period": {
+        "start": "2020-12-17",
+        "end": "2023-12-17"
+      },
+      "status": {
+        "code": "CANCELLED",
+        "description": "Cancelled"
+      },
+      "endReason": {
+        "code": "PER1",
+        "description": "Related Services Not Provided"
+      }
+    },
+    {
+      "category": {
+        "code": "MSDHOUS",
+        "description": "Housing (en)"
+      },
+      "type": [
+        {
+          "code": "MSDTYP1",
+          "description": "State Sector SHP (en)"
+        },
+        {
+          "code": "MSDTYP2",
+          "description": "Community Housing Provider (en)"
+        }
+      ],
+      "period": {
+        "start": "2024-12-17",
+        "end": "2025-12-17"
+      },
+      "status": {
+        "code": "ACTIVE",
+        "description": "Active"
+      }
+    }
+  ],
+  "contacts": [
+    {
+      "contactId": "1234567891234567891",
+      "type": {
+        "code": "ADDRESS",
+        "description": "Address"
+      },
+      "usage": {
+        "code": "POSTAL",
+        "description": "Postal"
+      },
+      "primacy": "PREFERRED",
+      "address": {
+        "careOfAddressee": "Mr. George W Trump",
+        "line1": "string",
+        "line2": "string",
+        "line3": "string",
+        "city": "Wellington",
+        "postalCode": "6011",
+        "suburb": "Te Aro",
+        "country": "New Zealand",
+        "countryCode": "NZ",
+        "addressId": 0,
+        "formattedAddress": "string"
+      },
+      "period": {
+        "start": "2020-12-17",
+        "end": "2025-12-17"
+      },
+      "status": {
+        "code": "ACTIVE",
+        "description": "Active"
+      }
+    },
+    {
+      "contactId": "1234567891234567891",
+      "type": {
+        "code": "WEBADDRESS",
+        "description": "Web Address"
+      },
+      "usage": {
+        "code": "WEBSITE",
+        "description": "Website"
+      },
+      "primacy": "PREFERRED",
+      "webAddress": {
+        "website": "www.newworld.com"
+      },
+      "period": {
+        "start": "2020-12-17",
+        "end": "2025-12-17"
+      },
+      "status": {
+        "code": "ACTIVE",
+        "description": "Active"
+      }
+    }
+  ]
+}

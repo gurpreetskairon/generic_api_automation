@@ -1,0 +1,7 @@
+ID,ENVIRONMENT,CONDITION,CLIENT_NUMBER,SCANNED_IMAGE_REF,CREATED_BY
+1,dev11,successful_response,526361624,,
+2,dev11,duplicate_document_reference,526361624,20260904T092439_621276_23921_9688,
+3,dev11,missing_mandatory_data,526361624,,
+4,dev11,invalid_request_data,52636162a,,
+5,dev11,unknown_user,526361624,,tbau
+6,dev11,user_not_enabled,526361624,,tbau
